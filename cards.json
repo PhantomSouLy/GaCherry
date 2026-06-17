@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Cookie",
+    "rarity": "Common",
+    "image": "https://placehold.co/400x600/4caf50/ffffff?text=Cookie",
+    "tags": ["Food"],
+    "category": "Food",
+    "description": "A simple cookie."
+  },
+
+  {
+    "id": 2,
+    "name": "Casual Cherry",
+    "rarity": "Rare",
+    "image": "https://placehold.co/400x600/2196f3/ffffff?text=Casual+Cherry",
+    "tags": ["Cherry"],
+    "category": "Cherry",
+    "description": "A casual Cherry outfit."
+  },
+
+  {
+    "id": 3,
+    "name": "Mage Cherry",
+    "rarity": "Epic",
+    "image": "https://placehold.co/400x600/9c27b0/ffffff?text=Mage+Cherry",
+    "tags": ["Cherry"],
+    "category": "Cherry",
+    "description": "A magical Cherry skin."
+  },
+
+  {
+    "id": 4,
+    "name": "Angel Cherry",
+    "rarity": "Legendary",
+    "image": "https://placehold.co/400x600/ff9800/ffffff?text=Angel+Cherry",
+    "tags": ["Event"],
+    "category": "Cherry",
+    "description": "A legendary angelic Cherry."
+  },
+
+  {
+    "id": 5,
+    "name": "Bunny Goddess",
+    "rarity": "Mythical",
+    "image": "https://placehold.co/400x600/f5f5f5/000000?text=Bunny+Goddess",
+    "tags": ["Limited"],
+    "category": "Cherry",
+    "description": "A mythical bunny goddess."
+  },
+
+  {
+    "id": 6,
+    "name": "Dedicated by Cherry",
+    "rarity": "Legendary",
+    "image": "https://placehold.co/400x600/ff9800/ffffff?text=Dedicated",
+    "tags": ["Dedicated"],
+    "category": "Special",
+    "description": "A special dedicated card."
+  }
+]
