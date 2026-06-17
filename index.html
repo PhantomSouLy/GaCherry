@@ -7,344 +7,45 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
+<div class="container">
 
-    <header class="hero">
+    <h1>🌸 GaCherry Collection Book</h1>
 
-        <div class="hero-content">
+    <div class="craft-section">
 
-            <h1>🎴 GaCherry</h1>
+        <h2>Japanese Essence</h2>
 
-            <h2>Collection Book</h2>
+        <ul>
+            <li class="card-link" data-card="Kunoichi Cherry">
+                Kunoichi Cherry
+            </li>
 
-            <p>
-                Official HappyCherryChan Discord Gacha Collection
-            </p>
+            <li class="card-link" data-card="Ninja Cherry">
+                Ninja Cherry
+            </li>
 
-        </div>
-
-    </header>
-
-    <!-- HOME -->
-
-    <section id="home" class="page active">
-
-        <div class="stats-grid">
-
-            <div class="stat-card">
-                <span class="stat-number">600+</span>
-                <span class="stat-label">Cards</span>
-            </div>
-
-            <div class="stat-card">
-                <span class="stat-number">6</span>
-                <span class="stat-label">Rarities</span>
-            </div>
-
-            <div class="stat-card">
-                <span class="stat-number">∞</span>
-                <span class="stat-label">Future Updates</span>
-            </div>
-
-        </div>
-
-        <div class="menu-grid">
-
-            <button class="menu-card" data-page="collection">
-                🎴
-                <span>Collection</span>
-            </button>
-
-            <button class="menu-card" data-page="rarities">
-                ⭐
-                <span>Rarities</span>
-            </button>
-
-            <button class="menu-card" data-page="merge">
-                🔨
-                <span>Merge Lab</span>
-            </button>
-
-            <button class="menu-card" data-page="games">
-                🎮
-                <span>Mini Games</span>
-            </button>
-
-            <button class="menu-card" data-page="guide">
-                📖
-                <span>Guide</span>
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- COLLECTION -->
-
-    <section id="collection" class="page">
-
-        <div class="top-bar">
-
-            <button class="back-btn">
-                ← Back
-            </button>
-
-            <h2>Collection</h2>
-
-        </div>
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔍 Search cards..."
-        >
-
-        <div class="filter-row">
-
-            <button class="filter-btn active">
-                All
-            </button>
-
-            <button class="filter-btn">
-                Common
-            </button>
-
-            <button class="filter-btn">
-                Rare
-            </button>
-
-            <button class="filter-btn">
-                Epic
-            </button>
-
-            <button class="filter-btn">
-                Legendary
-            </button>
-
-            <button class="filter-btn">
-                Mythical
-            </button>
-
-            <button class="filter-btn">
-                Eternity
-            </button>
-
-        </div>
-
-        <div class="filter-row">
-
-            <button class="tag-btn">
-                Event
-            </button>
-
-            <button class="tag-btn">
-                Limited
-            </button>
-
-            <button class="tag-btn">
-                Dedicated
-            </button>
-
-            <button class="tag-btn">
-                Exclusive
-            </button>
-
-        </div>
-
-        <div id="cardGallery" class="card-gallery">
-
-            <!-- JS tölti be -->
-
-        </div>
-
-    </section>
-
-    <!-- RARITIES -->
-
-    <section id="rarities" class="page">
-
-        <div class="top-bar">
-
-            <button class="back-btn">
-                ← Back
-            </button>
-
-            <h2>Rarities</h2>
-
-        </div>
-
-        <div class="rarity-list">
-
-            <div class="rarity-card common">
-                ⭐ Common
-            </div>
-
-            <div class="rarity-card rare">
-                ⭐⭐ Rare
-            </div>
-
-            <div class="rarity-card epic">
-                ⭐⭐⭐ Epic
-            </div>
-
-            <div class="rarity-card legendary">
-                ⭐⭐⭐⭐ Legendary
-            </div>
-
-            <div class="rarity-card mythical">
-                ⭐⭐⭐⭐⭐ Mythical
-            </div>
-
-            <div class="rarity-card eternity">
-                🔥 Eternity
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- MERGE -->
-
-    <section id="merge" class="page">
-
-        <div class="top-bar">
-
-            <button class="back-btn">
-                ← Back
-            </button>
-
-            <h2>Merge Lab</h2>
-
-        </div>
-
-        <div class="placeholder-card">
-
-            <h3>Craft Recipes</h3>
-
-            <p>
-                Merge recipes will appear here.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- MINI GAMES -->
-
-    <section id="games" class="page">
-
-        <div class="top-bar">
-
-            <button class="back-btn">
-                ← Back
-            </button>
-
-            <h2>Mini Games</h2>
-
-        </div>
-
-        <div class="games-grid">
-
-            <div class="game-card">
-                🎣 Fishing
-            </div>
-
-            <div class="game-card">
-                ⚔️ Battle
-            </div>
-
-            <div class="game-card">
-                🥕 Bunny Farm
-            </div>
-
-            <div class="game-card">
-                🎴 Collection
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- GUIDE -->
-
-    <section id="guide" class="page">
-
-        <div class="top-bar">
-
-            <button class="back-btn">
-                ← Back
-            </button>
-
-            <h2>Guide</h2>
-
-        </div>
-
-        <div class="guide-list">
-
-            <div class="guide-card">
-                Getting Started
-            </div>
-
-            <div class="guide-card">
-                Currency
-            </div>
-
-            <div class="guide-card">
-                Commands
-            </div>
-
-            <div class="guide-card">
-                Merge System
-            </div>
-
-            <div class="guide-card">
-                Events
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CARD POPUP -->
-
-    <div id="cardModal" class="modal">
-
-        <div class="modal-content">
-
-            <button id="closeModal">
-                ✕
-            </button>
-
-            <img
-                id="modalImage"
-                src=""
-                alt=""
-            >
-
-            <h2 id="modalTitle">
-                Card Name
-            </h2>
-
-            <div id="modalRarity">
-                Rare
-            </div>
-
-            <div id="modalTags">
-
-            </div>
-
-            <p id="modalDescription">
-                Card description.
-            </p>
-
-        </div>
+            <li class="card-link" data-card="Moonlit Sakura Cherry">
+                Moonlit Sakura Cherry
+            </li>
+        </ul>
 
     </div>
 
-    <script src="app.js"></script>
+</div>
+
+<div id="cardPreview" class="preview">
+
+    <img id="previewImage" src="" alt="">
+
+    <h3 id="previewName"></h3>
+
+    <p id="previewRarity"></p>
+
+</div>
+
+<script src="app.js"></script>
 
 </body>
-  </html>
+</html>
