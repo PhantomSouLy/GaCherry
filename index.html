@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GaCherry Collection Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="logo">📖 GaCherry</div>
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#rarities">Rarities</a>
+    <a href="#merge">Merge Lab</a>
+    <a href="#guide">Guide</a>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <h1>GaCherry Collection Book</h1>
+  <p>Official HappyCherryChan Discord Gacha Database</p>
+</section>
+
+<section class="stats">
+  <div class="card"><h2>600+</h2><p>Cards</p></div>
+  <div class="card"><h2>6+</h2><p>Rarities</p></div>
+  <div class="card"><h2>0</h2><p>Recipes</p></div>
+</section>
+
+<section id="collection">
+<h2>🎴 Collection</h2>
+<input id="search" placeholder="Search cards...">
+<div id="gallery" class="gallery"></div>
+</section>
+
+<section id="rarities"><h2>⭐ Rarities</h2></section>
+<section id="merge"><h2>🔨 Merge Lab</h2><p>Coming soon...</p></section>
+<section id="guide"><h2>📜 Guide</h2><p>Coming soon...</p></section>
+
+<div id="modal" class="modal">
+ <div class="modal-content">
+  <span id="close">&times;</span>
+  <h2 id="cardTitle"></h2>
+  <p id="cardRarity"></p>
+ </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
