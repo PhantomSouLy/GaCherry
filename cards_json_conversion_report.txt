@@ -1,0 +1,36 @@
+GaCherry cards.json conversion report
+====================================
+
+Total cards: 663
+Asset path mode: rarity-folder, e.g. Legendary/File.png
+Asset base URL: https://cdn.jsdelivr.net/gh/PhantomSouLy/GaCherry-Assets@main/
+
+Rarity stats:
+- Common: 36
+- Uncommon: 37
+- Rare: 99
+- Epic: 140
+- Legendary: 251
+- Relic: 32
+- Cherished: 37
+- Mythical: 25
+- Eternity: 1
+- Unknown: 5
+
+Source stats:
+- DUNGEON: 18
+- GACHA: 490
+- NODROP: 96
+- STORE: 59
+
+Asset filename conflicts needing manual check:
+- #11 A few coins -> Uncategorized/Coins.png
+- #162 Coins -> Uncategorized/Coins.png
+- #207 Delivery Moogle -> Common/Moogle.png
+- #213 Desert Nomad Cherry -> Legendary/Desert_Noman_Cherry.png
+- #214 Desert Noman Cherry -> Legendary/Desert_Noman_Cherry.png
+- #426 Moogle -> Common/Moogle.png
+- #440 Mythical Shard -> Mythical/Mythical_Shard.png
+- #441 Mythical Shard [1x] -> Mythical/Mythical_Shard.png
+- #459 Pack of Legendary Shards [25x] -> Legendary/Pack_of_Legendary_Shards.png
+- #618 Tons of Legendary Shards [50x] -> Legendary/Pack_of_Legendary_Shards.png
