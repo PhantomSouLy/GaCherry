@@ -1,64 +1,106 @@
-const DATA_URL = "data/cards.json";
-const DEFAULT_ASSET_BASE = "https://cdn.jsdelivr.net/gh/PhantomSouLy/GaCherry-Assets@main/";
+const DATA_URL = "./data/cards.json";
 
-const rarityOrder = ["Common", "Uncommon", "Rare", "Epic", "Legendary", "Relic", "Cherished", "Mythical", "Eternity", "Unknown"];
-const rarityIcon = { Common:"✿", Uncommon:"✦", Rare:"✦", Epic:"✦", Legendary:"♛", Relic:"✹", Cherished:"♥", Mythical:"✦", Eternity:"✦", Unknown:"?" };
+const fallbackRarityOrder = [
+  "Common",
+  "Uncommon",
+  "Rare",
+  "Epic",
+  "Legendary",
+  "Relic",
+  "Cherished",
+  "Mythical",
+  "Eternity",
+  "Unknown"
+];
 
-let rawData = null;
-let cards = [];
-let assetBase = DEFAULT_ASSET_BASE;
-let activeView = "collection";
-let activeRarity = "All";
-let activeSource = "All";
-let activeTag = "All";
-let currentPage = 1;
-let pageSize = 60;
-let compactMode = false;
-let selectedCard = null;
-
-const stateKey = "gacherry_collection_state_v1";
-let userState = loadState();
-
-const $ = sel => document.querySelector(sel);
-const $$ = sel => [...document.querySelectorAll(sel)];
-
-const els = {
-  ownedCount: $("#ownedCount"), totalCount: $("#totalCount"), progressBar: $("#progressBar"), progressPercent: $("#progressPercent"), nextMilestone: $("#nextMilestone"),
-  miniProgressPercent: $("#miniProgressPercent"), miniProgressBar: $("#miniProgressBar"), miniProgressText: $("#miniProgressText"), rarityPanelTotal: $("#rarityPanelTotal"), rarityStatsGrid: $("#rarityStatsGrid"),
-  searchInput: $("#searchInput"), clearSearch: $("#clearSearch"), raritySelect: $("#raritySelect"), sourceSelect: $("#sourceSelect"), tagSelect: $("#tagSelect"), sortSelect: $("#sortSelect"),
-  quickRarityFilters: $("#quickRarityFilters"), quickSourceFilters: $("#quickSourceFilters"), cardGrid: $("#cardGrid"), resultCount: $("#resultCount"), emptyState: $("#emptyState"), viewTitle: $("#viewTitle"),
-  prevPage: $("#prevPage"), nextPage: $("#nextPage"), pageNumbers: $("#pageNumbers"), pageSizeSelect: $("#pageSizeSelect"), gridViewBtn: $("#gridViewBtn"), compactViewBtn: $("#compactViewBtn"),
-  missingGrid: $("#missingGrid"), favoriteGrid: $("#favoriteGrid"), setList: $("#setList"), statsDetail: $("#statsDetail"),
-  modal: $("#cardModal"), closeModal: $("#closeModal"), modalImage: $("#modalImage"), modalImageWrap: $("#modalImageWrap"), modalId: $("#modalId"), modalRarity: $("#modalRarity"), modalName: $("#modalName"), modalDescription: $("#modalDescription"), modalSource: $("#modalSource"), modalCategory: $("#modalCategory"), modalSeries: $("#modalSeries"), modalEvent: $("#modalEvent"), modalTags: $("#modalTags"), toggleFavorite: $("#toggleFavorite"), toggleOwned: $("#toggleOwned"), openAsset: $("#openAsset"),
-  resetStateBtn: $("#resetStateBtn"), favoritesTopBtn: $("#favoritesTopBtn")
+const rarityIcons = {
+  Common: "✿",
+  Uncommon: "✦",
+  Rare: "✦",
+  Epic: "✦",
+  Legendary: "♛",
+  Relic: "✹",
+  Cherished: "♥",
+  Mythical: "✧",
+  Eternity: "✷",
+  Unknown: "?"
 };
 
-function loadState(){
-  try { return JSON.parse(localStorage.getItem(stateKey)) || { missing: [], favorites: [] }; }
-  catch { return { missing: [], favorites: [] }; }
-}
-function saveState(){ localStorage.setItem(stateKey, JSON.stringify(userState)); }
-function isMissing(card){ return userState.missing.includes(card.id); }
-function isOwned(card){ return !isMissing(card); }
-function isFavorite(card){ return userState.favorites.includes(card.id); }
-function toggleList(list, id){
-  const arr = userState[list];
-  const idx = arr.indexOf(id);
-  if(idx >= 0) arr.splice(idx, 1); else arr.push(id);
-  saveState();
+const state = {
+  database: null,
+  cards: [],
+  filtered: [],
+  activePage: "collection",
+  activeTag: "All",
+  activeRarity: "All",
+  activeSource: "All",
+  sort: "id-asc",
+  search: "",
+  currentPage: 1,
+  perPage: 60,
+  compact: false
+};
+
+const els = {};
+
+function $(id) {
+  return document.getElementById(id);
 }
 
-function rarityClass(rarity){ return String(rarity || "Unknown").toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
-function rarityRank(rarity){ const i = rarityOrder.indexOf(rarity); return i === -1 ? 999 : i; }
-function assetUrl(card){
-  if(card.image && /^https?:\/\//i.test(card.image)) return card.image;
-  return assetBase + encodeURI(card.asset || "").replace(/#/g, "%23");
+function setupElements() {
+  [
+    "sideTotal", "sideRarityCount", "sideSourceCount", "resultCount",
+    "totalCardsNumber", "totalProgressBar", "rarityPanelTotal",
+    "rarityStatsGrid", "searchInput", "clearSearchBtn", "raritySelect",
+    "sourceSelect", "sortSelect", "quickFilters", "tagFilters",
+    "cardGallery", "prevPage", "nextPage", "pageNumbers", "perPageSelect",
+    "emptyState", "rarityOverview", "sourceOverview", "gridViewBtn",
+    "compactViewBtn", "cardModal", "closeModal", "modalImage",
+    "modalPlaceholder", "modalId", "modalRarity", "modalSource",
+    "modalTitle", "modalDescription", "modalCategory", "modalSeries",
+    "modalEvent", "modalTags"
+  ].forEach(id => els[id] = $(id));
 }
-function normalizeCard(card, idx){
+
+function rarityClass(rarity) {
+  return String(rarity || "Unknown")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-");
+}
+
+function safeText(value, fallback = "-") {
+  if (value === null || value === undefined || value === "") return fallback;
+  return String(value);
+}
+
+function getAssetBase() {
+  return state.database?.assetBaseUrl || "https://cdn.jsdelivr.net/gh/PhantomSouLy/GaCherry-Assets@main/";
+}
+
+function getImageUrl(card) {
+  if (card.image && /^https?:\/\//i.test(card.image)) return card.image;
+  if (card.asset && /^https?:\/\//i.test(card.asset)) return card.asset;
+  if (card.asset) return getAssetBase() + card.asset;
+  return "";
+}
+
+function getRarityOrder() {
+  const stats = state.database?.statistics?.rarity || {};
+  const fromStats = Object.keys(stats);
+  return fallbackRarityOrder.filter(r => fromStats.includes(r)).concat(
+    fromStats.filter(r => !fallbackRarityOrder.includes(r))
+  );
+}
+
+function getRarityRank(rarity) {
+  return getRarityOrder().indexOf(rarity);
+}
+
+function normalizeCard(card, index) {
   return {
-    id: Number(card.id ?? idx + 1),
-    slug: card.slug || String(card.name || `card-${idx+1}`).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),
-    name: card.name || "Unknown Card",
+    id: card.id ?? index + 1,
+    slug: card.slug || "",
+    name: card.name || `Card ${index + 1}`,
     rarity: card.rarity || "Unknown",
     source: card.source || card.type || "Unknown",
     category: card.category || "Uncategorized",
@@ -67,231 +109,476 @@ function normalizeCard(card, idx){
     tags: Array.isArray(card.tags) ? card.tags : [],
     asset: card.asset || "",
     image: card.image || "",
-    description: card.description || "",
-    hidden: Boolean(card.hidden)
+    description: card.description || ""
   };
 }
 
-async function init(){
-  try{
-    const response = await fetch(DATA_URL, { cache: "no-cache" });
-    if(!response.ok) throw new Error(`Nem sikerült betölteni: ${DATA_URL}`);
-    rawData = await response.json();
-    assetBase = rawData.assetBaseUrl || DEFAULT_ASSET_BASE;
-    const list = Array.isArray(rawData) ? rawData : rawData.cards;
-    cards = list.map(normalizeCard).filter(card => !card.hidden);
-    renderAllControls();
-    bindEvents();
-    render();
-  }catch(error){
-    console.error(error);
-    els.cardGrid.innerHTML = `<div class="simple-panel glass"><h2>Nem sikerült betölteni a cards.json-t</h2><p>${error.message}</p></div>`;
+async function loadDatabase() {
+  const response = await fetch(DATA_URL, { cache: "no-store" });
+  if (!response.ok) throw new Error("Nem sikerült betölteni a cards.json fájlt.");
+
+  const database = await response.json();
+  state.database = database;
+  state.cards = (database.cards || []).map(normalizeCard);
+  state.filtered = [...state.cards];
+
+  renderAll();
+}
+
+function renderAll() {
+  renderSidebarStats();
+  renderRarityDashboard();
+  renderControls();
+  renderRarityOverview();
+  renderSourceOverview();
+  applyFilters();
+}
+
+function renderSidebarStats() {
+  const rarityCount = Object.keys(state.database?.statistics?.rarity || {}).length;
+  const sourceCount = Object.keys(state.database?.statistics?.source || {}).length;
+
+  els.sideTotal.textContent = state.cards.length;
+  els.sideRarityCount.textContent = rarityCount;
+  els.sideSourceCount.textContent = sourceCount;
+  els.totalCardsNumber.textContent = state.cards.length;
+  els.rarityPanelTotal.textContent = `${state.cards.length} összesen`;
+}
+
+function renderRarityDashboard() {
+  const stats = state.database?.statistics?.rarity || countBy(state.cards, "rarity");
+  const total = state.cards.length || 1;
+
+  els.rarityStatsGrid.innerHTML = getRarityOrder().map(rarity => {
+    const count = stats[rarity] || 0;
+    const pct = Math.round((count / total) * 1000) / 10;
+    return `
+      <button class="rarity-stat" data-rarity="${rarity}" title="${rarity}">
+        <strong><span class="mini-icon ${rarityClass(rarity)}">${rarityIcons[rarity] || "✦"}</span> ${rarity}</strong>
+        <span>${count} / ${total}</span>
+        <b class="rarity-badge ${rarityClass(rarity)}">${pct}%</b>
+      </button>
+    `;
+  }).join("");
+
+  els.rarityStatsGrid.querySelectorAll("[data-rarity]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.activeRarity = btn.dataset.rarity;
+      state.currentPage = 1;
+      syncControls();
+      applyFilters();
+    });
+  });
+}
+
+function renderControls() {
+  const rarities = ["All", ...getRarityOrder()];
+  const sources = ["All", ...Object.keys(state.database?.statistics?.source || countBy(state.cards, "source")).sort()];
+  const tags = getAllTags();
+
+  els.raritySelect.innerHTML = rarities.map(r => `<option value="${r}">${r === "All" ? "Rarity (Összes)" : r}</option>`).join("");
+  els.sourceSelect.innerHTML = sources.map(s => `<option value="${s}">${s === "All" ? "Source (Összes)" : s}</option>`).join("");
+
+  els.quickFilters.innerHTML = rarities.map(r => `
+    <button class="filter-chip ${r === "All" ? "active" : ""}" data-rarity="${r}">
+      ${r === "All" ? "Összes" : r}
+    </button>
+  `).join("") + sources.filter(s => s !== "All").map(s => `
+    <button class="filter-chip source-chip" data-source="${s}">
+      ${s}
+    </button>
+  `).join("");
+
+  els.tagFilters.innerHTML = [`<button class="tag-chip active" data-tag="All">Minden tag</button>`]
+    .concat(tags.slice(0, 36).map(tag => `<button class="tag-chip" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`))
+    .join("");
+
+  els.quickFilters.addEventListener("click", event => {
+    const btn = event.target.closest("button");
+    if (!btn) return;
+
+    if (btn.dataset.rarity) {
+      state.activeRarity = btn.dataset.rarity;
+    }
+
+    if (btn.dataset.source) {
+      state.activeSource = state.activeSource === btn.dataset.source ? "All" : btn.dataset.source;
+    }
+
+    state.currentPage = 1;
+    syncControls();
+    applyFilters();
+  });
+
+  els.tagFilters.addEventListener("click", event => {
+    const btn = event.target.closest("button");
+    if (!btn) return;
+
+    state.activeTag = btn.dataset.tag;
+    state.currentPage = 1;
+    syncControls();
+    applyFilters();
+  });
+}
+
+function syncControls() {
+  els.raritySelect.value = state.activeRarity;
+  els.sourceSelect.value = state.activeSource;
+
+  els.quickFilters.querySelectorAll("[data-rarity]").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.rarity === state.activeRarity);
+  });
+
+  els.quickFilters.querySelectorAll("[data-source]").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.source === state.activeSource);
+  });
+
+  els.tagFilters.querySelectorAll("[data-tag]").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.tag === state.activeTag);
+  });
+}
+
+function renderRarityOverview() {
+  const stats = state.database?.statistics?.rarity || countBy(state.cards, "rarity");
+
+  els.rarityOverview.innerHTML = getRarityOrder().map(rarity => `
+    <article class="overview-card">
+      <h3><span class="rarity-badge ${rarityClass(rarity)}">${rarity}</span></h3>
+      <div class="overview-number">${stats[rarity] || 0}</div>
+      <small>kártya ebben a rarityben</small>
+    </article>
+  `).join("");
+}
+
+function renderSourceOverview() {
+  const stats = state.database?.statistics?.source || countBy(state.cards, "source");
+
+  els.sourceOverview.innerHTML = Object.entries(stats)
+    .sort((a, b) => b[1] - a[1])
+    .map(([source, count]) => `
+      <article class="overview-card">
+        <h3><span class="source-badge">${source}</span></h3>
+        <div class="overview-number">${count}</div>
+        <small>kártya ebben a source-ban</small>
+      </article>
+    `).join("");
+}
+
+function getAllTags() {
+  const tags = new Set();
+  state.cards.forEach(card => card.tags.forEach(tag => tags.add(tag)));
+  return [...tags].sort((a, b) => a.localeCompare(b, "hu"));
+}
+
+function countBy(list, key) {
+  return list.reduce((acc, item) => {
+    const value = item[key] || "Unknown";
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+}
+
+function applyFilters() {
+  const search = state.search.trim().toLowerCase();
+
+  let result = state.cards.filter(card => {
+    const matchesRarity = state.activeRarity === "All" || card.rarity === state.activeRarity;
+    const matchesSource = state.activeSource === "All" || card.source === state.activeSource;
+    const matchesTag = state.activeTag === "All" || card.tags.includes(state.activeTag);
+
+    const haystack = [
+      card.name,
+      card.rarity,
+      card.source,
+      card.category,
+      card.series,
+      card.event,
+      card.description,
+      ...card.tags
+    ].filter(Boolean).join(" ").toLowerCase();
+
+    const matchesSearch = !search || haystack.includes(search);
+
+    return matchesRarity && matchesSource && matchesTag && matchesSearch;
+  });
+
+  result.sort(sortCards);
+
+  state.filtered = result;
+  clampPage();
+  renderCards();
+  renderPagination();
+}
+
+function sortCards(a, b) {
+  switch (state.sort) {
+    case "id-desc": return b.id - a.id;
+    case "name-asc": return a.name.localeCompare(b.name, "hu");
+    case "name-desc": return b.name.localeCompare(a.name, "hu");
+    case "rarity-desc": return getRarityRank(b.rarity) - getRarityRank(a.rarity) || a.name.localeCompare(b.name, "hu");
+    case "rarity-asc": return getRarityRank(a.rarity) - getRarityRank(b.rarity) || a.name.localeCompare(b.name, "hu");
+    case "id-asc":
+    default: return a.id - b.id;
   }
 }
 
-function bindEvents(){
-  $$('[data-view-link]').forEach(btn => btn.addEventListener('click', () => showView(btn.dataset.viewLink)));
-  els.searchInput.addEventListener('input', () => { currentPage = 1; renderCollection(); });
-  els.clearSearch.addEventListener('click', () => { els.searchInput.value = ""; currentPage = 1; renderCollection(); els.searchInput.focus(); });
-  [els.raritySelect, els.sourceSelect, els.tagSelect, els.sortSelect].forEach(el => el.addEventListener('change', () => {
-    activeRarity = els.raritySelect.value; activeSource = els.sourceSelect.value; activeTag = els.tagSelect.value; currentPage = 1; renderCollection(); updateQuickFilterState();
-  }));
-  els.pageSizeSelect.addEventListener('change', () => { pageSize = Number(els.pageSizeSelect.value); currentPage = 1; renderCollection(); });
-  els.prevPage.addEventListener('click', () => { if(currentPage > 1){ currentPage--; renderCollection(); scrollToGrid(); }});
-  els.nextPage.addEventListener('click', () => { const totalPages = Math.max(1, Math.ceil(getFilteredCards().length / pageSize)); if(currentPage < totalPages){ currentPage++; renderCollection(); scrollToGrid(); }});
-  els.gridViewBtn.addEventListener('click', () => setCompact(false));
-  els.compactViewBtn.addEventListener('click', () => setCompact(true));
-  els.closeModal.addEventListener('click', closeModal);
-  els.modal.addEventListener('click', e => { if(e.target === els.modal) closeModal(); });
-  document.addEventListener('keydown', e => { if(e.key === 'Escape' && els.modal.open) closeModal(); });
-  els.toggleFavorite.addEventListener('click', () => { if(!selectedCard) return; toggleList('favorites', selectedCard.id); updateModalActions(); render(); });
-  els.toggleOwned.addEventListener('click', () => { if(!selectedCard) return; toggleList('missing', selectedCard.id); updateModalActions(); render(); });
-  els.resetStateBtn.addEventListener('click', () => {
-    if(confirm('Biztos törlöd a kedvencek és missing állapotokat?')){ userState = { missing: [], favorites: [] }; saveState(); render(); }
+function clampPage() {
+  const maxPage = Math.max(1, Math.ceil(state.filtered.length / state.perPage));
+  if (state.currentPage > maxPage) state.currentPage = maxPage;
+  if (state.currentPage < 1) state.currentPage = 1;
+}
+
+function renderCards() {
+  const start = (state.currentPage - 1) * state.perPage;
+  const visible = state.filtered.slice(start, start + state.perPage);
+
+  els.resultCount.textContent = `${state.filtered.length} kártya`;
+  els.emptyState.style.display = visible.length ? "none" : "block";
+  els.cardGallery.classList.toggle("compact", state.compact);
+
+  els.cardGallery.innerHTML = visible.map(card => createCardHTML(card)).join("");
+
+  els.cardGallery.querySelectorAll(".card").forEach(cardEl => {
+    cardEl.addEventListener("click", () => {
+      const id = Number(cardEl.dataset.id);
+      openModal(state.cards.find(card => card.id === id));
+    });
   });
-  els.favoritesTopBtn.addEventListener('click', () => showView('favorites'));
-  $('#openCardsBtn').addEventListener('click', () => showView('collection'));
-}
 
-function setCompact(value){ compactMode = value; els.gridViewBtn.classList.toggle('active', !value); els.compactViewBtn.classList.toggle('active', value); renderCollection(); }
-function scrollToGrid(){ els.cardGrid.scrollIntoView({ behavior:'smooth', block:'start' }); }
-
-function renderAllControls(){
-  const rarities = ["All", ...rarityOrder.filter(r => cards.some(c => c.rarity === r))];
-  const sources = ["All", ...[...new Set(cards.map(c => c.source))].sort()];
-  const tags = ["All", ...[...new Set(cards.flatMap(c => c.tags))].sort((a,b) => a.localeCompare(b, 'hu'))];
-  fillSelect(els.raritySelect, rarities, 'Rarity');
-  fillSelect(els.sourceSelect, sources, 'Source');
-  fillSelect(els.tagSelect, tags, 'Tag');
-  els.quickRarityFilters.innerHTML = rarities.map(r => `<button class="chip ${r==='All'?'active':''} ${r==='All'?'':rarityClass(r)}" data-rarity="${escapeHtml(r)}" style="--c:var(--${rarityClass(r)})">${r==='All'?'Összes':r}</button>`).join('');
-  els.quickSourceFilters.innerHTML = sources.map(s => `<button class="chip ${s==='All'?'active':''}" data-source="${escapeHtml(s)}">${s==='All'?'Minden source':s}</button>`).join('');
-  els.quickRarityFilters.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => { activeRarity = btn.dataset.rarity; els.raritySelect.value = activeRarity; currentPage = 1; renderCollection(); updateQuickFilterState(); }));
-  els.quickSourceFilters.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => { activeSource = btn.dataset.source; els.sourceSelect.value = activeSource; currentPage = 1; renderCollection(); updateQuickFilterState(); }));
-}
-function fillSelect(select, values, label){ select.innerHTML = values.map(value => `<option value="${escapeHtml(value)}">${value === 'All' ? `${label} (Összes)` : value}</option>`).join(''); }
-function updateQuickFilterState(){
-  els.quickRarityFilters.querySelectorAll('button').forEach(btn => btn.classList.toggle('active', btn.dataset.rarity === activeRarity));
-  els.quickSourceFilters.querySelectorAll('button').forEach(btn => btn.classList.toggle('active', btn.dataset.source === activeSource));
-}
-
-function showView(view){
-  activeView = view;
-  $$('.view').forEach(el => el.classList.remove('active'));
-  const target = $(`#view-${view}`) || $('#view-collection');
-  target.classList.add('active');
-  $$('.nav-item').forEach(btn => btn.classList.toggle('active', btn.dataset.viewLink === view));
-  if(view === 'missing') renderCardGrid(els.missingGrid, cards.filter(isMissing));
-  if(view === 'favorites') renderCardGrid(els.favoriteGrid, cards.filter(isFavorite));
-  if(view === 'sets') renderSets();
-  if(view === 'stats') renderStatsDetail();
-  window.scrollTo({ top:0, behavior:'smooth' });
-}
-
-function render(){
-  renderDashboard();
-  renderCollection();
-  if(activeView === 'missing') renderCardGrid(els.missingGrid, cards.filter(isMissing));
-  if(activeView === 'favorites') renderCardGrid(els.favoriteGrid, cards.filter(isFavorite));
-  if(activeView === 'stats') renderStatsDetail();
-}
-
-function renderDashboard(){
-  const total = cards.length;
-  const owned = cards.filter(isOwned).length;
-  const percent = total ? Math.round((owned / total) * 1000) / 10 : 0;
-  els.ownedCount.textContent = owned;
-  els.totalCount.textContent = total;
-  els.progressBar.style.width = `${percent}%`;
-  els.progressPercent.textContent = `${percent}%`;
-  els.miniProgressPercent.textContent = `${percent}%`;
-  els.miniProgressBar.style.width = `${percent}%`;
-  els.miniProgressText.textContent = `${owned} / ${total} kártya`;
-  const milestone = Math.min(total, Math.ceil((owned + 1) / 50) * 50);
-  els.nextMilestone.textContent = owned >= total ? 'Teljes kollekció kész!' : `Következő mérföldkő: ${milestone} kártya`;
-  els.rarityPanelTotal.textContent = `${owned} / ${total}`;
-  els.rarityStatsGrid.innerHTML = rarityOrder.filter(r => cards.some(c => c.rarity === r)).map(rarity => {
-    const all = cards.filter(c => c.rarity === rarity);
-    const have = all.filter(isOwned).length;
-    const p = all.length ? Math.round((have / all.length) * 1000) / 10 : 0;
-    return `<article class="rarity-stat ${rarityClass(rarity)}" style="--c:var(--${rarityClass(rarity)})"><strong>${rarityIcon[rarity] || '✦'} ${rarity}</strong><small>${have} / ${all.length}</small><b>${p}%</b></article>`;
-  }).join('');
-}
-
-function getFilteredCards(){
-  const q = els.searchInput.value.trim().toLowerCase();
-  let filtered = cards.filter(card => {
-    const text = [card.name, card.rarity, card.source, card.category, card.series, card.event, card.description, ...card.tags].filter(Boolean).join(' ').toLowerCase();
-    return (!q || text.includes(q)) &&
-      (activeRarity === 'All' || card.rarity === activeRarity) &&
-      (activeSource === 'All' || card.source === activeSource) &&
-      (activeTag === 'All' || card.tags.includes(activeTag));
-  });
-  const sort = els.sortSelect.value;
-  filtered.sort((a,b) => {
-    if(sort === 'name-asc') return a.name.localeCompare(b.name, 'hu');
-    if(sort === 'name-desc') return b.name.localeCompare(a.name, 'hu');
-    if(sort === 'rarity-desc') return rarityRank(b.rarity) - rarityRank(a.rarity) || a.name.localeCompare(b.name, 'hu');
-    if(sort === 'rarity-asc') return rarityRank(a.rarity) - rarityRank(b.rarity) || a.name.localeCompare(b.name, 'hu');
-    if(sort === 'id-desc') return b.id - a.id;
-    return a.id - b.id;
-  });
-  return filtered;
-}
-
-function renderCollection(){
-  const filtered = getFilteredCards();
-  const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
-  currentPage = Math.min(currentPage, totalPages);
-  const pageItems = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize);
-  els.resultCount.textContent = `${filtered.length} kártya`;
-  els.emptyState.style.display = filtered.length ? 'none' : 'block';
-  els.cardGrid.classList.toggle('compact', compactMode);
-  renderCardGrid(els.cardGrid, pageItems);
-  renderPagination(totalPages);
-}
-
-function renderCardGrid(container, list){
-  if(!list.length){ container.innerHTML = ''; return; }
-  container.innerHTML = list.map(cardTemplate).join('');
-  container.querySelectorAll('.g-card').forEach(el => {
-    el.addEventListener('click', () => openModal(cards.find(c => c.id === Number(el.dataset.id))));
-    const img = el.querySelector('img');
-    if(img.complete && img.naturalWidth) img.classList.add('loaded');
-    img.addEventListener('load', () => img.classList.add('loaded'), { once:true });
-    img.addEventListener('error', () => el.classList.add('image-error'), { once:true });
+  els.cardGallery.querySelectorAll("img[data-src]").forEach(img => {
+    img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
+    img.addEventListener("error", () => {
+      img.alt = "A kép nem tölthető be";
+      img.classList.add("loaded");
+    }, { once: true });
+    img.src = img.dataset.src;
   });
 }
 
-function cardTemplate(card){
+function createCardHTML(card) {
   const cls = rarityClass(card.rarity);
-  const owned = isOwned(card);
-  const fav = isFavorite(card);
-  const url = assetUrl(card);
-  return `<article class="g-card ${cls} ${owned ? '' : 'missing'}" data-id="${card.id}" style="--c:var(--${cls})">
-    <div class="card-badges"><span class="owned-badge ${owned ? 'owned' : ''}">${owned ? '✓' : '🔒'}</span><span class="fav-badge ${fav ? 'active' : ''}">${fav ? '♥' : '♡'}</span></div>
-    <div class="image-shell"><div class="image-placeholder"><span>${escapeHtml(shortName(card.name))}</span></div><img loading="lazy" src="${url}" alt="${escapeHtml(card.name)}"></div>
-    <footer class="card-footer"><span class="rarity-label">${escapeHtml(card.rarity)}</span><strong>${escapeHtml(card.name)}</strong></footer>
-  </article>`;
+  const imageUrl = getImageUrl(card);
+
+  return `
+    <article class="card ${cls}" data-id="${card.id}">
+      <div class="image-shell">
+        <div class="placeholder">${escapeHtml(card.rarity)}</div>
+        <img data-src="${escapeAttr(imageUrl)}" alt="${escapeAttr(card.name)}" loading="lazy">
+      </div>
+
+      <div class="card-info">
+        <div class="card-name">${escapeHtml(card.name)}</div>
+        <div class="card-meta">
+          <span class="rarity-badge ${cls}">${escapeHtml(card.rarity)}</span>
+          <span class="card-id">#${String(card.id).padStart(3, "0")}</span>
+        </div>
+      </div>
+    </article>
+  `;
 }
 
-function renderPagination(totalPages){
-  els.prevPage.disabled = currentPage <= 1;
-  els.nextPage.disabled = currentPage >= totalPages;
-  const pages = getVisiblePages(currentPage, totalPages);
-  els.pageNumbers.innerHTML = pages.map(p => p === '…' ? `<span class="page-num dots">…</span>` : `<button class="page-num ${p===currentPage?'active':''}" data-page="${p}">${p}</button>`).join('');
-  els.pageNumbers.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => { currentPage = Number(btn.dataset.page); renderCollection(); scrollToGrid(); }));
-}
-function getVisiblePages(current, total){
-  if(total <= 7) return Array.from({ length: total }, (_,i) => i+1);
-  const set = new Set([1,total,current,current-1,current+1]);
-  const arr = [...set].filter(n => n>=1 && n<=total).sort((a,b)=>a-b);
-  return arr.flatMap((n,i) => i && n - arr[i-1] > 1 ? ['…', n] : [n]);
+function renderPagination() {
+  const totalPages = Math.max(1, Math.ceil(state.filtered.length / state.perPage));
+
+  els.prevPage.disabled = state.currentPage <= 1;
+  els.nextPage.disabled = state.currentPage >= totalPages;
+
+  const pages = buildPageList(state.currentPage, totalPages);
+  els.pageNumbers.innerHTML = pages.map(page => {
+    if (page === "...") return `<span class="dots">...</span>`;
+    return `<button class="${page === state.currentPage ? "active" : ""}" data-page="${page}">${page}</button>`;
+  }).join("");
+
+  els.pageNumbers.querySelectorAll("[data-page]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.currentPage = Number(btn.dataset.page);
+      renderCards();
+      renderPagination();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
 }
 
-function openModal(card){
-  if(!card) return;
-  selectedCard = card;
+function buildPageList(current, total) {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+
+  const pages = [1];
+  if (current > 4) pages.push("...");
+
+  const start = Math.max(2, current - 1);
+  const end = Math.min(total - 1, current + 1);
+
+  for (let i = start; i <= end; i++) pages.push(i);
+
+  if (current < total - 3) pages.push("...");
+  pages.push(total);
+
+  return pages;
+}
+
+function openModal(card) {
+  if (!card) return;
+
   const cls = rarityClass(card.rarity);
-  els.modalImage.classList.remove('loaded');
-  els.modalImageWrap.className = `modal-image-wrap ${cls}`;
-  els.modalImageWrap.style.setProperty('--modal-c', `var(--${cls})`);
-  els.modalId.textContent = `#${String(card.id).padStart(3,'0')}`;
-  els.modalRarity.textContent = card.rarity;
-  els.modalRarity.className = `rarity-pill ${cls}`;
-  els.modalName.textContent = card.name;
-  els.modalDescription.textContent = card.description || 'Nincs leírás megadva.';
-  els.modalSource.textContent = card.source || '-';
-  els.modalCategory.textContent = card.category || 'Uncategorized';
-  els.modalSeries.textContent = card.series || '-';
-  els.modalEvent.textContent = card.event || '-';
-  els.modalTags.innerHTML = card.tags.map(t => `<span>${escapeHtml(t)}</span>`).join('') || '<span>Nincs tag</span>';
-  const url = assetUrl(card);
-  els.modalImage.src = url;
+  const imageUrl = getImageUrl(card);
+
+  els.cardModal.classList.add("open");
+  els.cardModal.setAttribute("aria-hidden", "false");
+
+  els.modalImage.classList.remove("loaded");
+  els.modalImage.src = "";
   els.modalImage.alt = card.name;
-  els.openAsset.href = url;
-  if(els.modalImage.complete && els.modalImage.naturalWidth) els.modalImage.classList.add('loaded');
-  els.modalImage.onload = () => els.modalImage.classList.add('loaded');
-  updateModalActions();
-  els.modal.showModal();
-}
-function closeModal(){ els.modal.close(); selectedCard = null; }
-function updateModalActions(){
-  if(!selectedCard) return;
-  els.toggleFavorite.textContent = isFavorite(selectedCard) ? '♥ Kedvencből ki' : '♡ Kedvenc';
-  els.toggleOwned.textContent = isMissing(selectedCard) ? '✓ Megvan' : '🎁 Missing';
+
+  els.modalPlaceholder.className = `modal-placeholder ${cls}`;
+  els.modalImage.onload = () => els.modalImage.classList.add("loaded");
+  els.modalImage.src = imageUrl;
+
+  els.modalId.textContent = `#${String(card.id).padStart(3, "0")}`;
+  els.modalRarity.className = `rarity-badge ${cls}`;
+  els.modalRarity.textContent = card.rarity;
+  els.modalSource.textContent = card.source;
+
+  els.modalTitle.textContent = card.name;
+  els.modalDescription.textContent = card.description || "Nincs külön leírás megadva.";
+  els.modalCategory.textContent = safeText(card.category);
+  els.modalSeries.textContent = safeText(card.series);
+  els.modalEvent.textContent = safeText(card.event);
+
+  els.modalTags.innerHTML = card.tags.length
+    ? card.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")
+    : `<span>Nincs tag</span>`;
 }
 
-function renderSets(){
-  const series = groupBy(cards, c => c.series || 'Original / Uncategorized');
-  els.setList.innerHTML = Object.entries(series).sort((a,b)=>b[1].length-a[1].length).map(([name,list]) => `<div class="set-tile"><strong>${escapeHtml(name)}</strong><p>${list.filter(isOwned).length} / ${list.length} kártya</p></div>`).join('');
+function closeModal() {
+  els.cardModal.classList.remove("open");
+  els.cardModal.setAttribute("aria-hidden", "true");
 }
-function renderStatsDetail(){
-  const rarity = groupBy(cards, c => c.rarity);
-  const source = groupBy(cards, c => c.source);
-  els.statsDetail.innerHTML = [...Object.entries(rarity), ...Object.entries(source)].map(([name,list]) => `<div class="stat-tile"><strong>${escapeHtml(name)}</strong><p>${list.filter(isOwned).length} / ${list.length}</p></div>`).join('');
+
+function showPage(pageId) {
+  state.activePage = pageId;
+
+  document.querySelectorAll(".page").forEach(page => page.classList.remove("active"));
+  document.getElementById(pageId)?.classList.add("active");
+
+  document.querySelectorAll("[data-page]").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.page === pageId);
+  });
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
-function groupBy(list, getKey){ return list.reduce((acc,item) => { const key = getKey(item) || 'Unknown'; (acc[key] ||= []).push(item); return acc; }, {}); }
-function shortName(name){ return String(name).replace(/\[[^\]]+\]/g,'').trim().split(/\s+/).slice(0,2).join(' ') || 'GaCherry'; }
-function escapeHtml(value){ return String(value ?? '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch])); }
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function escapeAttr(value) {
+  return escapeHtml(value).replaceAll("`", "&#096;");
+}
+
+function bindEvents() {
+  document.querySelectorAll("[data-page]").forEach(btn => {
+    btn.addEventListener("click", () => showPage(btn.dataset.page));
+  });
+
+  els.searchInput.addEventListener("input", () => {
+    state.search = els.searchInput.value;
+    state.currentPage = 1;
+    applyFilters();
+  });
+
+  els.clearSearchBtn.addEventListener("click", () => {
+    els.searchInput.value = "";
+    state.search = "";
+    state.currentPage = 1;
+    applyFilters();
+  });
+
+  els.raritySelect.addEventListener("change", () => {
+    state.activeRarity = els.raritySelect.value;
+    state.currentPage = 1;
+    syncControls();
+    applyFilters();
+  });
+
+  els.sourceSelect.addEventListener("change", () => {
+    state.activeSource = els.sourceSelect.value;
+    state.currentPage = 1;
+    syncControls();
+    applyFilters();
+  });
+
+  els.sortSelect.addEventListener("change", () => {
+    state.sort = els.sortSelect.value;
+    applyFilters();
+  });
+
+  els.perPageSelect.addEventListener("change", () => {
+    state.perPage = Number(els.perPageSelect.value);
+    state.currentPage = 1;
+    applyFilters();
+  });
+
+  els.prevPage.addEventListener("click", () => {
+    state.currentPage -= 1;
+    clampPage();
+    renderCards();
+    renderPagination();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  els.nextPage.addEventListener("click", () => {
+    state.currentPage += 1;
+    clampPage();
+    renderCards();
+    renderPagination();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  els.gridViewBtn.addEventListener("click", () => {
+    state.compact = false;
+    els.gridViewBtn.classList.add("active");
+    els.compactViewBtn.classList.remove("active");
+    renderCards();
+  });
+
+  els.compactViewBtn.addEventListener("click", () => {
+    state.compact = true;
+    els.compactViewBtn.classList.add("active");
+    els.gridViewBtn.classList.remove("active");
+    renderCards();
+  });
+
+  els.closeModal.addEventListener("click", closeModal);
+  els.cardModal.addEventListener("click", event => {
+    if (event.target.classList.contains("modal-backdrop")) closeModal();
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeModal();
+  });
+}
+
+async function init() {
+  setupElements();
+  bindEvents();
+
+  try {
+    await loadDatabase();
+  } catch (error) {
+    console.error(error);
+    els.resultCount.textContent = "Nem sikerült betölteni az adatbázist.";
+    els.cardGallery.innerHTML = `
+      <article class="guide-card">
+        <h3>Hiba</h3>
+        <p>${escapeHtml(error.message)}</p>
+      </article>
+    `;
+  }
+}
 
 init();
