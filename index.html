@@ -4,145 +4,187 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GaCherry Collection</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="petals" aria-hidden="true"></div>
 
   <aside class="sidebar">
-    <div class="brand">
-      <div class="brand-title">GaCherry<span>✿</span></div>
-      <div class="brand-sub">Collection</div>
-    </div>
+    <a class="brand" href="#collection" data-view-link="collection">
+      <span class="brand-main">GaCherry</span>
+      <span class="brand-sub">Collection</span>
+    </a>
 
-    <div class="profile-card">
-      <div class="avatar">🐰</div>
-      <strong>SouLy ✿</strong>
-      <small>Collector</small>
-      <div class="mini-progress"><span id="sidebarProgress"></span></div>
-      <small id="sidebarProgressText">0 / 0</small>
-    </div>
+    <section class="profile-card">
+      <div class="profile-avatar">🌸</div>
+      <strong>SouLy 🌸</strong>
+      <span>Collector</span>
+      <div class="level-row"><span>Lv. 42</span><span id="miniProgressPercent">0%</span></div>
+      <div class="mini-bar"><span id="miniProgressBar"></span></div>
+      <small id="miniProgressText">0 / 0 kártya</small>
+    </section>
 
-    <nav class="nav">
-      <button class="nav-btn active" data-view="collection">▦ Collection</button>
-      <button class="nav-btn" data-view="missing">🎁 Missing</button>
-      <button class="nav-btn" data-view="favorites">♡ Favorites</button>
-      <button class="nav-btn" data-view="stats">📊 Stats</button>
-      <button class="nav-btn" data-view="guide">📖 Guide</button>
+    <nav class="side-nav" aria-label="Fő menü">
+      <button class="nav-item active" data-view-link="collection">▦ <span>Collection</span></button>
+      <button class="nav-item" data-view-link="missing">🎁 <span>Missing</span></button>
+      <button class="nav-item" data-view-link="favorites">♡ <span>Favorites</span></button>
+      <button class="nav-item" data-view-link="sets">▱ <span>Sets</span></button>
+      <button class="nav-item" data-view-link="stats">📊 <span>Stats</span></button>
+      <button class="nav-item" data-view-link="guide">📖 <span>Guide</span></button>
     </nav>
 
-    <div class="love-card">
-      <b>Cherry Love</b>
-      <div class="mini-progress"><span style="width:49%"></span></div>
-      <small>2,450 / 5,000</small>
-    </div>
+    <section class="love-card">
+      <div class="love-icon">💗</div>
+      <div>
+        <strong>Cherry Love</strong>
+        <div class="mini-bar love"><span></span></div>
+        <small>2,450 / 5,000</small>
+      </div>
+    </section>
+
+    <footer class="sidebar-footer">© 2026 GaCherry Collection</footer>
   </aside>
 
-  <main class="app">
-    <header class="topbar">
+  <main class="app-shell">
+    <header class="top-header">
       <div>
-        <h1 id="pageTitle">✦ Collection</h1>
-        <p id="pageSubtitle">Gyűjtsd össze az összes Cherry kártyát!</p>
+        <p class="eyebrow">HappyCherryChan Discord Gacha</p>
+        <h1><span>✦</span> Collection</h1>
+        <p>Gyűjtsd össze az összes Cherry kártyát!</p>
       </div>
-      <div class="top-actions">
-        <button id="markVisibleOwned" class="action primary">🎁 Láthatók megjelölése</button>
-        <button id="resetOwned" class="action ghost">↺ Reset</button>
-        <button class="action ghost" data-open-guide>Guide</button>
+      <div class="header-actions">
+        <button class="btn primary" id="openCardsBtn">🎁 Kártyák megnyitása</button>
+        <button class="btn ghost" data-view-link="guide">ⓘ Guide</button>
+        <button class="icon-btn" id="favoritesTopBtn" title="Kedvencek">♡</button>
+        <button class="icon-btn" id="resetStateBtn" title="Gyűjtemény állapot törlése">⚙</button>
       </div>
     </header>
 
-    <section class="dashboard">
+    <section class="dashboard" id="dashboard">
       <article class="progress-panel glass">
-        <span>Collection Progress</span>
-        <div class="progress-number"><strong id="ownedCount">0</strong><em>/</em><strong id="totalCount">0</strong></div>
-        <div class="big-progress"><span id="mainProgress"></span></div>
-        <div class="progress-meta"><span id="progressPercent">0%</span><span id="nextMilestone">Következő mérföldkő: -</span></div>
+        <span class="panel-label">Collection Progress</span>
+        <div class="progress-big"><strong id="ownedCount">0</strong><span>/</span><span id="totalCount">0</span></div>
+        <div class="progress-row">
+          <div class="progress-track"><span id="progressBar"></span></div>
+          <strong id="progressPercent">0%</strong>
+        </div>
+        <p id="nextMilestone">Következő mérföldkő: -</p>
       </article>
 
       <article class="rarity-panel glass">
-        <div class="panel-title">Rarity megoszlás</div>
-        <div id="rarityStats" class="rarity-stats"></div>
+        <div class="panel-head">
+          <span class="panel-label">Rarity megoszlás</span>
+          <small id="rarityPanelTotal">0 / 0</small>
+        </div>
+        <div id="rarityStatsGrid" class="rarity-stats-grid"></div>
       </article>
     </section>
 
-    <section id="collectionView" class="content-view active">
-      <div class="controls glass">
-        <div class="search-wrap">
+    <section class="view active" id="view-collection">
+      <div class="toolbar glass">
+        <label class="search-box">
           <span>⌕</span>
-          <input id="searchInput" type="search" placeholder="Keresés név, tag, rarity vagy leírás alapján..." autocomplete="off" />
+          <input id="searchInput" type="search" placeholder="Keresés név, tag, ritkaság vagy leírás alapján..." autocomplete="off" />
           <button id="clearSearch" title="Keresés törlése">×</button>
-        </div>
-        <select id="raritySelect"></select>
-        <select id="sourceSelect"></select>
-        <select id="tagSelect"></select>
-        <select id="sortSelect">
+        </label>
+
+        <select id="raritySelect" aria-label="Rarity szűrő"></select>
+        <select id="sourceSelect" aria-label="Source szűrő"></select>
+        <select id="tagSelect" aria-label="Tag szűrő"></select>
+        <select id="sortSelect" aria-label="Rendezés">
           <option value="default">Rendezés: Alapértelmezett</option>
-          <option value="name">Név A-Z</option>
-          <option value="rarity">Ritkaság szerint</option>
-          <option value="owned">Megvan előre</option>
-          <option value="missing">Hiányzó előre</option>
+          <option value="name-asc">Név: A-Z</option>
+          <option value="name-desc">Név: Z-A</option>
+          <option value="rarity-desc">Ritkaság: magas → alacsony</option>
+          <option value="rarity-asc">Ritkaság: alacsony → magas</option>
+          <option value="id-desc">Legújabb elöl</option>
         </select>
-      </div>
 
-      <div id="quickFilters" class="quick-filters"></div>
-      <div id="sourceFilters" class="quick-filters compact"></div>
-
-      <div class="result-row">
-        <p id="resultCount">0 kártya</p>
-        <div class="view-toggle">
-          <button id="gridSmall">▦</button>
-          <button id="gridLarge" class="active">▥</button>
+        <div class="view-toggle" role="group" aria-label="Nézet váltás">
+          <button class="active" id="gridViewBtn">▦</button>
+          <button id="compactViewBtn">☰</button>
         </div>
       </div>
 
-      <div id="gallery" class="gallery"></div>
-      <div id="emptyState" class="empty-state">Nincs találat.</div>
+      <div class="quick-filters" id="quickRarityFilters"></div>
+      <div class="quick-filters source-row" id="quickSourceFilters"></div>
 
-      <div class="pagination">
-        <button id="prevPage">‹</button>
-        <div id="pageButtons"></div>
-        <button id="nextPage">›</button>
-        <select id="pageSize">
+      <div class="section-head">
+        <div>
+          <h2 id="viewTitle">Collection</h2>
+          <p id="resultCount">0 kártya</p>
+        </div>
+        <button class="btn ghost small" id="moreFiltersBtn">⚗ Több szűrő</button>
+      </div>
+
+      <div id="cardGrid" class="card-grid"></div>
+      <p id="emptyState" class="empty-state">Nincs találat.</p>
+
+      <div class="pagination-panel glass">
+        <button id="prevPage" class="page-btn">‹</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <button id="nextPage" class="page-btn">›</button>
+        <select id="pageSizeSelect" aria-label="Oldalméret">
           <option value="48">48 / oldal</option>
           <option value="60" selected>60 / oldal</option>
           <option value="96">96 / oldal</option>
+          <option value="120">120 / oldal</option>
         </select>
       </div>
     </section>
 
-    <section id="statsView" class="content-view glass info-view">
-      <h2>Statisztikák</h2>
-      <div id="statsDetails" class="stats-details"></div>
+    <section class="view" id="view-missing">
+      <div class="simple-panel glass"><h2>🎁 Missing</h2><p>Azok a lapok, amiket Missing státuszra állítottál.</p></div>
+      <div id="missingGrid" class="card-grid"></div>
     </section>
 
-    <section id="guideView" class="content-view glass info-view">
-      <h2>Guide</h2>
-      <p>A Collection oldal a <code>data/cards.json</code> fájlból tölt. A képek a JSON <code>assetBaseUrl</code> + <code>asset</code> útvonalából jönnek.</p>
-      <p>Kattints egy kártyára a részletes nézethez. A jobb felső pipa gombbal megjelölheted, hogy megvan. A szívvel kedvencelheted.</p>
+    <section class="view" id="view-favorites">
+      <div class="simple-panel glass"><h2>❤️ Favorites</h2><p>A kedvencnek jelölt GaCherry lapok.</p></div>
+      <div id="favoriteGrid" class="card-grid"></div>
+    </section>
+
+    <section class="view" id="view-sets">
+      <div class="simple-panel glass"><h2>Sets</h2><p>Itt később külön szettek, eventek és kollekciók jelenhetnek meg.</p><div id="setList" class="set-list"></div></div>
+    </section>
+
+    <section class="view" id="view-stats">
+      <div class="simple-panel glass"><h2>📊 Stats</h2><p>Részletes rarity és source statisztika.</p><div id="statsDetail" class="stats-detail"></div></div>
+    </section>
+
+    <section class="view" id="view-guide">
+      <div class="simple-panel glass guide-text">
+        <h2>📖 Guide</h2>
+        <p>A Collection a <code>data/cards.json</code> fájlból dolgozik, a képeket pedig a GaCherry-Assets repóból tölti be jsDelivr CDN-en keresztül.</p>
+        <p>A kártyára kattintva teljes adatlap nyílik. A modalban lehet kedvencnek jelölni vagy Missing státuszra állítani.</p>
+      </div>
     </section>
   </main>
 
-  <dialog id="cardModal" class="modal">
-    <div class="modal-inner">
+  <dialog id="cardModal" class="card-modal">
+    <div class="modal-card">
       <button id="closeModal" class="modal-close">×</button>
-      <div class="modal-art-wrap">
-        <div id="modalPlaceholder" class="modal-placeholder"></div>
+      <div class="modal-image-wrap" id="modalImageWrap">
+        <div class="image-placeholder modal-placeholder"><span>GaCherry</span></div>
         <img id="modalImage" alt="" />
       </div>
       <div class="modal-info">
-        <div class="modal-head">
-          <span id="modalRarity" class="rarity-chip"></span>
-          <span id="modalSource" class="source-chip"></span>
-        </div>
+        <div class="modal-topline"><span id="modalId"></span><span id="modalRarity" class="rarity-pill"></span></div>
         <h2 id="modalName"></h2>
-        <p id="modalDesc"></p>
-        <div id="modalTags" class="tag-list"></div>
+        <p id="modalDescription"></p>
+        <div class="modal-meta-grid">
+          <div><span>Source</span><strong id="modalSource"></strong></div>
+          <div><span>Category</span><strong id="modalCategory"></strong></div>
+          <div><span>Series</span><strong id="modalSeries"></strong></div>
+          <div><span>Event</span><strong id="modalEvent"></strong></div>
+        </div>
+        <div id="modalTags" class="modal-tags"></div>
         <div class="modal-actions">
-          <button id="toggleOwnedModal" class="action primary">Megvan</button>
-          <button id="toggleFavModal" class="action ghost">♡ Kedvenc</button>
+          <button id="toggleFavorite" class="btn ghost">♡ Kedvenc</button>
+          <button id="toggleOwned" class="btn ghost">🎁 Missing</button>
+          <a id="openAsset" class="btn primary" target="_blank" rel="noreferrer">Kép megnyitása</a>
         </div>
       </div>
     </div>
