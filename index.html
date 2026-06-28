@@ -4,247 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GaCherry Collection Book</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <div class="app">
-
     <header class="hero">
-      <div class="hero-bg"></div>
-
+      <div class="hero-glow"></div>
       <div class="hero-content">
         <p class="hero-kicker">HappyCherryChan Discord Gacha</p>
         <h1>GaCherry Collection Book</h1>
-        <p class="hero-desc">
-          Cherry kártyák, ritkaságok, tagek, guide-ok és gyűjtemény egy helyen.
-        </p>
-
-        <div class="hero-buttons">
+        <p class="hero-desc">Gyors, kereshető és rarity szerint szűrhető GaCherry kártya album.</p>
+        <div class="hero-actions">
           <button class="btn primary" data-page="collection">Kártyák megnyitása</button>
-          <button class="btn secondary" data-page="guide">Guide</button>
+          <button class="btn secondary" data-page="rarities">Ritkaságok</button>
         </div>
       </div>
     </header>
 
     <main>
-
-      <!-- HOME -->
       <section id="home" class="page active">
         <div id="statsGrid" class="stats-grid"></div>
-
         <div class="menu-grid">
-          <button class="menu-card" data-page="collection">
-            <span>🃏</span>
-            <strong>Collection</strong>
-            <small>Összes GaCherry kártya</small>
-          </button>
-
-          <button class="menu-card" data-page="rarities">
-            <span>✨</span>
-            <strong>Ritkaságok</strong>
-            <small>Common → Eternity</small>
-          </button>
-
-          <button class="menu-card" data-page="tags">
-            <span>🏷️</span>
-            <strong>Tag Browser</strong>
-            <small>Témák és kategóriák</small>
-          </button>
-
-          <button class="menu-card" data-page="essences">
-            <span>🧪</span>
-            <strong>Craft Essences</strong>
-            <small>Későbbi craft alap</small>
-          </button>
-
-          <button class="menu-card" data-page="random">
-            <span>🎲</span>
-            <strong>Random Card</strong>
-            <small>Véletlen kártya húzás</small>
-          </button>
-
-          <button class="menu-card" data-page="guide">
-            <span>📖</span>
-            <strong>Guide</strong>
-            <small>Parancsok és leírások</small>
-          </button>
+          <button class="menu-card" data-page="collection"><span>🃏</span><strong>Collection</strong><small>Összes GaCherry kártya</small></button>
+          <button class="menu-card" data-page="rarities"><span>✨</span><strong>Ritkaságok</strong><small>Common → Eternity</small></button>
+          <button class="menu-card" data-page="tags"><span>🏷️</span><strong>Tag Browser</strong><small>Témák és címkék</small></button>
+          <button class="menu-card" data-page="random"><span>🎲</span><strong>Random Card</strong><small>Véletlen kártya</small></button>
         </div>
       </section>
 
-      <!-- COLLECTION -->
       <section id="collection" class="page">
         <div class="top-bar">
-          <button class="back-btn">←</button>
+          <button class="back-btn" aria-label="Vissza">←</button>
           <div>
             <h2>Collection</h2>
-            <p id="resultCount">0 kártya</p>
+            <p id="resultCount">Betöltés...</p>
           </div>
         </div>
 
         <div class="toolbar">
-          <input id="searchInput" type="search" placeholder="Keresés név, ritkaság vagy tag alapján..." />
-
+          <input id="searchInput" type="search" placeholder="Keresés név, rarity, source vagy tag alapján..." autocomplete="off" />
           <select id="sortSelect">
-            <option value="number-asc">Szám szerint növekvő</option>
-            <option value="number-desc">Szám szerint csökkenő</option>
+            <option value="id-asc">ID szerint növekvő</option>
+            <option value="id-desc">ID szerint csökkenő</option>
             <option value="name-asc">Név szerint A-Z</option>
             <option value="rarity-desc">Ritkaság szerint</option>
           </select>
         </div>
 
         <div id="rarityFilters" class="filter-row"></div>
-        <div id="tagFilters" class="filter-row"></div>
+        <div id="sourceFilters" class="filter-row"></div>
+        <div id="tagFilters" class="filter-row tag-row"></div>
+
+        <div class="pagination top-pagination">
+          <button id="prevPageTop" class="page-btn">Előző</button>
+          <span id="pageInfoTop"></span>
+          <button id="nextPageTop" class="page-btn">Következő</button>
+        </div>
 
         <div id="cardGallery" class="card-gallery"></div>
         <p id="emptyState" class="empty-state">Nincs találat.</p>
+
+        <div class="pagination">
+          <button id="prevPage" class="page-btn">Előző</button>
+          <span id="pageInfo"></span>
+          <button id="nextPage" class="page-btn">Következő</button>
+        </div>
       </section>
 
-      <!-- RARITIES -->
       <section id="rarities" class="page">
         <div class="top-bar">
-          <button class="back-btn">←</button>
-          <div>
-            <h2>Ritkaságok</h2>
-            <p>A GaCherry ritkasági rendszer.</p>
-          </div>
+          <button class="back-btn" aria-label="Vissza">←</button>
+          <div><h2>Ritkaságok</h2><p>A jelenlegi adatbázis rarity bontása.</p></div>
         </div>
-
         <div id="rarityList" class="rarity-list"></div>
       </section>
 
-      <!-- TAGS -->
       <section id="tags" class="page">
         <div class="top-bar">
-          <button class="back-btn">←</button>
-          <div>
-            <h2>Tag Browser</h2>
-            <p>Kártyák témák szerint.</p>
-          </div>
+          <button class="back-btn" aria-label="Vissza">←</button>
+          <div><h2>Tag Browser</h2><p>Szűrés címkék szerint.</p></div>
         </div>
-
         <div id="tagBrowser" class="tag-browser"></div>
       </section>
 
-      <!-- ESSENCES -->
-      <section id="essences" class="page">
-        <div class="top-bar">
-          <button class="back-btn">←</button>
-          <div>
-            <h2>Craft Essences</h2>
-            <p>Későbbi craft / gyűjtögetős rendszer alapja.</p>
-          </div>
-        </div>
-
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>Japanese Essence</h3>
-            <p>Japán, ninja, sakura, shrine, tea house és wuxia témájú kártyákhoz.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Fantasy Essence</h3>
-            <p>Mágikus, mitológiai, boss, creature és fantasy világú lapokhoz.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Cherry Essence</h3>
-            <p>Cherry skinekhez, outfit variációkhoz és különleges event lapokhoz.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Event Essence</h3>
-            <p>Szezonális, ünnepi, limited és közösségi esemény kártyákhoz.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- RANDOM -->
       <section id="random" class="page">
         <div class="top-bar">
-          <button class="back-btn">←</button>
-          <div>
-            <h2>Random Card</h2>
-            <p>Véletlen GaCherry kártya megjelenítése.</p>
-          </div>
+          <button class="back-btn" aria-label="Vissza">←</button>
+          <div><h2>Random Card</h2><p>Véletlen GaCherry kártya.</p></div>
         </div>
-
         <div class="random-box">
           <button id="randomBtn" class="btn primary">Random kártya</button>
           <div id="randomResult" class="random-result"></div>
         </div>
       </section>
-
-      <!-- GUIDE -->
-      <section id="guide" class="page">
-        <div class="top-bar">
-          <button class="back-btn">←</button>
-          <div>
-            <h2>Guide</h2>
-            <p>GaCherry rendszer rövid leírás.</p>
-          </div>
-        </div>
-
-        <div class="guide-list">
-          <article class="info-card">
-            <h3>Mi ez?</h3>
-            <p>
-              A GaCherry Collection Book egy böngészhető kártya album a HappyCherryChan közösség gacha kártyáihoz.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Hogyan bővíthető?</h3>
-            <p>
-              Az új kártyákat a <b>data.js</b> fájlban lévő <b>cards</b> listába kell felvenni.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Lootium kapcsolat</h3>
-            <p>
-              Automata nyitogatás csak akkor lenne megoldható, ha a Lootium adna használható API-t vagy exportot.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>600+ kártya</h3>
-            <p>
-              A rendszer úgy van felépítve, hogy később sok száz kártyát is kezeljen kereséssel, szűréssel és rendezéssel.
-            </p>
-          </article>
-        </div>
-      </section>
-
     </main>
   </div>
 
-  <!-- CARD MODAL -->
   <div id="cardModal" class="modal" aria-hidden="true">
     <div class="modal-content">
-      <button id="closeModal" class="modal-close">×</button>
-
-      <img id="modalImage" src="" alt="" />
-
-      <div class="modal-meta">
-        <span id="modalNumber"></span>
-        <span id="modalRarity"></span>
+      <button id="closeModal" class="modal-close" aria-label="Bezárás">×</button>
+      <div class="modal-image-shell">
+        <div id="modalPlaceholder" class="modal-placeholder">GaCherry</div>
+        <img id="modalImage" src="" alt="" />
       </div>
-
+      <div class="modal-meta"><span id="modalNumber"></span><span id="modalRarity"></span><span id="modalSource"></span></div>
       <h2 id="modalTitle"></h2>
-
       <div id="modalTags" class="modal-tags"></div>
-
       <p id="modalDescription"></p>
     </div>
   </div>
 
-  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
