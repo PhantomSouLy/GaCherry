@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "count": 8,
+  "currencies": [
+    {
+      "id": "default",
+      "name": "Default",
+      "icon": "$",
+      "sortOrder": 1
+    },
+    {
+      "id": "memory_petal",
+      "name": "Memory Petal",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/memorypetal.webp",
+      "sortOrder": 3
+    },
+    {
+      "id": "legendary_shard",
+      "name": "Legendary Shard",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/legendaryshard.webp",
+      "sortOrder": 4
+    },
+    {
+      "id": "eternity_shard",
+      "name": "Eternity Shard",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/eternityshard.webp",
+      "sortOrder": 5
+    },
+    {
+      "id": "mythical_shard",
+      "name": "Mythical Shard",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/mythicalshard.webp",
+      "sortOrder": 6
+    },
+    {
+      "id": "gold_bar",
+      "name": "Gold Bar",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/gold.webp",
+      "sortOrder": 7
+    },
+    {
+      "id": "dungeon_key",
+      "name": "Dungeon Key",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/dungeonkey.webp",
+      "sortOrder": 8
+    },
+    {
+      "id": "echo_bloom",
+      "name": "Echo Bloom",
+      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/echobloom.webp",
+      "sortOrder": 9
+    }
+  ]
+}

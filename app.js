@@ -40,14 +40,13 @@ const RARITY_META = {
 const CURRENCY_META = {
   default: { name: "Default", icon: "$" },
   unknown: { name: "Default", icon: "$" },
-  memory_petal: { name: "Memory Petal", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png" },
-  legendary_shard: { name: "Legendary Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/LegendaryShard.png" },
-  eternity_shard: { name: "Eternity Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/EternityShard.png" },
-  definitely_not_mythical_shard: { name: "Definitely Not Mythical Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/DefinitelyNotMythicalShard.png" },
-  mythical_shard: { name: "Mythical Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MythicalShard.png" },
-  gold_bar: { name: "Gold Bar", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/GoldBar.png" },
-  dungeon_key: { name: "Dungeon Key", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/DungeonKey.png" },
-  echo_bloom: { name: "Echo Bloom", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/EchoBloom.png" }
+  memory_petal: { name: "Memory Petal", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/memorypetal.webp" },
+  legendary_shard: { name: "Legendary Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/legendaryshard.webp" },
+  eternity_shard: { name: "Eternity Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/eternityshard.webp" },
+  mythical_shard: { name: "Mythical Shard", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/mythicalshard.webp" },
+  gold_bar: { name: "Gold Bar", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/gold.webp" },
+  dungeon_key: { name: "Dungeon Key", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/dungeonkey.webp" },
+  echo_bloom: { name: "Echo Bloom", icon: "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/echobloom.webp" }
 };
 
 const state = { database:null, cards:[], filtered:[], activePage:"collection", activeTag:"All", activeRarity:"All", activeSource:"All", sort:"id-asc", search:"", currentPage:1, perPage:60, compact:false };
@@ -58,7 +57,17 @@ function normalizeKey(value){ return String(value||"").trim().toLowerCase().norm
 function normalizeRarityId(value){ const id=normalizeKey(value||"unknown"); if(RARITY_META[id]) return id; const found=Object.entries(RARITY_META).find(([,m])=>m.name.toLowerCase()===String(value||"").toLowerCase()); return found?found[0]:(id||"unknown"); }
 function getRarityMeta(cardOrRarity){ const id=typeof cardOrRarity==='object'?normalizeRarityId(cardOrRarity.rarity||cardOrRarity.rarityName):normalizeRarityId(cardOrRarity); const meta=RARITY_META[id]||{}; return { id, name: typeof cardOrRarity==='object'?(cardOrRarity.rarityName||meta.name||id):(meta.name||String(cardOrRarity||"Unknown")), icon: typeof cardOrRarity==='object'?(cardOrRarity.rarityIcon||meta.icon||""):(meta.icon||"")}; }
 function normalizeCurrencyId(value){ const id=normalizeKey(value||"default"); if(id==="unknown") return "default"; if(CURRENCY_META[id]) return id; const found=Object.entries(CURRENCY_META).find(([,m])=>m.name.toLowerCase()===String(value||"").toLowerCase()); return found?found[0]:(id||"default"); }
-function getCurrencyMeta(card){ const id=normalizeCurrencyId(card.currency||card.currencyName||"default"); const meta=CURRENCY_META[id]||CURRENCY_META.default; return { id, name: card.currencyName&&card.currencyName!=="Unknown"?card.currencyName:meta.name, icon: card.currencyIcon&&card.currencyIcon!=="❔"&&card.currencyIcon!=="?"?card.currencyIcon:meta.icon, confidence: card.currencyConfidence||"unknown" }; }
+function getCurrencyMeta(card){
+  const id=normalizeCurrencyId(card.currency||card.currencyName||"default");
+  const meta=CURRENCY_META[id]||CURRENCY_META.default;
+  const badIcon=!card.currencyIcon||card.currencyIcon==="❔"||card.currencyIcon==="?"||(id!=="default"&&card.currencyIcon==="$");
+  return {
+    id,
+    name: meta.name || (card.currencyName&&card.currencyName!=="Unknown"?card.currencyName:"Default"),
+    icon: badIcon ? meta.icon : card.currencyIcon,
+    confidence: card.currencyConfidence||"unknown"
+  };
+}
 function rarityClass(rarity){ const id=normalizeRarityId(rarity); if(id.includes("common")) return id.includes("uncommon")?"uncommon":"common"; if(id.includes("rare")) return "rare"; if(id.includes("epic")) return "epic"; if(id.includes("legendary")) return "legendary"; if(id.includes("relic")) return "relic"; if(id.includes("mythical")) return "mythical"; if(id.includes("cherished")) return "cherished"; if(id.includes("eternity")) return "eternity"; return "unknown"; }
 function safeText(value,fallback="-"){ return value===null||value===undefined||value===""?fallback:String(value); }
 function getAssetBase(){ return state.database?.assetBaseUrl || "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/"; }
