@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "eternity",
@@ -9,7 +9,7 @@
   "count": 1,
   "cards": [
     {
-      "id": "grandmaster-gacherry-cherry",
+      "id": "grandmaster_gacherry_cherry",
       "slug": "grandmaster-gacherry-cherry",
       "name": "Grandmaster GaCherry Cherry",
       "description": "<:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008>",
@@ -20,10 +20,10 @@
       "rarityIcon": "🔴",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -31,7 +31,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🔴 Eternity Grandmaster GaCherry Cherry GACHA UNTRADABLE PREMIUM <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     }

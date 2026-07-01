@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "mythical_plus",
@@ -9,7 +9,7 @@
   "count": 4,
   "cards": [
     {
-      "id": "ascendent-essence",
+      "id": "ascendent_essence",
       "slug": "ascendent-essence",
       "name": "Ascendent Essence",
       "description": "",
@@ -20,10 +20,10 @@
       "rarityIcon": "◻️",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -31,12 +31,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "⬜️Mythical+ Ascendent Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "mythical-crystal",
+      "id": "mythical_crystal",
       "slug": "mythical-crystal",
       "name": "Mythical Crystal",
       "description": "",
@@ -47,10 +48,10 @@
       "rarityIcon": "◻️",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -58,12 +59,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "⬜️Mythical+ Mythical Crystal NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "mythical-essence",
+      "id": "mythical_essence",
       "slug": "mythical-essence",
       "name": "Mythical Essence",
       "description": "",
@@ -74,10 +76,10 @@
       "rarityIcon": "◻️",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -85,12 +87,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "⬜️Mythical+ Mythical Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "mythical-money-bag",
+      "id": "mythical_money_bag",
       "slug": "mythical-money-bag",
       "name": "Mythical Money Bag",
       "description": "",
@@ -103,8 +106,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 180000,
       "buy": 180000,
@@ -112,7 +115,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "⬜️Mythical+ Mythical Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 180000 BUY $ 180000 STOCK Unlimited MAX/USER 1 ROLE None"
     }

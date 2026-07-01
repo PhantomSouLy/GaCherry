@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "legendary_event",
@@ -9,7 +9,7 @@
   "count": 2,
   "cards": [
     {
-      "id": "cherry-s-passionate-bloom-event",
+      "id": "cherry_s_passionate_bloom_event",
       "slug": "cherry-s-passionate-bloom-event",
       "name": "Cherry's Passionate Bloom [Event]",
       "description": "[EVENT] ⭐️⭐️⭐️⭐️",
@@ -20,10 +20,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 30,
       "buy": 30,
@@ -32,12 +32,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Event"
       ],
       "rawText": "🟠 Legendary [EVENT] Cherry's Passionate Bloom [Event] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️ SELL 30 BUY 30 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "hanami-huntress-cherry-event",
+      "id": "hanami_huntress_cherry_event",
       "slug": "hanami-huntress-cherry-event",
       "name": "Hanami Huntress Cherry [EVENT]",
       "description": "[EVENT] ⭐⭐⭐⭐",
@@ -48,10 +49,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 15,
       "buy": 15,
@@ -60,7 +61,8 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Event"
       ],
       "rawText": "🟠 Legendary [EVENT] Hanami Huntress Cherry [EVENT] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐ SELL 15 BUY 15 STOCK 0 MAX/USER 1 ROLE None"
     }

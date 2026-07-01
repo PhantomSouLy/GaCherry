@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "mythical_limited",
@@ -9,7 +9,7 @@
   "count": 1,
   "cards": [
     {
-      "id": "haunted-queen-cherry-limited",
+      "id": "haunted_queen_cherry_limited",
       "slug": "haunted-queen-cherry-limited",
       "name": "Haunted Queen Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐⭐",
@@ -20,10 +20,10 @@
       "rarityIcon": "⚪",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -32,7 +32,8 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "⚪ Mythical [LIMITED] Haunted Queen Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐⭐ SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE None"
     }

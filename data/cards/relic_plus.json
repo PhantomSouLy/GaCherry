@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "relic_plus",
@@ -9,7 +9,7 @@
   "count": 4,
   "cards": [
     {
-      "id": "abyss-essence",
+      "id": "abyss_essence",
       "slug": "abyss-essence",
       "name": "Abyss Essence",
       "description": "",
@@ -20,10 +20,10 @@
       "rarityIcon": "🟨",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -31,12 +31,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟨 Relic+ Abyss Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-basement",
+      "id": "cherry_s_basement",
       "slug": "cherry-s-basement",
       "name": "Cherry's Basement",
       "description": "",
@@ -47,21 +48,23 @@
       "rarityIcon": "🟨",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 20000,
       "buy": 20000,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟨 Relic+ Cherry's Basement STORE PREMIUM No description provided SELL 20000 BUY 20000 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cute-nightmare-essence",
+      "id": "cute_nightmare_essence",
       "slug": "cute-nightmare-essence",
       "name": "Cute Nightmare Essence",
       "description": "",
@@ -72,10 +75,10 @@
       "rarityIcon": "🟨",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -83,12 +86,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟨 Relic+ Cute Nightmare Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "relic-money-bag",
+      "id": "relic_money_bag",
       "slug": "relic-money-bag",
       "name": "Relic Money Bag",
       "description": "",
@@ -101,8 +105,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 160000,
       "buy": 160000,
@@ -110,7 +114,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟨 Relic+ Relic Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 160000 BUY $ 160000 STOCK Unlimited MAX/USER 1 ROLE None"
     }

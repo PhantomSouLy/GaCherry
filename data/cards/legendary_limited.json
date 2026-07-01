@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "legendary_limited",
@@ -9,7 +9,7 @@
   "count": 27,
   "cards": [
     {
-      "id": "all-hallows-cherry-limited",
+      "id": "all_hallows_cherry_limited",
       "slug": "all-hallows-cherry-limited",
       "name": "All Hallows Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐",
@@ -20,10 +20,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -32,12 +32,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] All Hallows Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "beach-float-cherry-limited",
+      "id": "beach_float_cherry_limited",
       "slug": "beach-float-cherry-limited",
       "name": "Beach Float Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -48,10 +49,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -59,12 +60,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Beach Float Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "bizarre-weird-cherry-limited",
+      "id": "bizarre_weird_cherry_limited",
       "slug": "bizarre-weird-cherry-limited",
       "name": "Bizarre Weird Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -75,10 +77,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -86,12 +88,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Bizarre Weird Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "bunny-cover-up-cherry-limited",
+      "id": "bunny_cover_up_cherry_limited",
       "slug": "bunny-cover-up-cherry-limited",
       "name": "Bunny Cover-Up Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -102,10 +105,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -113,12 +116,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Bunny Cover-Up Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "bunny-s-secret-garden-cherry-limited",
+      "id": "bunny_s_secret_garden_cherry_limited",
       "slug": "bunny-s-secret-garden-cherry-limited",
       "name": "Bunny's Secret Garden Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -129,10 +133,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -140,12 +144,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Bunny's Secret Garden Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "burger-bite-cherry-limited",
+      "id": "burger_bite_cherry_limited",
       "slug": "burger-bite-cherry-limited",
       "name": "Burger Bite Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -156,10 +161,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -167,12 +172,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Burger Bite Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-perfumed-blessing-limited",
+      "id": "cherry_s_perfumed_blessing_limited",
       "slug": "cherry-s-perfumed-blessing-limited",
       "name": "Cherry's Perfumed Blessing [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -183,10 +189,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -194,12 +200,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Cherry's Perfumed Blessing [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "coral-diver-cherry-limited",
+      "id": "coral_diver_cherry_limited",
       "slug": "coral-diver-cherry-limited",
       "name": "Coral Diver Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -210,10 +217,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -221,12 +228,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Coral Diver Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cozy-date-cherry-limited",
+      "id": "cozy_date_cherry_limited",
       "slug": "cozy-date-cherry-limited",
       "name": "Cozy Date Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -237,10 +245,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 15,
       "buy": 15,
@@ -249,12 +257,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Cozy Date Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️ SELL 15 BUY 15 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "craze-carrot-cherry-limited",
+      "id": "craze_carrot_cherry_limited",
       "slug": "craze-carrot-cherry-limited",
       "name": "Craze Carrot Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -265,10 +274,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -276,12 +285,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Craze Carrot Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "cursed-puppet-cherry-limited",
+      "id": "cursed_puppet_cherry_limited",
       "slug": "cursed-puppet-cherry-limited",
       "name": "Cursed Puppet Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐",
@@ -292,10 +302,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -304,12 +314,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Cursed Puppet Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "easter-picnic-flirt-cherry-limited",
+      "id": "easter_picnic_flirt_cherry_limited",
       "slug": "easter-picnic-flirt-cherry-limited",
       "name": "Easter Picnic Flirt Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -320,10 +331,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -331,12 +342,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Easter Picnic Flirt Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "egg-citing-adventure-cherry-limited",
+      "id": "egg_citing_adventure_cherry_limited",
       "slug": "egg-citing-adventure-cherry-limited",
       "name": "Egg-citing Adventure Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -347,10 +359,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -358,12 +370,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Egg-citing Adventure Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "golden-nocturne-cherry-limited",
+      "id": "golden_nocturne_cherry_limited",
       "slug": "golden-nocturne-cherry-limited",
       "name": "Golden Nocturne Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐",
@@ -374,10 +387,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -386,12 +399,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Golden Nocturne Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "luxe-poolside-cherry-limited",
+      "id": "luxe_poolside_cherry_limited",
       "slug": "luxe-poolside-cherry-limited",
       "name": "Luxe Poolside Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -402,10 +416,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -413,12 +427,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Luxe Poolside Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "marshmallow-camper-cherry-limited",
+      "id": "marshmallow_camper_cherry_limited",
       "slug": "marshmallow-camper-cherry-limited",
       "name": "Marshmallow Camper Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -429,10 +444,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -440,12 +455,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Marshmallow Camper Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "mismatched-limb-cherry-limited",
+      "id": "mismatched_limb_cherry_limited",
       "slug": "mismatched-limb-cherry-limited",
       "name": "Mismatched Limb Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -456,10 +472,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -467,12 +483,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Mismatched Limb Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "pink-fluffy-tamer-cherry-limited",
+      "id": "pink_fluffy_tamer_cherry_limited",
       "slug": "pink-fluffy-tamer-cherry-limited",
       "name": "Pink Fluffy Tamer Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -483,10 +500,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -494,12 +511,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Pink Fluffy Tamer Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "pool-sailor-cherry-limited",
+      "id": "pool_sailor_cherry_limited",
       "slug": "pool-sailor-cherry-limited",
       "name": "Pool Sailor Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -510,10 +528,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 5,
       "buy": 5,
@@ -521,12 +539,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Pool Sailor Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "prank-guard-cherry-limited",
+      "id": "prank_guard_cherry_limited",
       "slug": "prank-guard-cherry-limited",
       "name": "Prank Guard Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -537,10 +556,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -548,12 +567,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Prank Guard Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "pumpkin-heist-cherry-limited",
+      "id": "pumpkin_heist_cherry_limited",
       "slug": "pumpkin-heist-cherry-limited",
       "name": "Pumpkin Heist Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐",
@@ -564,10 +584,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -576,12 +596,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Pumpkin Heist Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "rose-petal-cherry-limited",
+      "id": "rose_petal_cherry_limited",
       "slug": "rose-petal-cherry-limited",
       "name": "Rose Petal Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -592,10 +613,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 15,
       "buy": 15,
@@ -604,12 +625,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Rose Petal Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️ SELL 15 BUY 15 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "the-furry-cherry-limited",
+      "id": "the_furry_cherry_limited",
       "slug": "the-furry-cherry-limited",
       "name": "The Furry Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -620,10 +642,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3,
       "buy": 3,
@@ -631,12 +653,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] The Furry Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 3 BUY 3 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "valentine-princess-cherry-limited",
+      "id": "valentine_princess_cherry_limited",
       "slug": "valentine-princess-cherry-limited",
       "name": "Valentine Princess Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -647,10 +670,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 15,
       "buy": 15,
@@ -658,12 +681,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Valentine Princess Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️⭐️ SELL 15 BUY 15 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "volley-pose-cherry-limited",
+      "id": "volley_pose_cherry_limited",
       "slug": "volley-pose-cherry-limited",
       "name": "Volley Pose Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️⭐️",
@@ -674,10 +698,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -686,12 +710,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Volley Pose Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "winter-wonderland-cherry-limited",
+      "id": "winter_wonderland_cherry_limited",
       "slug": "winter-wonderland-cherry-limited",
       "name": "Winter Wonderland Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐⭐",
@@ -702,10 +727,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 10,
       "buy": 10,
@@ -714,12 +739,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] Winter Wonderland Cherry [LIMITED] NODROP UNTRADABLE ⭐⭐⭐⭐⭐ SELL 10 BUY 10 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "xmas-cherry-limited",
+      "id": "xmas_cherry_limited",
       "slug": "xmas-cherry-limited",
       "name": "XMAS Cherry [LIMITED]",
       "description": "[LIMITED] ⭐⭐⭐⭐⭐",
@@ -730,10 +756,10 @@
       "rarityIcon": "🟠",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 10,
       "buy": 10,
@@ -742,7 +768,8 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟠 Legendary [LIMITED] XMAS Cherry [LIMITED] NODROP UNTRADABLE ⭐⭐⭐⭐⭐ SELL 10 BUY 10 STOCK 0 MAX/USER 1 ROLE None"
     }

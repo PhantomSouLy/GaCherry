@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "cherished",
@@ -9,10 +9,10 @@
   "count": 35,
   "cards": [
     {
-      "id": "lvl0-petal-badge",
+      "id": "lvl0_petal_badge",
       "slug": "lvl0-petal-badge",
       "name": "[LVL0] Petal Badge",
-      "description": "ból vehető item. `/`",
+      "description": "Storeból vehető item. `/store`",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/lvl0.png",
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl0.png?raw=true",
       "rarity": "cherished",
@@ -20,10 +20,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -32,12 +32,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL0] Petal Badge NODROP UNTRADABLE PREMIUM Storeból vehető item. `/store` SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "lvl1-petal-badge",
+      "id": "lvl1_petal_badge",
       "slug": "lvl1-petal-badge",
       "name": "[LVL1] Petal Badge",
       "description": "Badge Item",
@@ -48,10 +49,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 2,
       "buy": 2,
@@ -60,12 +61,13 @@
       "role": "[LVL1] Explorer",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL1] Petal Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 2 BUY 2 STOCK Unlimited MAX/USER 1 ROLE [LVL1] Explorer"
     },
     {
-      "id": "lvl2-petal-badge",
+      "id": "lvl2_petal_badge",
       "slug": "lvl2-petal-badge",
       "name": "[LVL2] Petal Badge",
       "description": "Badge Item",
@@ -76,10 +78,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3,
       "buy": 3,
@@ -88,12 +90,13 @@
       "role": "[LVL2] Casual Hoarder",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL2] Petal Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 3 BUY 3 STOCK Unlimited MAX/USER 1 ROLE [LVL2] Casual Hoarder"
     },
     {
-      "id": "lvl3-petal-badge",
+      "id": "lvl3_petal_badge",
       "slug": "lvl3-petal-badge",
       "name": "[LVL3] Petal Badge",
       "description": "Badge Item",
@@ -104,10 +107,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 4,
       "buy": 4,
@@ -116,12 +119,13 @@
       "role": "[LVL3] Epic Collector",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL3] Petal Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 4 BUY 4 STOCK Unlimited MAX/USER 1 ROLE [LVL3] Epic Collector"
     },
     {
-      "id": "lvl4-cherished-badge",
+      "id": "lvl4_cherished_badge",
       "slug": "lvl4-cherished-badge",
       "name": "[LVL4] Cherished Badge",
       "description": "Badge Item",
@@ -132,10 +136,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 5,
       "buy": 5,
@@ -144,12 +148,13 @@
       "role": "[LVL4] Gacha Veteran",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL4] Cherished Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 5 BUY 5 STOCK Unlimited MAX/USER 1 ROLE [LVL4] Gacha Veteran"
     },
     {
-      "id": "lvl6-cherished-badge",
+      "id": "lvl6_cherished_badge",
       "slug": "lvl6-cherished-badge",
       "name": "[LVL6] Cherished Badge",
       "description": "Badge Item",
@@ -160,10 +165,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 7,
       "buy": 7,
@@ -172,12 +177,13 @@
       "role": "[LVL6] Treasure Hunter",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL6] Cherished Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 7 BUY 7 STOCK Unlimited MAX/USER 1 ROLE [LVL6] Treasure Hunter"
     },
     {
-      "id": "lvl7-cherished-badge",
+      "id": "lvl7_cherished_badge",
       "slug": "lvl7-cherished-badge",
       "name": "[LVL7] Cherished Badge",
       "description": "Badge Item",
@@ -188,10 +194,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 8,
       "buy": 8,
@@ -200,12 +206,13 @@
       "role": "[LVL7] Ascendant",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL7] Cherished Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 8 BUY 8 STOCK Unlimited MAX/USER 1 ROLE [LVL7] Ascendant"
     },
     {
-      "id": "lvl8-cherished-badge",
+      "id": "lvl8_cherished_badge",
       "slug": "lvl8-cherished-badge",
       "name": "[LVL8] Cherished Badge",
       "description": "Badge Item",
@@ -216,10 +223,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 9,
       "buy": 9,
@@ -228,12 +235,13 @@
       "role": "[LVL8] Gacha Master",
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished [LVL8] Cherished Badge NODROP UNTRADABLE PREMIUM Badge Item SELL 9 BUY 9 STOCK Unlimited MAX/USER 1 ROLE [LVL8] Gacha Master"
     },
     {
-      "id": "cherished-badge",
+      "id": "cherished_badge",
       "slug": "cherished-badge",
       "name": "Cherished Badge",
       "description": "",
@@ -244,10 +252,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -255,12 +263,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherished Badge NODROP PREMIUM SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherished-crystal",
+      "id": "cherished_crystal",
       "slug": "cherished-crystal",
       "name": "Cherished Crystal",
       "description": "",
@@ -271,10 +280,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -282,12 +291,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherished Crystal NODROP PREMIUM SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherished-crystal-shard",
+      "id": "cherished_crystal_shard",
       "slug": "cherished-crystal-shard",
       "name": "Cherished Crystal Shard",
       "description": "",
@@ -298,21 +308,23 @@
       "rarityIcon": "🌸",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 80,
       "buy": 80,
       "stock": "Unlimited",
       "maxPerUser": 2,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🌸 Cherished Cherished Crystal Shard STORE PREMIUM SELL 80 BUY 80 STOCK Unlimited MAX/USER 2 ROLE None"
     },
     {
-      "id": "cherished-essence",
+      "id": "cherished_essence",
       "slug": "cherished-essence",
       "name": "Cherished Essence",
       "description": "",
@@ -323,21 +335,23 @@
       "rarityIcon": "🌸",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🌸 Cherished Cherished Essence STORE PREMIUM SELL 150 BUY 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherished-ingot",
+      "id": "cherished_ingot",
       "slug": "cherished-ingot",
       "name": "Cherished Ingot",
       "description": "",
@@ -348,10 +362,10 @@
       "rarityIcon": "🌸",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -359,12 +373,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherished Ingot NODROP PREMIUM SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherished-money-bag",
+      "id": "cherished_money_bag",
       "slug": "cherished-money-bag",
       "name": "Cherished Money Bag",
       "description": "",
@@ -377,8 +392,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 199999,
       "buy": 199999,
@@ -386,12 +401,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherished Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 199999 BUY $ 199999 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherished-ore",
+      "id": "cherished_ore",
       "slug": "cherished-ore",
       "name": "Cherished Ore",
       "description": "",
@@ -402,21 +418,23 @@
       "rarityIcon": "🌸",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 60,
       "buy": 60,
       "stock": "Unlimited",
       "maxPerUser": 2,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🌸 Cherished Cherished Ore STORE PREMIUM SELL 60 BUY 60 STOCK Unlimited MAX/USER 2 ROLE None"
     },
     {
-      "id": "cherry-s-backpack",
+      "id": "cherry_s_backpack",
       "slug": "cherry-s-backpack",
       "name": "Cherry's Backpack",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -427,10 +445,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -438,12 +456,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Backpack GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-baseball-cap",
+      "id": "cherry_s_baseball_cap",
       "slug": "cherry-s-baseball-cap",
       "name": "Cherry's Baseball Cap",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -454,10 +473,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -465,12 +484,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Baseball Cap GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-bunny-cola",
+      "id": "cherry_s_bunny_cola",
       "slug": "cherry-s-bunny-cola",
       "name": "Cherry's Bunny Cola",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -481,10 +501,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -492,12 +512,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Bunny Cola GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-bunpuding",
+      "id": "cherry_s_bunpuding",
       "slug": "cherry-s-bunpuding",
       "name": "Cherry's BunPuding",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -508,10 +529,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -519,12 +540,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's BunPuding GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-choco-bites",
+      "id": "cherry_s_choco_bites",
       "slug": "cherry-s-choco-bites",
       "name": "Cherry's Choco Bites",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -535,10 +557,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -546,12 +568,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Choco Bites GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-desk-mat",
+      "id": "cherry_s_desk_mat",
       "slug": "cherry-s-desk-mat",
       "name": "Cherry's Desk mat",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -562,10 +585,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -573,12 +596,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Desk mat GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-diary",
+      "id": "cherry_s_diary",
       "slug": "cherry-s-diary",
       "name": "Cherry's Diary",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -589,10 +613,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -600,12 +624,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Diary GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-diary2",
+      "id": "cherry_s_diary2",
       "slug": "cherry-s-diary2",
       "name": "Cherry's Diary2",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -616,10 +641,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -627,12 +652,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Diary2 GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-gamer-set",
+      "id": "cherry_s_gamer_set",
       "slug": "cherry-s-gamer-set",
       "name": "Cherry's Gamer Set",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -643,10 +669,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -654,12 +680,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Gamer Set GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-mug",
+      "id": "cherry_s_mug",
       "slug": "cherry-s-mug",
       "name": "Cherry's Mug",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -670,10 +697,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -681,12 +708,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Mug GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-pen",
+      "id": "cherry_s_pen",
       "slug": "cherry-s-pen",
       "name": "Cherry's Pen",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -697,10 +725,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -708,12 +736,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Pen GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-pen-holder",
+      "id": "cherry_s_pen_holder",
       "slug": "cherry-s-pen-holder",
       "name": "Cherry's Pen holder",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -724,10 +753,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -735,12 +764,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Pen holder GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-phone-case",
+      "id": "cherry_s_phone_case",
       "slug": "cherry-s-phone-case",
       "name": "Cherry's Phone Case",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -751,10 +781,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -762,12 +792,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Phone Case GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-pillow",
+      "id": "cherry_s_pillow",
       "slug": "cherry-s-pillow",
       "name": "Cherry's Pillow",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -778,10 +809,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -789,12 +820,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Pillow GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-pizza",
+      "id": "cherry_s_pizza",
       "slug": "cherry-s-pizza",
       "name": "Cherry's Pizza",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -805,10 +837,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -816,12 +848,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Pizza GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-popcorn",
+      "id": "cherry_s_popcorn",
       "slug": "cherry-s-popcorn",
       "name": "Cherry's Popcorn",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -832,10 +865,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -843,12 +876,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Popcorn GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-shake",
+      "id": "cherry_s_shake",
       "slug": "cherry-s-shake",
       "name": "Cherry's Shake",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -859,10 +893,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -870,12 +904,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Shake GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-shoes",
+      "id": "cherry_s_shoes",
       "slug": "cherry-s-shoes",
       "name": "Cherry's Shoes",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -886,10 +921,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -897,12 +932,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Shoes GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-snack",
+      "id": "cherry_s_snack",
       "slug": "cherry-s-snack",
       "name": "Cherry's Snack",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -913,10 +949,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -924,12 +960,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's Snack GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-to-do-list",
+      "id": "cherry_s_to_do_list",
       "slug": "cherry-s-to-do-list",
       "name": "Cherry's To Do List",
       "description": "<:MemoryPetal:1375917751763472394>",
@@ -940,10 +977,10 @@
       "rarityIcon": "🌸",
       "type": "Gacha",
       "source": "Gacha",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "memory_petal",
+      "currencyName": "Memory Petal",
+      "currencyIcon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png",
+      "currencyConfidence": "medium",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -951,7 +988,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🌸 Cherished Cherry's To Do List GACHA UNTRADABLE PREMIUM <:MemoryPetal:1375917751763472394> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     }

@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "epic_event",
@@ -9,7 +9,7 @@
   "count": 1,
   "cards": [
     {
-      "id": "eggventure-cherry-event",
+      "id": "eggventure_cherry_event",
       "slug": "eggventure-cherry-event",
       "name": "Eggventure Cherry [EVENT]",
       "description": "[EVENT] ⭐️⭐️⭐️",
@@ -22,8 +22,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3500,
       "buy": 3500,
@@ -31,7 +31,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Event"
       ],
       "rawText": "🟣 Epic [EVENT] Eggventure Cherry [EVENT] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3500 BUY $ 3500 STOCK 0 MAX/USER 1 ROLE None"
     }

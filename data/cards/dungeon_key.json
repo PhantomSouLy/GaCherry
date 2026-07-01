@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "dungeon_key",
@@ -9,7 +9,7 @@
   "count": 1,
   "cards": [
     {
-      "id": "dungeon-key",
+      "id": "dungeon_key",
       "slug": "dungeon-key",
       "name": "Dungeon Key",
       "description": "Key",
@@ -20,17 +20,19 @@
       "rarityIcon": "🗝️",
       "type": "Dungeon",
       "source": "Dungeon",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
       "stock": "Unlimited",
       "maxPerUser": 50,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🗝️ Dungeon Key Dungeon Key GACHA PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 50 ROLE None"
     }
   ]

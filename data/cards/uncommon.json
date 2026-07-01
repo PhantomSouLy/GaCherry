@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "uncommon",
@@ -9,7 +9,7 @@
   "count": 35,
   "cards": [
     {
-      "id": "big-mac",
+      "id": "big_mac",
       "slug": "big-mac",
       "name": "Big Mac",
       "description": "",
@@ -22,19 +22,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Big Mac GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "bonbonetti-cherry-queen",
+      "id": "bonbonetti_cherry_queen",
       "slug": "bonbonetti-cherry-queen",
       "name": "Bonbonetti Cherry Queen",
       "description": "",
@@ -47,19 +49,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Bonbonetti Cherry Queen GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "bounty-cherry",
+      "id": "bounty_cherry",
       "slug": "bounty-cherry",
       "name": "Bounty Cherry",
       "description": "",
@@ -72,19 +76,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Bounty Cherry GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "burn-cherry",
+      "id": "burn_cherry",
       "slug": "burn-cherry",
       "name": "Burn Cherry",
       "description": "",
@@ -97,19 +103,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Burn Cherry GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "captain-america-s-shield",
+      "id": "captain_america_s_shield",
       "slug": "captain-america-s-shield",
       "name": "Captain America's Shield",
       "description": "",
@@ -122,15 +130,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Captain America's Shield GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -147,15 +157,17 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Carrot DUNGEON GACHA No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -172,15 +184,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Cherries GACHA DUNGEON PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -197,15 +211,17 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon ChocoChips DUNGEON GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -222,15 +238,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Cookie GACHA No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -247,19 +265,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Firecrackers GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "haribo-happy-cherries",
+      "id": "haribo_happy_cherries",
       "slug": "haribo-happy-cherries",
       "name": "Haribo Happy Cherries",
       "description": "",
@@ -272,19 +292,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Haribo Happy Cherries GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "heart-macaron",
+      "id": "heart_macaron",
       "slug": "heart-macaron",
       "name": "Heart Macaron",
       "description": "",
@@ -297,19 +319,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Heart Macaron GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "hell-black-cherry",
+      "id": "hell_black_cherry",
       "slug": "hell-black-cherry",
       "name": "HELL Black Cherry",
       "description": "",
@@ -322,19 +346,21 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon HELL Black Cherry DUNGEON GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "infinity-gauntlet",
+      "id": "infinity_gauntlet",
       "slug": "infinity-gauntlet",
       "name": "Infinity Gauntlet",
       "description": "",
@@ -347,19 +373,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Infinity Gauntlet GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "kentucky-gold-burger",
+      "id": "kentucky_gold_burger",
       "slug": "kentucky-gold-burger",
       "name": "Kentucky Gold Burger",
       "description": "",
@@ -372,19 +400,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Kentucky Gold Burger GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "kinder-cherry",
+      "id": "kinder_cherry",
       "slug": "kinder-cherry",
       "name": "Kinder Cherry",
       "description": "",
@@ -397,15 +427,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Kinder Cherry GACHA No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -422,19 +454,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Kryptonite GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "love-letter",
+      "id": "love_letter",
       "slug": "love-letter",
       "name": "Love Letter",
       "description": "",
@@ -447,19 +481,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Love Letter GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "love-potion",
+      "id": "love_potion",
       "slug": "love-potion",
       "name": "Love Potion",
       "description": "",
@@ -472,19 +508,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Love Potion GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "milka-oreo",
+      "id": "milka_oreo",
       "slug": "milka-oreo",
       "name": "Milka Oreo",
       "description": "",
@@ -497,15 +535,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Milka Oreo GACHA No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -522,19 +562,21 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Mochi DUNGEON GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "mon-cheri",
+      "id": "mon_cheri",
       "slug": "mon-cheri",
       "name": "Mon Chéri",
       "description": "",
@@ -547,15 +589,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Mon Chéri GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -572,19 +616,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Monster GACHA No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "monster-energy-ultra-red",
+      "id": "monster_energy_ultra_red",
       "slug": "monster-energy-ultra-red",
       "name": "Monster Energy ULTRA RED",
       "description": "",
@@ -597,19 +643,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Monster Energy ULTRA RED GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "monster-energy-ultra-rosa",
+      "id": "monster_energy_ultra_rosa",
       "slug": "monster-energy-ultra-rosa",
       "name": "Monster Energy ULTRA ROSÁ",
       "description": "",
@@ -622,19 +670,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Monster Energy ULTRA ROSÁ GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "monster-juice",
+      "id": "monster_juice",
       "slug": "monster-juice",
       "name": "Monster Juice",
       "description": "",
@@ -647,19 +697,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Monster Juice GACHA No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "monster-ultra-black",
+      "id": "monster_ultra_black",
       "slug": "monster-ultra-black",
       "name": "Monster Ultra Black",
       "description": "",
@@ -672,19 +724,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Monster Ultra Black GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "new-year-s-lantern",
+      "id": "new_year_s_lantern",
       "slug": "new-year-s-lantern",
       "name": "New Year's Lantern",
       "description": "",
@@ -697,19 +751,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon New Year's Lantern GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "pocky-choco",
+      "id": "pocky_choco",
       "slug": "pocky-choco",
       "name": "Pocky Choco",
       "description": "",
@@ -722,15 +778,17 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Pocky Choco DUNGEON GACHA PREMIUM No description provided SELL $ 50 BUY $ 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -747,19 +805,21 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Potato DUNGEON GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "rockstar-cherry-energy-drink",
+      "id": "rockstar_cherry_energy_drink",
       "slug": "rockstar-cherry-energy-drink",
       "name": "Rockstar Cherry Energy Drink",
       "description": "",
@@ -772,15 +832,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Rockstar Cherry Energy Drink GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -797,15 +859,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Rose GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -822,19 +886,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 45,
       "buy": 45,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon Strawberry GACHA PREMIUM No description provided SELL $ 45 BUY $ 45 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "superhero-energy-drink",
+      "id": "superhero_energy_drink",
       "slug": "superhero-energy-drink",
       "name": "SUPERHERO - Energy Drink",
       "description": "",
@@ -847,19 +913,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon SUPERHERO - Energy Drink GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "v-energy-deadpool",
+      "id": "v_energy_deadpool",
       "slug": "v-energy-deadpool",
       "name": "V Energy - Deadpool",
       "description": "",
@@ -872,15 +940,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 40,
       "buy": 40,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "⚫ Uncommon V Energy - Deadpool GACHA PREMIUM No description provided SELL $ 40 BUY $ 40 STOCK Unlimited MAX/USER 1 ROLE None"
     }
   ]

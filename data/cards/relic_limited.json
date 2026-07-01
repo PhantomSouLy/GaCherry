@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "relic_limited",
@@ -9,7 +9,7 @@
   "count": 8,
   "cards": [
     {
-      "id": "blood-moon-cherry-limited",
+      "id": "blood_moon_cherry_limited",
       "slug": "blood-moon-cherry-limited",
       "name": "Blood Moon Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -20,10 +20,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3000,
       "buy": 3000,
@@ -32,12 +32,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Blood Moon Cherry [LIMITED] NODROP UNTRADABLE PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "celestial-harmony-cherry-limited",
+      "id": "celestial_harmony_cherry_limited",
       "slug": "celestial-harmony-cherry-limited",
       "name": "Celestial Harmony Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -48,10 +49,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3000,
       "buy": 3000,
@@ -60,12 +61,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Celestial Harmony Cherry [LIMITED] NODROP UNTRADABLE PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "cryptwing-cherry-limited",
+      "id": "cryptwing_cherry_limited",
       "slug": "cryptwing-cherry-limited",
       "name": "Cryptwing Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -76,10 +78,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3000,
       "buy": 3000,
@@ -88,12 +90,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Cryptwing Cherry [LIMITED] NODROP UNTRADABLE PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "cute-tripod-cherry-limited",
+      "id": "cute_tripod_cherry_limited",
       "slug": "cute-tripod-cherry-limited",
       "name": "Cute Tripod Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -104,10 +107,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3000,
       "buy": 3000,
@@ -115,12 +118,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Cute Tripod Cherry [LIMITED] NODROP PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "extra-hand-cherry-limited",
+      "id": "extra_hand_cherry_limited",
       "slug": "extra-hand-cherry-limited",
       "name": "Extra Hand Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -131,10 +135,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3000,
       "buy": 3000,
@@ -142,12 +146,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Extra Hand Cherry [LIMITED] NODROP PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "luminous-seraph-cherry-limited",
+      "id": "luminous_seraph_cherry_limited",
       "slug": "luminous-seraph-cherry-limited",
       "name": "Luminous Seraph Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -158,10 +163,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3000,
       "buy": 3000,
@@ -170,12 +175,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Luminous Seraph Cherry [LIMITED] NODROP UNTRADABLE PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "magical-trickster-tamer-cherry-limited",
+      "id": "magical_trickster_tamer_cherry_limited",
       "slug": "magical-trickster-tamer-cherry-limited",
       "name": "Magical Trickster Tamer Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -186,10 +192,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3000,
       "buy": 3000,
@@ -197,12 +203,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Magical Trickster Tamer Cherry [LIMITED] NODROP PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "prismatic-grace-cherry-limited",
+      "id": "prismatic_grace_cherry_limited",
       "slug": "prismatic-grace-cherry-limited",
       "name": "Prismatic Grace Cherry [LIMITED]",
       "description": "[LIMITED] 🌟🌟🌟🌟",
@@ -213,10 +220,10 @@
       "rarityIcon": "🟡",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3000,
       "buy": 3000,
@@ -225,7 +232,8 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟡 Relic [LIMITED] Prismatic Grace Cherry [LIMITED] NODROP UNTRADABLE PREMIUM 🌟🌟🌟🌟 SELL 3000 BUY 3000 STOCK 0 MAX/USER 1 ROLE None"
     }

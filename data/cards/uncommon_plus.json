@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "uncommon_plus",
@@ -9,7 +9,7 @@
   "count": 2,
   "cards": [
     {
-      "id": "choco-gift-pack",
+      "id": "choco_gift_pack",
       "slug": "choco-gift-pack",
       "name": "Choco Gift Pack",
       "description": "",
@@ -22,8 +22,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 200,
       "buy": 200,
@@ -31,12 +31,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "⬛️ Uncommon+ Choco Gift Pack NODROP PREMIUM No description provided SELL $ 200 BUY $ 200 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "uncommon-money-bag",
+      "id": "uncommon_money_bag",
       "slug": "uncommon-money-bag",
       "name": "Uncommon Money Bag",
       "description": "",
@@ -49,8 +50,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 25000,
       "buy": 25000,
@@ -58,7 +59,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "⬛️ Uncommon+ Uncommon Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 25000 BUY $ 25000 STOCK Unlimited MAX/USER 1 ROLE None"
     }

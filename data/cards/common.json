@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "common",
@@ -22,19 +22,21 @@
       "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Abby DUNGEON GACHA PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "black-spirit",
+      "id": "black_spirit",
       "slug": "black-spirit",
       "name": "Black Spirit",
       "description": "",
@@ -47,19 +49,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Black Spirit GACHA ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "bunny-slime",
+      "id": "bunny_slime",
       "slug": "bunny-slime",
       "name": "Bunny Slime",
       "description": "",
@@ -72,15 +76,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Bunny Slime GACHA ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -97,19 +103,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Capybara GACHA DUNGEON PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "chaos-caster-minion",
+      "id": "chaos_caster_minion",
       "slug": "chaos-caster-minion",
       "name": "Chaos Caster Minion",
       "description": "",
@@ -122,15 +130,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Chaos Caster Minion GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -147,19 +157,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Chikipi GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "chinese-nian-dragon-chibi",
+      "id": "chinese_nian_dragon_chibi",
       "slug": "chinese-nian-dragon-chibi",
       "name": "Chinese Nian Dragon Chibi",
       "description": "",
@@ -172,15 +184,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Chinese Nian Dragon Chibi GACHA PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -197,15 +211,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Chocobo GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -222,19 +238,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Creeper GACHA ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cupid-kirby",
+      "id": "cupid_kirby",
       "slug": "cupid-kirby",
       "name": "Cupid Kirby",
       "description": "",
@@ -247,19 +265,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Cupid Kirby GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "delivery-moogle",
+      "id": "delivery_moogle",
       "slug": "delivery-moogle",
       "name": "Delivery Moogle",
       "description": "",
@@ -272,15 +292,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Delivery Moogle GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -297,15 +319,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Enderman GACHA DUNGEON PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -322,19 +346,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Flopie GACHA DUNGEON PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "fortnite-xmas",
+      "id": "fortnite_xmas",
       "slug": "fortnite-xmas",
       "name": "Fortnite XMAS",
       "description": "",
@@ -347,15 +373,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Fortnite XMAS GACHA DUNGEON PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -372,15 +400,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Goomba GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -397,19 +427,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Groot GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "hungry-grey-wolf",
+      "id": "hungry_grey_wolf",
       "slug": "hungry-grey-wolf",
       "name": "Hungry Grey Wolf",
       "description": "",
@@ -422,19 +454,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Hungry Grey Wolf GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "jeff-the-land-shark",
+      "id": "jeff_the_land_shark",
       "slug": "jeff-the-land-shark",
       "name": "Jeff the Land Shark",
       "description": "",
@@ -447,19 +481,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Jeff the Land Shark GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "jigglypuff-love",
+      "id": "jigglypuff_love",
       "slug": "jigglypuff-love",
       "name": "JigglyPuff Love",
       "description": "",
@@ -472,19 +508,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common JigglyPuff Love GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "kelvin-sotf",
+      "id": "kelvin_sotf",
       "slug": "kelvin-sotf",
       "name": "Kelvin (SOTF)",
       "description": "",
@@ -497,19 +535,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Kelvin (SOTF) GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "minecraft-sheep",
+      "id": "minecraft_sheep",
       "slug": "minecraft-sheep",
       "name": "Minecraft Sheep",
       "description": "",
@@ -522,19 +562,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Minecraft Sheep GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "moss-slime",
+      "id": "moss_slime",
       "slug": "moss-slime",
       "name": "Moss Slime",
       "description": "",
@@ -547,19 +589,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Moss Slime GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "order-caster-minion",
+      "id": "order_caster_minion",
       "slug": "order-caster-minion",
       "name": "Order Caster Minion",
       "description": "",
@@ -572,15 +616,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Order Caster Minion GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -597,19 +643,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Paimon GACHA DUNGEON PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "pinky-slime",
+      "id": "pinky_slime",
       "slug": "pinky-slime",
       "name": "Pinky Slime",
       "description": "",
@@ -622,19 +670,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Pinky Slime GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "princess-luna",
+      "id": "princess_luna",
       "slug": "princess-luna",
       "name": "Princess Luna",
       "description": "",
@@ -647,19 +697,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Princess Luna GACHA DUNGEON PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "qilin-dragon",
+      "id": "qilin_dragon",
       "slug": "qilin-dragon",
       "name": "Qilin Dragon",
       "description": "",
@@ -672,19 +724,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Qilin Dragon GACHA PREMIUM ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "rainbow-dash",
+      "id": "rainbow_dash",
       "slug": "rainbow-dash",
       "name": "Rainbow Dash",
       "description": "",
@@ -697,15 +751,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Rainbow Dash GACHA ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -722,15 +778,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Ribbunny GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -747,19 +805,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Riku GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "rocket-raccoon",
+      "id": "rocket_raccoon",
       "slug": "rocket-raccoon",
       "name": "Rocket Raccoon",
       "description": "",
@@ -772,15 +832,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Rocket Raccoon GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -797,19 +859,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common Saki GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "the-tarr-slime",
+      "id": "the_tarr_slime",
       "slug": "the-tarr-slime",
       "name": "The Tarr Slime",
       "description": "",
@@ -822,15 +886,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common The Tarr Slime GACHA PREMIUM ⭐️ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
@@ -847,15 +913,17 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟢 Common YIPPEE! GACHA ⭐ SELL $ 150 BUY $ 150 STOCK Unlimited MAX/USER 1 ROLE None"
     }
   ]

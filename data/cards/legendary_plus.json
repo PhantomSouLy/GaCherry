@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "legendary_plus",
@@ -9,7 +9,7 @@
   "count": 9,
   "cards": [
     {
-      "id": "cherry-s-legendary-necklance",
+      "id": "cherry_s_legendary_necklance",
       "slug": "cherry-s-legendary-necklance",
       "name": "Cherry's Legendary Necklance",
       "description": "",
@@ -20,21 +20,23 @@
       "rarityIcon": "🟧",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 30,
       "buy": 30,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟧 Legendary+ Cherry's Legendary Necklance STORE PREMIUM No description provided SELL 30 BUY 30 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "cherry-s-legendary-ring",
+      "id": "cherry_s_legendary_ring",
       "slug": "cherry-s-legendary-ring",
       "name": "Cherry's Legendary Ring",
       "description": "",
@@ -45,21 +47,23 @@
       "rarityIcon": "🟧",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 30,
       "buy": 30,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟧 Legendary+ Cherry's Legendary Ring STORE PREMIUM No description provided SELL 30 BUY 30 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "japanese-essence",
+      "id": "japanese_essence",
       "slug": "japanese-essence",
       "name": "Japanese Essence",
       "description": "",
@@ -70,10 +74,10 @@
       "rarityIcon": "🟧",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -81,12 +85,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Japanese Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "legendary-accessory-kit",
+      "id": "legendary_accessory_kit",
       "slug": "legendary-accessory-kit",
       "name": "Legendary Accessory Kit",
       "description": "",
@@ -97,10 +102,10 @@
       "rarityIcon": "🟧",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -108,12 +113,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Legendary Accessory Kit NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "legendary-money-bag",
+      "id": "legendary_money_bag",
       "slug": "legendary-money-bag",
       "name": "Legendary Money Bag",
       "description": "",
@@ -126,8 +132,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 140000,
       "buy": 140000,
@@ -135,12 +141,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Legendary Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 140000 BUY $ 140000 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "legendary-shards-10x",
+      "id": "legendary_shards_10x",
       "slug": "legendary-shards-10x",
       "name": "Legendary Shards [10x]",
       "description": "",
@@ -151,10 +158,10 @@
       "rarityIcon": "🟧",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 10,
       "buy": 10,
@@ -162,12 +169,13 @@
       "maxPerUser": 10,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Legendary Shards [10x] STORE GACHA UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️ SELL 10 BUY 10 STOCK Unlimited MAX/USER 10 ROLE None"
     },
     {
-      "id": "shinobi-way-essence",
+      "id": "shinobi_way_essence",
       "slug": "shinobi-way-essence",
       "name": "Shinobi Way Essence",
       "description": "",
@@ -178,10 +186,10 @@
       "rarityIcon": "🟧",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -189,12 +197,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Shinobi Way Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "tons-of-legendary-shards-50x",
+      "id": "tons_of_legendary_shards_50x",
       "slug": "tons-of-legendary-shards-50x",
       "name": "Tons of Legendary Shards [50x]",
       "description": "",
@@ -205,10 +214,10 @@
       "rarityIcon": "🟧",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 50,
       "buy": 50,
@@ -216,12 +225,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Tons of Legendary Shards [50x] STORE UNTRADABLE PREMIUM No description provided SELL 50 BUY 50 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "tranditional-essence",
+      "id": "tranditional_essence",
       "slug": "tranditional-essence",
       "name": "Tranditional Essence",
       "description": "",
@@ -232,10 +242,10 @@
       "rarityIcon": "🟧",
       "type": "NoDrop",
       "source": "NoDrop",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 1,
       "buy": 1,
@@ -243,7 +253,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟧 Legendary+ Tranditional Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     }

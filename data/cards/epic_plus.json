@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "epic_plus",
@@ -9,7 +9,7 @@
   "count": 3,
   "cards": [
     {
-      "id": "collector-s-bag",
+      "id": "collector_s_bag",
       "slug": "collector-s-bag",
       "name": "Collector’s Bag",
       "description": "",
@@ -20,21 +20,23 @@
       "rarityIcon": "🟪",
       "type": "Store",
       "source": "Store",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 25,
       "buy": 25,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟪 Epic+ Collector’s Bag STORE PREMIUM No description provided SELL 25 BUY 25 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "collector-s-sacks",
+      "id": "collector_s_sacks",
       "slug": "collector-s-sacks",
       "name": "Collector’s Sacks",
       "description": "",
@@ -47,19 +49,21 @@
       "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 950,
       "buy": 950,
       "stock": "Unlimited",
       "maxPerUser": 1,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🟪 Epic+ Collector’s Sacks GACHA PREMIUM No description provided SELL $ 950 BUY $ 950 STOCK Unlimited MAX/USER 1 ROLE None"
     },
     {
-      "id": "epic-money-bag",
+      "id": "epic_money_bag",
       "slug": "epic-money-bag",
       "name": "Epic Money Bag",
       "description": "",
@@ -72,8 +76,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 120000,
       "buy": 120000,
@@ -81,7 +85,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟪 Epic+ Epic Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 120000 BUY $ 120000 STOCK Unlimited MAX/USER 1 ROLE None"
     }

@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "dungeon_tier_1",
@@ -9,7 +9,7 @@
   "count": 2,
   "cards": [
     {
-      "id": "a-few-coins",
+      "id": "a_few_coins",
       "slug": "a-few-coins",
       "name": "A few coins",
       "description": "Tier 1 🔸🔸",
@@ -20,17 +20,19 @@
       "rarityIcon": "🔸",
       "type": "Dungeon",
       "source": "Dungeon",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🔸 Dungeon Tier 1 A few coins DUNGEON PREMIUM 🔸🔸 SELL 150 BUY 150 STOCK Unlimited MAX/USER 99 ROLE None"
     },
     {
@@ -45,17 +47,19 @@
       "rarityIcon": "🔸",
       "type": "Dungeon",
       "source": "Dungeon",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🔸 Dungeon Tier 1 Coins DUNGEON PREMIUM 🔸 SELL 50 BUY 50 STOCK Unlimited MAX/USER 99 ROLE None"
     }
   ]

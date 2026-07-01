@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "epic_limited",
@@ -9,7 +9,7 @@
   "count": 6,
   "cards": [
     {
-      "id": "blushy-pool-cherry-limited",
+      "id": "blushy_pool_cherry_limited",
       "slug": "blushy-pool-cherry-limited",
       "name": "Blushy Pool Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️",
@@ -22,8 +22,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3000,
       "buy": 3000,
@@ -31,12 +31,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟣 Epic [LIMITED] Blushy Pool Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3000 BUY $ 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "chibi-carrot-pocky-cherry-limited",
+      "id": "chibi_carrot_pocky_cherry_limited",
       "slug": "chibi-carrot-pocky-cherry-limited",
       "name": "Chibi Carrot Pocky Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️",
@@ -49,8 +50,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3500,
       "buy": 3500,
@@ -58,12 +59,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟣 Epic [LIMITED] Chibi Carrot Pocky Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3500 BUY $ 3500 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "chill-dip-cherry-limited",
+      "id": "chill_dip_cherry_limited",
       "slug": "chill-dip-cherry-limited",
       "name": "Chill Dip Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️",
@@ -76,8 +78,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 3000,
       "buy": 3000,
@@ -86,12 +88,13 @@
       "role": null,
       "tags": [
         "NoDrop",
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟣 Epic [LIMITED] Chill Dip Cherry [LIMITED] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️ SELL $ 3000 BUY $ 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "cyber-chibi-cherry-limited",
+      "id": "cyber_chibi_cherry_limited",
       "slug": "cyber-chibi-cherry-limited",
       "name": "Cyber Chibi Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️",
@@ -104,8 +107,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3500,
       "buy": 3500,
@@ -113,12 +116,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟣 Epic [LIMITED] Cyber Chibi Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3500 BUY $ 3500 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "poolside-cherry-limited",
+      "id": "poolside_cherry_limited",
       "slug": "poolside-cherry-limited",
       "name": "Poolside Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️",
@@ -131,8 +135,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3000,
       "buy": 3000,
@@ -140,12 +144,13 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟣 Epic [LIMITED] Poolside Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3000 BUY $ 3000 STOCK 0 MAX/USER 1 ROLE None"
     },
     {
-      "id": "yukata-sweet-cherry-limited",
+      "id": "yukata_sweet_cherry_limited",
       "slug": "yukata-sweet-cherry-limited",
       "name": "Yukata Sweet Cherry [LIMITED]",
       "description": "[LIMITED] ⭐️⭐️⭐️",
@@ -158,8 +163,8 @@
       "source": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 3000,
       "buy": 3000,
@@ -167,7 +172,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "NoDrop"
+        "NoDrop",
+        "Limited"
       ],
       "rawText": "🟣 Epic [LIMITED] Yukata Sweet Cherry [LIMITED] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3000 BUY $ 3000 STOCK 0 MAX/USER 1 ROLE None"
     }

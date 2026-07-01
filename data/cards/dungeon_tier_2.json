@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "dungeon_tier_2",
@@ -9,7 +9,7 @@
   "count": 2,
   "cards": [
     {
-      "id": "bags-of-coins",
+      "id": "bags_of_coins",
       "slug": "bags-of-coins",
       "name": "Bags of coins",
       "description": "Tier 2 🔶🔶",
@@ -20,21 +20,23 @@
       "rarityIcon": "🔶",
       "type": "Dungeon",
       "source": "Dungeon",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 800,
       "buy": 800,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🔶 Dungeon Tier 2 Bags of coins DUNGEON PREMIUM 🔶🔶 SELL 800 BUY 800 STOCK Unlimited MAX/USER 99 ROLE None"
     },
     {
-      "id": "lots-of-coins",
+      "id": "lots_of_coins",
       "slug": "lots-of-coins",
       "name": "Lots of coins",
       "description": "Tier 2 🔶",
@@ -45,17 +47,19 @@
       "rarityIcon": "🔶",
       "type": "Dungeon",
       "source": "Dungeon",
-      "currency": "unknown",
-      "currencyName": "Unknown",
-      "currencyIcon": null,
-      "currencyConfidence": "low",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": null,
       "sell": 350,
       "buy": 350,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [],
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🔶 Dungeon Tier 2 Lots of coins DUNGEON PREMIUM 🔶 SELL 350 BUY 350 STOCK Unlimited MAX/USER 99 ROLE None"
     }
   ]

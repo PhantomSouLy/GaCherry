@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-01T19:41:26Z",
-  "schemaVersion": 2,
+  "exportedAt": "2026-07-01T19:38:32.276Z",
+  "schemaVersion": 3,
   "source": "Lootium",
   "rarityFilter": {
     "id": "common_plus",
@@ -9,7 +9,7 @@
   "count": 1,
   "cards": [
     {
-      "id": "common-money-bag",
+      "id": "common_money_bag",
       "slug": "common-money-bag",
       "name": "Common Money Bag",
       "description": "",
@@ -22,8 +22,8 @@
       "source": "Store",
       "currency": "default",
       "currencyName": "Default",
-      "currencyIcon": null,
-      "currencyConfidence": "high",
+      "currencyIcon": "$",
+      "currencyConfidence": "default",
       "tradable": false,
       "sell": 55000,
       "buy": 55000,
@@ -31,7 +31,8 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable"
+        "Untradable",
+        "Limited"
       ],
       "rawText": "🟢 Common+ Common Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 55000 BUY $ 55000 STOCK Unlimited MAX/USER 1 ROLE None"
     }
