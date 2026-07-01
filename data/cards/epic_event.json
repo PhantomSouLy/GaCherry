@@ -1,0 +1,39 @@
+{
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
+  "source": "Lootium",
+  "rarityFilter": {
+    "id": "epic_event",
+    "name": "Epic [EVENT]"
+  },
+  "count": 1,
+  "cards": [
+    {
+      "id": "eggventure-cherry-event",
+      "slug": "eggventure-cherry-event",
+      "name": "Eggventure Cherry [EVENT]",
+      "description": "[EVENT] ⭐️⭐️⭐️",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Epic/Eggventure_Cherry.png",
+      "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Epic/Eggventure_Cherry.png",
+      "rarity": "epic_event",
+      "rarityName": "Epic [EVENT]",
+      "rarityIcon": "🟣",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": null,
+      "currencyConfidence": "high",
+      "tradable": null,
+      "sell": 3500,
+      "buy": 3500,
+      "stock": 0,
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "NoDrop"
+      ],
+      "rawText": "🟣 Epic [EVENT] Eggventure Cherry [EVENT] NODROP PREMIUM ⭐️⭐️⭐️ SELL $ 3500 BUY $ 3500 STOCK 0 MAX/USER 1 ROLE None"
+    }
+  ]
+}

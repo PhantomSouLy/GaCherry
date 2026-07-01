@@ -1,0 +1,96 @@
+{
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
+  "source": "Lootium",
+  "rarityFilter": {
+    "id": "mythical_event",
+    "name": "Mythical [EVENT]"
+  },
+  "count": 3,
+  "cards": [
+    {
+      "id": "eternal-mermaid-cherry-cherryfest2025",
+      "slug": "eternal-mermaid-cherry-cherryfest2025",
+      "name": "Eternal Mermaid Cherry [CherryFest2025]",
+      "description": "[EVENT] ⭐️⭐️⭐️⭐️⭐️",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/LIMITED/Eternal%20Mermaid%20Cherry.gif",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/LIMITED/Eternal%20Mermaid%20Cherry.gif?raw=true",
+      "rarity": "mythical_event",
+      "rarityName": "Mythical [EVENT]",
+      "rarityIcon": "⚪",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": false,
+      "sell": 5,
+      "buy": 5,
+      "stock": 0,
+      "maxPerUser": 1,
+      "role": "𝙲𝚑𝚎𝚛𝚛𝚢𝙵𝚎𝚜𝚝𝟸𝟶𝟸𝟻",
+      "tags": [
+        "NoDrop",
+        "Untradable"
+      ],
+      "rawText": "⚪ Mythical [EVENT] Eternal Mermaid Cherry [CherryFest2025] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE 𝙲𝚑𝚎𝚛𝚛𝚢𝙵𝚎𝚜𝚝𝟸𝟶𝟸𝟻"
+    },
+    {
+      "id": "heaven-s-bloom-cherry-dedicated-event",
+      "slug": "heaven-s-bloom-cherry-dedicated-event",
+      "name": "Heaven's Bloom Cherry [DEDICATED-EVENT]",
+      "description": "[EVENT] ⭐⭐⭐⭐⭐",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/LIMITED/Heaven%E2%80%99s%20Bloom%20Cherry.gif",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/LIMITED/Heaven%E2%80%99s%20Bloom%20Cherry.gif?raw=true",
+      "rarity": "mythical_event",
+      "rarityName": "Mythical [EVENT]",
+      "rarityIcon": "⚪",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": false,
+      "sell": 10,
+      "buy": 10,
+      "stock": 0,
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "NoDrop",
+        "Untradable"
+      ],
+      "rawText": "⚪ Mythical [EVENT] Heaven's Bloom Cherry [DEDICATED-EVENT] NODROP UNTRADABLE PREMIUM ⭐⭐⭐⭐⭐ SELL 10 BUY 10 STOCK 0 MAX/USER 1 ROLE None"
+    },
+    {
+      "id": "zombiecherrychan-dedicated-event",
+      "slug": "zombiecherrychan-dedicated-event",
+      "name": "ZombieCherryChan [DEDICATED-EVENT]",
+      "description": "[EVENT] ⭐️⭐️⭐️⭐️⭐️",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/LIMITED/ZombieCherryChan.png",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/LIMITED/ZombieCherryChan.png?raw=true",
+      "rarity": "mythical_event",
+      "rarityName": "Mythical [EVENT]",
+      "rarityIcon": "⚪",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": false,
+      "sell": 10,
+      "buy": 10,
+      "stock": 0,
+      "maxPerUser": 1,
+      "role": "ZombieBunny",
+      "tags": [
+        "NoDrop",
+        "Untradable"
+      ],
+      "rawText": "⚪ Mythical [EVENT] ZombieCherryChan [DEDICATED-EVENT] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️⭐️ SELL 10 BUY 10 STOCK 0 MAX/USER 1 ROLE ZombieBunny"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
+  "source": "Lootium",
+  "rarityFilter": {
+    "id": "mythical_plus",
+    "name": "Mythical+"
+  },
+  "count": 4,
+  "cards": [
+    {
+      "id": "ascendent-essence",
+      "slug": "ascendent-essence",
+      "name": "Ascendent Essence",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/Craft/Ascendent%20Essence.webp",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Ascendent%20Essence.webp?raw=true",
+      "rarity": "mythical_plus",
+      "rarityName": "Mythical+",
+      "rarityIcon": "◻️",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": null,
+      "sell": 1,
+      "buy": 1,
+      "stock": "Unlimited",
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "NoDrop"
+      ],
+      "rawText": "⬜️Mythical+ Ascendent Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
+    },
+    {
+      "id": "mythical-crystal",
+      "slug": "mythical-crystal",
+      "name": "Mythical Crystal",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/Craft/Mythical%20Crystal.webp",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Mythical%20Crystal.webp?raw=true",
+      "rarity": "mythical_plus",
+      "rarityName": "Mythical+",
+      "rarityIcon": "◻️",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": null,
+      "sell": 1,
+      "buy": 1,
+      "stock": "Unlimited",
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "NoDrop"
+      ],
+      "rawText": "⬜️Mythical+ Mythical Crystal NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
+    },
+    {
+      "id": "mythical-essence",
+      "slug": "mythical-essence",
+      "name": "Mythical Essence",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/Craft/Mythical%20Essence.webp",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Mythical%20Essence.webp?raw=true",
+      "rarity": "mythical_plus",
+      "rarityName": "Mythical+",
+      "rarityIcon": "◻️",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": null,
+      "sell": 1,
+      "buy": 1,
+      "stock": "Unlimited",
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "NoDrop"
+      ],
+      "rawText": "⬜️Mythical+ Mythical Essence NODROP PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
+    },
+    {
+      "id": "mythical-money-bag",
+      "slug": "mythical-money-bag",
+      "name": "Mythical Money Bag",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Mythical/Craft/Mythical%20Money%20Bag.webp",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Mythical%20Money%20Bag.webp?raw=true",
+      "rarity": "mythical_plus",
+      "rarityName": "Mythical+",
+      "rarityIcon": "◻️",
+      "type": "Store",
+      "source": "Store",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": null,
+      "currencyConfidence": "high",
+      "tradable": false,
+      "sell": 180000,
+      "buy": 180000,
+      "stock": "Unlimited",
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "Untradable"
+      ],
+      "rawText": "⬜️Mythical+ Mythical Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 180000 BUY $ 180000 STOCK Unlimited MAX/USER 1 ROLE None"
+    }
+  ]
+}

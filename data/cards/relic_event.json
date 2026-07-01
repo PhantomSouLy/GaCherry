@@ -1,0 +1,39 @@
+{
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
+  "source": "Lootium",
+  "rarityFilter": {
+    "id": "relic_event",
+    "name": "Relic [EVENT]"
+  },
+  "count": 1,
+  "cards": [
+    {
+      "id": "egg-of-the-abyss-cherry-event",
+      "slug": "egg-of-the-abyss-cherry-event",
+      "name": "Egg of the Abyss Cherry [EVENT]",
+      "description": "[EVENT] 🌟🌟🌟🌟",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Egg_of_the_Abyss_Cherry.png",
+      "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Egg_of_the_Abyss_Cherry.png",
+      "rarity": "relic_event",
+      "rarityName": "Relic [EVENT]",
+      "rarityIcon": "🟡",
+      "type": "NoDrop",
+      "source": "NoDrop",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": null,
+      "sell": 7000,
+      "buy": 7000,
+      "stock": 0,
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "NoDrop"
+      ],
+      "rawText": "🟡 Relic [EVENT] Egg of the Abyss Cherry [EVENT] NODROP PREMIUM 🌟🌟🌟🌟 SELL 7000 BUY 7000 STOCK 0 MAX/USER 1 ROLE None"
+    }
+  ]
+}

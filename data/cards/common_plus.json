@@ -1,0 +1,39 @@
+{
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
+  "source": "Lootium",
+  "rarityFilter": {
+    "id": "common_plus",
+    "name": "Common+"
+  },
+  "count": 1,
+  "cards": [
+    {
+      "id": "common-money-bag",
+      "slug": "common-money-bag",
+      "name": "Common Money Bag",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Common/7gMEWiw.png",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Common/7gMEWiw.png?raw=true",
+      "rarity": "common_plus",
+      "rarityName": "Common+",
+      "rarityIcon": "🟢",
+      "type": "Store",
+      "source": "Store",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": null,
+      "currencyConfidence": "high",
+      "tradable": false,
+      "sell": 55000,
+      "buy": 55000,
+      "stock": "Unlimited",
+      "maxPerUser": 1,
+      "role": null,
+      "tags": [
+        "Untradable"
+      ],
+      "rawText": "🟢 Common+ Common Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 55000 BUY $ 55000 STOCK Unlimited MAX/USER 1 ROLE None"
+    }
+  ]
+}

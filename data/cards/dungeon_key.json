@@ -1,0 +1,37 @@
+{
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
+  "source": "Lootium",
+  "rarityFilter": {
+    "id": "dungeon_key",
+    "name": "Dungeon Key"
+  },
+  "count": 1,
+  "cards": [
+    {
+      "id": "dungeon-key",
+      "slug": "dungeon-key",
+      "name": "Dungeon Key",
+      "description": "Key",
+      "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncategorized/DungeonKey.png",
+      "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncategorized/DungeonKey.png?raw=true",
+      "rarity": "dungeon_key",
+      "rarityName": "Dungeon Key",
+      "rarityIcon": "🗝️",
+      "type": "Dungeon",
+      "source": "Dungeon",
+      "currency": "unknown",
+      "currencyName": "Unknown",
+      "currencyIcon": null,
+      "currencyConfidence": "low",
+      "tradable": null,
+      "sell": 1,
+      "buy": 1,
+      "stock": "Unlimited",
+      "maxPerUser": 50,
+      "role": null,
+      "tags": [],
+      "rawText": "🗝️ Dungeon Key Dungeon Key GACHA PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 50 ROLE None"
+    }
+  ]
+}

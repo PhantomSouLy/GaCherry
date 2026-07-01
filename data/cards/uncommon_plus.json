@@ -1,7 +1,11 @@
 {
-  "exportedAt": "2026-07-01T00:26:56.440Z",
+  "exportedAt": "2026-07-01T19:41:26Z",
+  "schemaVersion": 2,
   "source": "Lootium",
-  "rarityFilter": "Uncommon+",
+  "rarityFilter": {
+    "id": "uncommon_plus",
+    "name": "Uncommon+"
+  },
   "count": 2,
   "cards": [
     {
@@ -11,9 +15,15 @@
       "description": "",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncommon/KPfoCgU.png",
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/KPfoCgU.png?raw=true",
-      "rarity": "Uncommon+",
+      "rarity": "uncommon_plus",
+      "rarityName": "Uncommon+",
+      "rarityIcon": "◼️",
       "type": "NoDrop",
-      "source": "Lootium",
+      "source": "NoDrop",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": null,
+      "currencyConfidence": "high",
       "tradable": null,
       "sell": 200,
       "buy": 200,
@@ -21,7 +31,6 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Premium",
         "NoDrop"
       ],
       "rawText": "⬛️ Uncommon+ Choco Gift Pack NODROP PREMIUM No description provided SELL $ 200 BUY $ 200 STOCK Unlimited MAX/USER 1 ROLE None"
@@ -33,9 +42,15 @@
       "description": "",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncommon/I6iJd8E.png",
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/I6iJd8E.png?raw=true",
-      "rarity": "Uncommon+",
+      "rarity": "uncommon_plus",
+      "rarityName": "Uncommon+",
+      "rarityIcon": "◼️",
       "type": "Store",
-      "source": "Lootium",
+      "source": "Store",
+      "currency": "default",
+      "currencyName": "Default",
+      "currencyIcon": null,
+      "currencyConfidence": "high",
       "tradable": false,
       "sell": 25000,
       "buy": 25000,
@@ -43,7 +58,6 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Premium",
         "Untradable"
       ],
       "rawText": "⬛️ Uncommon+ Uncommon Money Bag STORE UNTRADABLE PREMIUM No description provided SELL $ 25000 BUY $ 25000 STOCK Unlimited MAX/USER 1 ROLE None"
