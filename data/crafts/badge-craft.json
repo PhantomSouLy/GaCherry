@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 5,
+  "title": "Badge Craft",
+  "levels": [
+    {
+      "level": 1,
+      "title": "LVL 1 – Explorer",
+      "result": "[LVL1] Petal Badge",
+      "rarity": "Uncommon+",
+      "role": "Explorer",
+      "requirements": [
+        "1× Choco Gift Pack",
+        "1× Uncommon Money Bag",
+        "1× LVL 0 Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Choco Gift Pack Craft",
+          "items": [
+            "Bounty Cherry 1×",
+            "Kinder Cherry 1×",
+            "Bonbonetti Cherry Queen 1×",
+            "Mon Chéri 1×"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "LVL 2 – Casual Hoarder",
+      "result": "[LVL2] Petal Badge",
+      "rarity": "Epic+",
+      "role": "Casual Hoarder",
+      "requirements": [
+        "50× Legendary Shard",
+        "1× Common Money Bag",
+        "1× LVL 1 Petal Badge"
+      ],
+      "subcrafts": []
+    },
+    {
+      "level": 3,
+      "title": "LVL 3 – Epic Collector",
+      "result": "[LVL3] Petal Badge",
+      "rarity": "Epic+",
+      "role": "Epic Collector",
+      "requirements": [
+        "1× Collector’s Bag",
+        "1× Collector’s Sacks",
+        "1× Rare Money Bag",
+        "1× LVL 2 Petal Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Megjegyzés",
+          "items": [
+            "Collector’s Bag → Store",
+            "Collector’s Sacks → Gacha"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "title": "LVL 4 – Gacha Veteran",
+      "result": "[LVL4] Cherished Badge",
+      "rarity": "Legendary+",
+      "role": "Gacha Veteran",
+      "requirements": [
+        "1× Legendary Accessory Kit",
+        "1× Epic Money Bag",
+        "1× LVL 3 Petal Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Legendary Accessory Kit Craft",
+          "items": [
+            "1× Pack of Legendary Shards [25x]",
+            "1× Cherry’s Ring (Store)",
+            "1× Cherry’s Necklace (Store)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "title": "LVL 5 – Legendary Collector",
+      "result": "[LVL5] Cherished Badge",
+      "rarity": "Legendary+",
+      "role": "Legendary Collector",
+      "requirements": [
+        "1× Japanese Essence",
+        "1× Legendary Money Bag",
+        "1× LVL 4 Cherished Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Japanese Essence Craft",
+          "items": [
+            "5× Shinobi Way Essence",
+            "5× Traditional Essence"
+          ]
+        },
+        {
+          "title": "Shinobi Way Essence Craft",
+          "items": [
+            "1× Kunoichi Cherry",
+            "1× Ninja Cherry",
+            "1× Moonlit Sakura Cherry",
+            "1× Violet Specter Cherry",
+            "1× Luminara Viper Cherry"
+          ]
+        },
+        {
+          "title": "Traditional Essence Craft",
+          "items": [
+            "1× BUNDLE - Seasons pack (4 kártya)",
+            "1× Whispering Blossom Maiden Cherry"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "title": "LVL 6 – Treasure Hunter",
+      "result": "[LVL6] Cherished Badge",
+      "rarity": "Relic+",
+      "role": "Treasure Hunter",
+      "requirements": [
+        "1× Abyss Essence",
+        "1× Relic Money Bag",
+        "1× LVL 5 Cherished Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Abyss Essence Craft",
+          "items": [
+            "1× Cherry’s Basement (Store)",
+            "1× Cute Nightmare Essence"
+          ]
+        },
+        {
+          "title": "Cute Nightmare Essence Craft",
+          "items": [
+            "1× Spectral Cherry (Store)",
+            "1× Goblin Vixen Cherry (Dungeon)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "title": "LVL 7 – Ascendant",
+      "result": "[LVL7] Cherished Badge",
+      "rarity": "Mythical+",
+      "role": "Ascendant",
+      "requirements": [
+        "1× HappyCherryChan Mythical Card",
+        "1× Ascendent Essence",
+        "1× Mythical Money Bag",
+        "1× LVL 6 Cherished Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Ascendent Essence Craft",
+          "items": [
+            "1× Mythical Essence",
+            "1× Mythical Crystal"
+          ]
+        },
+        {
+          "title": "Mythical Essence Craft",
+          "items": [
+            "1× Angel Cherry (Gacha)",
+            "1× Bride Queen Cherry (Store)"
+          ]
+        },
+        {
+          "title": "Mythical Crystal Craft",
+          "items": [
+            "1× Demon Queen Cherry (Gacha)",
+            "1× Mythical Shards [2x] (Store)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "title": "LVL 8 – Gacha Master",
+      "result": "[LVL8] Cherished Badge",
+      "rarity": "Cherished",
+      "role": "Gacha Master",
+      "requirements": [
+        "1× Mythical Shards [2x]",
+        "1× Tons of Legendary Shards [50x]",
+        "1× Cherished Legendary Badge",
+        "1× Cherished Money Bag",
+        "1× LVL 7 Cherished Badge"
+      ],
+      "subcrafts": [
+        {
+          "title": "Cherished Legendary Badge Craft",
+          "items": [
+            "1× Cherished Essence (Store)",
+            "1× Cherished Badge"
+          ]
+        },
+        {
+          "title": "Cherished Badge Craft",
+          "items": [
+            "1× Cherished Ingot",
+            "1× Cherished Crystal"
+          ]
+        },
+        {
+          "title": "Cherished Ingot Craft",
+          "items": [
+            "2× Cherished Ore (Store)"
+          ]
+        },
+        {
+          "title": "Cherished Crystal Craft",
+          "items": [
+            "2× Cherished Crystal Shard (Store)"
+          ]
+        }
+      ]
+    }
+  ]
+}

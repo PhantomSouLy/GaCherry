@@ -1,53 +1,54 @@
 {
-  "schemaVersion": 4,
+  "schemaVersion": 5,
+  "count": 8,
   "currencies": [
     {
       "id": "default",
       "name": "Default",
       "icon": "$",
-      "type": "symbol"
+      "order": 0
     },
     {
       "id": "memory_petal",
       "name": "Memory Petal",
-      "icon": "./data/Currency/memorypetal.webp",
-      "type": "image"
+      "icon": "data/Currency/memorypetal.webp",
+      "order": 10
     },
     {
       "id": "legendary_shard",
       "name": "Legendary Shard",
-      "icon": "./data/Currency/legendaryshard.webp",
-      "type": "image"
-    },
-    {
-      "id": "eternity_shard",
-      "name": "Eternity Shard",
-      "icon": "./data/Currency/eternityshard.webp",
-      "type": "image"
+      "icon": "data/Currency/legendaryshard.webp",
+      "order": 20
     },
     {
       "id": "mythical_shard",
       "name": "Mythical Shard",
-      "icon": "./data/Currency/mythicalshard.webp",
-      "type": "image"
+      "icon": "data/Currency/mythicalshard.webp",
+      "order": 30
+    },
+    {
+      "id": "eternity_shard",
+      "name": "Eternity Shard",
+      "icon": "data/Currency/eternityshard.webp",
+      "order": 40
     },
     {
       "id": "gold_bar",
       "name": "Gold Bar",
-      "icon": "./data/Currency/gold.webp",
-      "type": "image"
+      "icon": "data/Currency/gold.webp",
+      "order": 50
     },
     {
       "id": "dungeon_key",
       "name": "Dungeon Key",
-      "icon": "./data/Currency/dungeonkey.webp",
-      "type": "image"
+      "icon": "data/Currency/dungeonkey.webp",
+      "order": 60
     },
     {
       "id": "echo_bloom",
       "name": "Echo Bloom",
-      "icon": "./data/Currency/echobloom.webp",
-      "type": "image"
+      "icon": "data/Currency/echobloom.webp",
+      "order": 70
     }
   ]
 }

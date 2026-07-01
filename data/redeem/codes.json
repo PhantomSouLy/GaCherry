@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 5,
+  "active": [
+    {
+      "code": "HAMAROSAN",
+      "reward": "Később kerül feltöltésre",
+      "expires": "Nincs megadva",
+      "note": "A beváltás Discordon, /redeem paranccsal történik."
+    }
+  ],
+  "expired": []
+}

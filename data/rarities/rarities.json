@@ -1,77 +1,146 @@
 {
-  "schemaVersion": 4,
+  "schemaVersion": 5,
+  "count": 20,
   "rarities": [
     {
       "id": "common",
       "name": "Common",
       "icon": "🟢",
-      "sortOrder": 1
+      "order": 10,
+      "group": "common"
+    },
+    {
+      "id": "common_plus",
+      "name": "Common+",
+      "icon": "🟢",
+      "order": 11,
+      "group": "common"
     },
     {
       "id": "uncommon",
       "name": "Uncommon",
       "icon": "⚫",
-      "sortOrder": 2
+      "order": 20,
+      "group": "uncommon"
+    },
+    {
+      "id": "uncommon_plus",
+      "name": "Uncommon+",
+      "icon": "◼️",
+      "order": 21,
+      "group": "uncommon"
     },
     {
       "id": "rare",
       "name": "Rare",
       "icon": "🔵",
-      "sortOrder": 3
+      "order": 30,
+      "group": "rare"
+    },
+    {
+      "id": "rare_plus",
+      "name": "Rare+",
+      "icon": "🟦",
+      "order": 31,
+      "group": "rare"
     },
     {
       "id": "epic",
       "name": "Epic",
       "icon": "🟣",
-      "sortOrder": 4
+      "order": 40,
+      "group": "epic"
+    },
+    {
+      "id": "epic_plus",
+      "name": "Epic+",
+      "icon": "🟪",
+      "order": 41,
+      "group": "epic"
     },
     {
       "id": "legendary",
       "name": "Legendary",
       "icon": "🟠",
-      "sortOrder": 5
+      "order": 50,
+      "group": "legendary"
+    },
+    {
+      "id": "legendary_plus",
+      "name": "Legendary+",
+      "icon": "🟧",
+      "order": 51,
+      "group": "legendary"
     },
     {
       "id": "relic",
       "name": "Relic",
       "icon": "🟡",
-      "sortOrder": 6
+      "order": 60,
+      "group": "relic"
+    },
+    {
+      "id": "relic_plus",
+      "name": "Relic+",
+      "icon": "🟨",
+      "order": 61,
+      "group": "relic"
     },
     {
       "id": "mythical",
       "name": "Mythical",
       "icon": "⚪",
-      "sortOrder": 7
+      "order": 70,
+      "group": "mythical"
+    },
+    {
+      "id": "mythical_plus",
+      "name": "Mythical+",
+      "icon": "◻️",
+      "order": 71,
+      "group": "mythical"
     },
     {
       "id": "cherished",
       "name": "Cherished",
       "icon": "🌸",
-      "sortOrder": 8
+      "order": 80,
+      "group": "cherished"
     },
     {
       "id": "eternity",
       "name": "Eternity",
       "icon": "🔴",
-      "sortOrder": 9
+      "order": 90,
+      "group": "eternity"
     },
     {
       "id": "dungeon_tier_1",
       "name": "Dungeon Tier 1",
       "icon": "🔸",
-      "sortOrder": 10
+      "order": 100,
+      "group": "dungeon_tier_1"
     },
     {
       "id": "dungeon_tier_2",
       "name": "Dungeon Tier 2",
       "icon": "🔶",
-      "sortOrder": 11
+      "order": 101,
+      "group": "dungeon_tier_2"
     },
     {
       "id": "dungeon_key",
       "name": "Dungeon Key",
       "icon": "🗝️",
-      "sortOrder": 12
+      "order": 102,
+      "group": "dungeon_key"
+    },
+    {
+      "id": "unknown",
+      "name": "Unknown",
+      "icon": "?",
+      "order": 999,
+      "group": "unknown"
     }
   ]
 }

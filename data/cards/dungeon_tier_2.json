@@ -1,71 +1,68 @@
 {
-  "exportedAt": "2026-07-01T19:38:32.276Z",
-  "schemaVersion": 4,
-  "source": "Lootium",
-  "rarityFilter": {
-    "id": "dungeon_tier_2",
-    "name": "Dungeon Tier 2"
-  },
+  "schemaVersion": 5,
+  "group": "dungeon_tier_2",
   "count": 2,
   "cards": [
     {
       "id": "bags-of-coins",
+      "number": 27,
       "slug": "bags-of-coins",
-      "order": 27,
       "name": "Bags of coins",
       "description": "Tier 2 🔶🔶",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncategorized/Bags_of_coin.png",
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncategorized/Bags_of_coin.png?raw=true",
       "rarity": "dungeon_tier_2",
       "rarityName": "Dungeon Tier 2",
+      "rarityGroup": "dungeon_tier_2",
       "rarityIcon": "🔶",
-      "series": "Legacy",
       "types": [
         "Dungeon"
       ],
       "type": "Dungeon",
+      "series": "Legacy",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
-      "currencyType": "symbol",
-      "currencyConfidence": "default_fallback",
-      "tradable": null,
       "sell": 800,
       "buy": 800,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [],
+      "tradable": null,
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🔶 Dungeon Tier 2 Bags of coins DUNGEON PREMIUM 🔶🔶 SELL 800 BUY 800 STOCK Unlimited MAX/USER 99 ROLE None"
     },
     {
       "id": "lots-of-coins",
+      "number": 370,
       "slug": "lots-of-coins",
-      "order": 370,
       "name": "Lots of coins",
       "description": "Tier 2 🔶",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncategorized/Lots_of_coins.png",
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncategorized/Lots_of_coins.png?raw=true",
       "rarity": "dungeon_tier_2",
       "rarityName": "Dungeon Tier 2",
+      "rarityGroup": "dungeon_tier_2",
       "rarityIcon": "🔶",
-      "series": "Legacy",
       "types": [
         "Dungeon"
       ],
       "type": "Dungeon",
+      "series": "Legacy",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
-      "currencyType": "symbol",
-      "currencyConfidence": "default_fallback",
-      "tradable": null,
       "sell": 350,
       "buy": 350,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [],
+      "tradable": null,
+      "tags": [
+        "Limited"
+      ],
       "rawText": "🔶 Dungeon Tier 2 Lots of coins DUNGEON PREMIUM 🔶 SELL 350 BUY 350 STOCK Unlimited MAX/USER 99 ROLE None"
     }
   ]
