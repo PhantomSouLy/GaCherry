@@ -1,54 +1,53 @@
 {
-  "schemaVersion": 1,
-  "count": 8,
+  "schemaVersion": 3,
   "currencies": [
     {
       "id": "default",
       "name": "Default",
       "icon": "$",
-      "sortOrder": 1
+      "type": "symbol"
     },
     {
       "id": "memory_petal",
       "name": "Memory Petal",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/memorypetal.webp",
-      "sortOrder": 3
+      "icon": "./data/Currency/memorypetal.webp",
+      "type": "image"
     },
     {
       "id": "legendary_shard",
       "name": "Legendary Shard",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/legendaryshard.webp",
-      "sortOrder": 4
+      "icon": "./data/Currency/legendaryshard.webp",
+      "type": "image"
     },
     {
       "id": "eternity_shard",
       "name": "Eternity Shard",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/eternityshard.webp",
-      "sortOrder": 5
+      "icon": "./data/Currency/eternityshard.webp",
+      "type": "image"
     },
     {
       "id": "mythical_shard",
       "name": "Mythical Shard",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/mythicalshard.webp",
-      "sortOrder": 6
+      "icon": "./data/Currency/mythicalshard.webp",
+      "type": "image"
     },
     {
       "id": "gold_bar",
       "name": "Gold Bar",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/gold.webp",
-      "sortOrder": 7
+      "icon": "./data/Currency/gold.webp",
+      "type": "image"
     },
     {
       "id": "dungeon_key",
       "name": "Dungeon Key",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/dungeonkey.webp",
-      "sortOrder": 8
+      "icon": "./data/Currency/dungeonkey.webp",
+      "type": "image"
     },
     {
       "id": "echo_bloom",
       "name": "Echo Bloom",
-      "icon": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry/main/data/Currency/echobloom.webp",
-      "sortOrder": 9
+      "icon": "./data/Currency/echobloom.webp",
+      "type": "image"
     }
   ]
 }

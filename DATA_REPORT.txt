@@ -1,0 +1,27 @@
+Total cards: 659
+Rarity counts:
+- Common: 35
+- Uncommon: 37
+- Rare: 98
+- Epic: 140
+- Legendary: 250
+- Relic: 32
+- Mythical: 24
+- Cherished: 37
+- Eternity: 1
+- Dungeon Tier 1: 2
+- Dungeon Tier 2: 2
+- Dungeon Key: 1
+Type counts:
+- Gacha: 469
+- NoDrop: 95
+- Store: 62
+- Dungeon: 33
+Tags:
+- Untradable: 87
+- Limited: 42
+- Bundle: 23
+- Badge: 11
+- Event: 7
+- Craft: 4
+- Dedicated: 3

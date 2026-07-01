@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 3,
+  "rarities": [
+    {
+      "id": "common",
+      "name": "Common",
+      "icon": "🟢",
+      "sortOrder": 1
+    },
+    {
+      "id": "uncommon",
+      "name": "Uncommon",
+      "icon": "⚫",
+      "sortOrder": 2
+    },
+    {
+      "id": "rare",
+      "name": "Rare",
+      "icon": "🔵",
+      "sortOrder": 3
+    },
+    {
+      "id": "epic",
+      "name": "Epic",
+      "icon": "🟣",
+      "sortOrder": 4
+    },
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "icon": "🟠",
+      "sortOrder": 5
+    },
+    {
+      "id": "relic",
+      "name": "Relic",
+      "icon": "🟡",
+      "sortOrder": 6
+    },
+    {
+      "id": "mythical",
+      "name": "Mythical",
+      "icon": "⚪",
+      "sortOrder": 7
+    },
+    {
+      "id": "cherished",
+      "name": "Cherished",
+      "icon": "🌸",
+      "sortOrder": 8
+    },
+    {
+      "id": "eternity",
+      "name": "Eternity",
+      "icon": "🔴",
+      "sortOrder": 9
+    },
+    {
+      "id": "dungeon_tier_1",
+      "name": "Dungeon Tier 1",
+      "icon": "🔸",
+      "sortOrder": 10
+    },
+    {
+      "id": "dungeon_tier_2",
+      "name": "Dungeon Tier 2",
+      "icon": "🔶",
+      "sortOrder": 11
+    },
+    {
+      "id": "dungeon_key",
+      "name": "Dungeon Key",
+      "icon": "🗝️",
+      "sortOrder": 12
+    }
+  ]
+}

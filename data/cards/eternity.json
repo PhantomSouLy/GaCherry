@@ -9,8 +9,9 @@
   "count": 1,
   "cards": [
     {
-      "id": "grandmaster_gacherry_cherry",
+      "id": "grandmaster-gacherry-cherry",
       "slug": "grandmaster-gacherry-cherry",
+      "order": 289,
       "name": "Grandmaster GaCherry Cherry",
       "description": "<:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008>",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Eternity/GMCherry.gif",
@@ -18,12 +19,12 @@
       "rarity": "eternity",
       "rarityName": "Eternity",
       "rarityIcon": "🔴",
+      "series": "Legacy",
       "type": "Gacha",
-      "source": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
-      "currencyConfidence": "default",
+      "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 1,
       "buy": 1,
@@ -31,8 +32,7 @@
       "maxPerUser": 1,
       "role": null,
       "tags": [
-        "Untradable",
-        "Limited"
+        "Untradable"
       ],
       "rawText": "🔴 Eternity Grandmaster GaCherry Cherry GACHA UNTRADABLE PREMIUM <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> <:RedStar:1451296417367851008> SELL 1 BUY 1 STOCK Unlimited MAX/USER 1 ROLE None"
     }

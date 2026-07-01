@@ -9,8 +9,9 @@
   "count": 1,
   "cards": [
     {
-      "id": "dungeon_key",
+      "id": "dungeon-key",
       "slug": "dungeon-key",
+      "order": 221,
       "name": "Dungeon Key",
       "description": "Key",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncategorized/DungeonKey.png",
@@ -18,21 +19,19 @@
       "rarity": "dungeon_key",
       "rarityName": "Dungeon Key",
       "rarityIcon": "🗝️",
+      "series": "Legacy",
       "type": "Dungeon",
-      "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
-      "currencyConfidence": "default",
+      "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
       "buy": 1,
       "stock": "Unlimited",
       "maxPerUser": 50,
       "role": null,
-      "tags": [
-        "Limited"
-      ],
+      "tags": [],
       "rawText": "🗝️ Dungeon Key Dungeon Key GACHA PREMIUM No description provided SELL 1 BUY 1 STOCK Unlimited MAX/USER 50 ROLE None"
     }
   ]

@@ -9,8 +9,9 @@
   "count": 2,
   "cards": [
     {
-      "id": "a_few_coins",
+      "id": "a-few-coins",
       "slug": "a-few-coins",
+      "order": 11,
       "name": "A few coins",
       "description": "Tier 1 🔸🔸",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncategorized/Coins.png",
@@ -18,26 +19,25 @@
       "rarity": "dungeon_tier_1",
       "rarityName": "Dungeon Tier 1",
       "rarityIcon": "🔸",
+      "series": "Legacy",
       "type": "Dungeon",
-      "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
-      "currencyConfidence": "default",
+      "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 150,
       "buy": 150,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [
-        "Limited"
-      ],
+      "tags": [],
       "rawText": "🔸 Dungeon Tier 1 A few coins DUNGEON PREMIUM 🔸🔸 SELL 150 BUY 150 STOCK Unlimited MAX/USER 99 ROLE None"
     },
     {
       "id": "coins",
       "slug": "coins",
+      "order": 161,
       "name": "Coins",
       "description": "Tier 1 🔸",
       "image": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Uncategorized/Coin.png",
@@ -45,21 +45,19 @@
       "rarity": "dungeon_tier_1",
       "rarityName": "Dungeon Tier 1",
       "rarityIcon": "🔸",
+      "series": "Legacy",
       "type": "Dungeon",
-      "source": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
-      "currencyConfidence": "default",
+      "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 50,
       "buy": 50,
       "stock": "Unlimited",
       "maxPerUser": 99,
       "role": null,
-      "tags": [
-        "Limited"
-      ],
+      "tags": [],
       "rawText": "🔸 Dungeon Tier 1 Coins DUNGEON PREMIUM 🔸 SELL 50 BUY 50 STOCK Unlimited MAX/USER 99 ROLE None"
     }
   ]
