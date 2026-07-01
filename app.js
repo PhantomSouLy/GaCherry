@@ -1,779 +1,86 @@
 const CORE_DATA_URL = "./data/cards.json";
 const CARD_DATA_INDEX_URL = "./data/cards/index.json";
+const FALLBACK_CARD_DATA_FILES = ["cherished.json"];
 
-// Ide elég később új sorokat tenni a data/cards/index.json fájlban.
-// Példa: "common.json", "rare.json", "epic.json"
-const FALLBACK_CARD_DATA_FILES = [
-  "cherished.json"
-];
-
-const fallbackRarityOrder = [
-  "Common",
-  "Uncommon",
-  "Rare",
-  "Epic",
-  "Legendary",
-  "Relic",
-  "Cherished",
-  "Mythical",
-  "Eternity",
-  "Unknown"
-];
-
-const rarityIcons = {
-  Common: "✿",
-  Uncommon: "✦",
-  Rare: "✦",
-  Epic: "✦",
-  Legendary: "♛",
-  Relic: "✹",
-  Cherished: "♥",
-  Mythical: "✧",
-  Eternity: "✷",
-  Unknown: "?"
+const RARITY_META = {
+  common:{name:"Common",icon:"🟢",order:10}, common_plus:{name:"Common+",icon:"🟢",order:11},
+  uncommon:{name:"Uncommon",icon:"⚫",order:20}, uncommon_plus:{name:"Uncommon+",icon:"◼️",order:21},
+  rare:{name:"Rare",icon:"🔵",order:30}, rare_plus:{name:"Rare+",icon:"🟦",order:31},
+  epic:{name:"Epic",icon:"🟣",order:40}, epic_plus:{name:"Epic+",icon:"🟪",order:41}, epic_event:{name:"Epic [EVENT]",icon:"🟣",order:42}, epic_limited:{name:"Epic [LIMITED]",icon:"🟣",order:43},
+  legendary:{name:"Legendary",icon:"🟠",order:50}, legendary_plus:{name:"Legendary+",icon:"🟧",order:51}, legendary_bundle:{name:"Legendary [BUNDLE]",icon:"🟠",order:52}, legendary_event:{name:"Legendary [EVENT]",icon:"🟠",order:53}, legendary_limited:{name:"Legendary [LIMITED]",icon:"🟠",order:54}, legendary_pack:{name:"Legendary [PACK]",icon:"🟠",order:55},
+  relic:{name:"Relic",icon:"🟡",order:60}, relic_plus:{name:"Relic+",icon:"🟨",order:61}, relic_event:{name:"Relic [EVENT]",icon:"🟡",order:62}, relic_limited:{name:"Relic [LIMITED]",icon:"🟡",order:63},
+  mythical:{name:"Mythical",icon:"⚪",order:70}, mythical_plus:{name:"Mythical+",icon:"◻️",order:71}, mythical_event:{name:"Mythical [EVENT]",icon:"⚪",order:72}, mythical_limited:{name:"Mythical [LIMITED]",icon:"⚪",order:73}, mythical_special:{name:"Mythical [SPECIAL]",icon:"⚪",order:74},
+  cherished:{name:"Cherished",icon:"🌸",order:80}, eternity:{name:"Eternity",icon:"🔴",order:90},
+  dungeon_tier_1:{name:"Dungeon Tier 1",icon:"🔸",order:100}, dungeon_tier_2:{name:"Dungeon Tier 2",icon:"🔶",order:101}, dungeon_key:{name:"Dungeon Key",icon:"🗝️",order:102},
+  unknown:{name:"Unknown",icon:"?",order:999}
 };
 
-const state = {
-  database: null,
-  cards: [],
-  filtered: [],
-  activePage: "collection",
-  activeTag: "All",
-  activeRarity: "All",
-  activeSource: "All",
-  sort: "id-asc",
-  search: "",
-  currentPage: 1,
-  perPage: 60,
-  compact: false
+const CURRENCY_META = {
+  default:{name:"Default",icon:"🪙"},
+  memory_petal:{name:"Memory Petal",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MemoryPetal.png"},
+  legendary_shard:{name:"Legendary Shard",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/LegendaryShard.png"},
+  eternity_shard:{name:"Eternity Shard",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/EternityShard.png"},
+  definitely_not_mythical_shard:{name:"Definitely Not Mythical Shard",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/DefinitelyNotMythicalShard.png"},
+  mythical_shard:{name:"Mythical Shard",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/MythicalShard.png"},
+  gold_bar:{name:"Gold Bar",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/GoldBar.png"},
+  dungeon_key:{name:"Dungeon Key",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/DungeonKey.png"},
+  echo_bloom:{name:"Echo Bloom",icon:"https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Icons/Currency/EchoBloom.png"},
+  unknown:{name:"Unknown",icon:"❔"}
 };
 
+const state = { database:null, cards:[], filtered:[], activePage:"collection", activeTag:"All", activeRarity:"All", activeSource:"All", sort:"id-asc", search:"", currentPage:1, perPage:60, compact:false };
 const els = {};
 
-function $(id) {
-  return document.getElementById(id);
-}
-
-function setupElements() {
-  [
-    "sideTotal", "sideRarityCount", "sideSourceCount", "resultCount",
-    "totalCardsNumber", "totalProgressBar", "rarityPanelTotal",
-    "rarityStatsGrid", "searchInput", "clearSearchBtn", "raritySelect",
-    "sourceSelect", "sortSelect", "quickFilters", "tagFilters",
-    "cardGallery", "prevPage", "nextPage", "pageNumbers", "perPageSelect",
-    "emptyState", "rarityOverview", "sourceOverview", "gridViewBtn",
-    "compactViewBtn", "cardModal", "closeModal", "modalImage",
-    "modalPlaceholder", "modalId", "modalRarity", "modalSource",
-    "modalTitle", "modalDescription", "modalCategory", "modalSeries",
-    "modalEvent", "modalType", "modalSell", "modalBuy", "modalStock",
-    "modalMaxUser", "modalRole", "modalTags"
-  ].forEach(id => els[id] = $(id));
-}
-
-function rarityClass(rarity) {
-  return String(rarity || "Unknown")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-");
-}
-
-function safeText(value, fallback = "-") {
-  if (value === null || value === undefined || value === "") return fallback;
-  return String(value);
-}
-
-function getAssetBase() {
-  return state.database?.assetBaseUrl || "https://cdn.jsdelivr.net/gh/PhantomSouLy/GaCherry-Assets@main/";
-}
-
-function getImageUrl(card) {
-  if (card.image && /^https?:\/\//i.test(card.image)) return card.image;
-  if (card.asset && /^https?:\/\//i.test(card.asset)) return card.asset;
-  if (card.asset) return getAssetBase() + card.asset;
-  return "";
-}
-
-function getRarityOrder() {
-  const stats = state.database?.statistics?.rarity || {};
-  const fromStats = Object.keys(stats);
-  return fallbackRarityOrder.filter(r => fromStats.includes(r)).concat(
-    fromStats.filter(r => !fallbackRarityOrder.includes(r))
-  );
-}
-
-function getRarityRank(rarity) {
-  return getRarityOrder().indexOf(rarity);
-}
-
-function normalizeSource(value) {
-  const text = String(value || "Unknown").trim();
-  const upper = text.toUpperCase().replace(/\s+/g, "");
-
-  if (upper === "NODROP" || upper === "NODROP") return "NoDrop";
-  if (upper === "STORE") return "Store";
-  if (upper === "GACHA") return "Gacha";
-  if (upper === "DUNGEON") return "Dungeon";
-  if (upper === "CURRENCY") return "Currency";
-  if (upper === "BUNDLE") return "Bundle";
-  if (upper === "MERGE") return "Merge";
-
-  return text;
-}
-
-function normalizeTag(tag) {
-  const text = String(tag || "").trim();
-  const upper = text.toUpperCase().replace(/\s+/g, "");
-
-  if (upper === "NODROP") return "NoDrop";
-  if (upper === "UNTRADABLE") return "Untradable";
-  // Lootium Premium csak dev/internal jelzés, a Collectionben ne jelenjen meg tagként.
-  if (upper === "PREMIUM") return "";
-  if (upper === "LIMITED") return "Limited";
-  if (upper === "EVENT") return "Event";
-
-  return text;
-}
-
-function uniqueTags(tags) {
-  return [...new Set((Array.isArray(tags) ? tags : []).map(normalizeTag).filter(Boolean))];
-}
-
-function normalizeMergeKey(card) {
-  return [card.rarity || "Unknown", card.name || ""].join("|").toLowerCase();
-}
-
-function mergeCardLists(cardGroups) {
-  const merged = [];
-  const indexByKey = new Map();
-
-  cardGroups.forEach(group => {
-    group.forEach(card => {
-      const key = normalizeMergeKey(card);
-
-      if (indexByKey.has(key)) {
-        const existingIndex = indexByKey.get(key);
-        const existing = merged[existingIndex];
-
-        merged[existingIndex] = {
-          ...existing,
-          ...card,
-          // A régi cards.json numerikus ID-ja maradjon meg, hogy a sorrend stabil legyen.
-          id: existing.id ?? card.id,
-          slug: card.slug || existing.slug,
-          category: card.category || existing.category,
-          series: card.series ?? existing.series ?? null,
-          event: card.event ?? existing.event ?? null,
-          tags: uniqueTags([...(existing.tags || []), ...(card.tags || [])])
-        };
-      } else {
-        indexByKey.set(key, merged.length);
-        merged.push(card);
-      }
-    });
-  });
-
-  return merged;
-}
-
-function normalizeCard(card, index) {
-  const source = normalizeSource(card.type || card.source || "Unknown");
-  const tags = uniqueTags(card.tags);
-  const rarityName = card.rarityName || card.rarity || "Unknown";
-  const rarityIcon = card.rarityIcon || rarityIcons[rarityName] || "";
-  const currency = card.currency || "default";
-  const currencyName = card.currencyName || (currency === "default" ? "Default" : currency);
-
-  return {
-    _uid: index + 1,
-    _sortId: typeof card.id === "number" ? card.id : index + 1,
-    id: card.id ?? index + 1,
-    slug: card.slug || "",
-    name: card.name || `Card ${index + 1}`,
-    rarity: card.rarity || "Unknown",
-    rarityName,
-    rarityIcon,
-    source,
-    type: source,
-    category: card.category || "Uncategorized",
-    series: card.series ?? null,
-    event: card.event ?? null,
-    tags,
-    asset: card.asset || "",
-    image: card.image || "",
-    imageOriginal: card.imageOriginal || "",
-    description: card.description || "",
-    currency,
-    currencyName,
-    currencyIcon: card.currencyIcon ?? null,
-    tradable: card.tradable ?? null,
-    sell: card.sell ?? null,
-    buy: card.buy ?? null,
-    stock: card.stock ?? null,
-    maxPerUser: card.maxPerUser ?? null,
-    role: card.role ?? null,
-    rawText: card.rawText || ""
-  };
-}
-
-async function fetchJsonOptional(url) {
-  try {
-    const response = await fetch(url, { cache: "no-store" });
-    if (!response.ok) return null;
-    return await response.json();
-  } catch (error) {
-    console.warn("Nem sikerült betölteni:", url, error);
-    return null;
-  }
-}
-
-async function getExtraCardFiles() {
-  const index = await fetchJsonOptional(CARD_DATA_INDEX_URL);
-  const files = Array.isArray(index?.files) ? index.files : FALLBACK_CARD_DATA_FILES;
-
-  return files
-    .filter(Boolean)
-    .map(file => file.startsWith("./") || file.startsWith("/") || /^https?:\/\//i.test(file)
-      ? file
-      : `./data/cards/${file}`
-    );
-}
-
-function calculateStatistics(cards) {
-  return {
-    rarity: countBy(cards, "rarity"),
-    source: countBy(cards, "source"),
-    raritySource: cards.reduce((acc, card) => {
-      const rarity = card.rarity || "Unknown";
-      const source = card.source || "Unknown";
-      acc[rarity] ??= {};
-      acc[rarity][source] = (acc[rarity][source] || 0) + 1;
-      return acc;
-    }, {})
-  };
-}
-
-async function loadDatabase() {
-  const response = await fetch(CORE_DATA_URL, { cache: "no-store" });
-  if (!response.ok) throw new Error("Nem sikerült betölteni a cards.json fájlt.");
-
-  const database = await response.json();
-  const extraFiles = await getExtraCardFiles();
-  const extraDatabases = (await Promise.all(extraFiles.map(fetchJsonOptional))).filter(Boolean);
-
-  const rawCards = mergeCardLists([
-    database.cards || [],
-    ...extraDatabases.map(db => db.cards || [])
-  ]);
-
-  state.database = {
-    ...database,
-    generatedAt: new Date().toISOString(),
-    totalCards: rawCards.length,
-    loadedFiles: [CORE_DATA_URL, ...extraFiles],
-    statistics: calculateStatistics(rawCards.map((card, index) => normalizeCard(card, index)))
-  };
-
-  state.cards = rawCards.map(normalizeCard);
-  state.filtered = [...state.cards];
-
-  renderAll();
-}
-
-function renderAll() {
-  renderSidebarStats();
-  renderRarityDashboard();
-  renderControls();
-  renderRarityOverview();
-  renderSourceOverview();
-  applyFilters();
-}
-
-function renderSidebarStats() {
-  const rarityCount = Object.keys(state.database?.statistics?.rarity || {}).length;
-  const sourceCount = Object.keys(state.database?.statistics?.source || {}).length;
-
-  els.sideTotal.textContent = state.cards.length;
-  els.sideRarityCount.textContent = rarityCount;
-  els.sideSourceCount.textContent = sourceCount;
-  els.totalCardsNumber.textContent = state.cards.length;
-  els.rarityPanelTotal.textContent = `${state.cards.length} összesen`;
-}
-
-function renderRarityDashboard() {
-  const stats = state.database?.statistics?.rarity || countBy(state.cards, "rarity");
-  const total = state.cards.length || 1;
-
-  els.rarityStatsGrid.innerHTML = getRarityOrder().map(rarity => {
-    const count = stats[rarity] || 0;
-    const pct = Math.round((count / total) * 1000) / 10;
-    return `
-      <button class="rarity-stat" data-rarity="${rarity}" title="${rarity}">
-        <strong><span class="mini-icon ${rarityClass(rarity)}">${rarityIcons[rarity] || "✦"}</span> ${rarity}</strong>
-        <span>${count} / ${total}</span>
-        <b class="rarity-badge ${rarityClass(rarity)}">${pct}%</b>
-      </button>
-    `;
-  }).join("");
-
-  els.rarityStatsGrid.querySelectorAll("[data-rarity]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      state.activeRarity = btn.dataset.rarity;
-      state.currentPage = 1;
-      syncControls();
-      applyFilters();
-    });
-  });
-}
-
-function renderControls() {
-  const rarities = ["All", ...getRarityOrder()];
-  const sources = ["All", ...Object.keys(state.database?.statistics?.source || countBy(state.cards, "source")).sort()];
-  const tags = getAllTags();
-
-  els.raritySelect.innerHTML = rarities.map(r => `<option value="${r}">${r === "All" ? "Rarity (Összes)" : r}</option>`).join("");
-  els.sourceSelect.innerHTML = sources.map(s => `<option value="${s}">${s === "All" ? "Source (Összes)" : s}</option>`).join("");
-
-  els.quickFilters.innerHTML = rarities.map(r => `
-    <button class="filter-chip ${r === "All" ? "active" : ""}" data-rarity="${r}">
-      ${r === "All" ? "Összes" : r}
-    </button>
-  `).join("") + sources.filter(s => s !== "All").map(s => `
-    <button class="filter-chip source-chip" data-source="${s}">
-      ${s}
-    </button>
-  `).join("");
-
-  els.tagFilters.innerHTML = [`<button class="tag-chip active" data-tag="All">Minden tag</button>`]
-    .concat(tags.slice(0, 36).map(tag => `<button class="tag-chip" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`))
-    .join("");
-
-  els.quickFilters.addEventListener("click", event => {
-    const btn = event.target.closest("button");
-    if (!btn) return;
-
-    if (btn.dataset.rarity) {
-      state.activeRarity = btn.dataset.rarity;
-    }
-
-    if (btn.dataset.source) {
-      state.activeSource = state.activeSource === btn.dataset.source ? "All" : btn.dataset.source;
-    }
-
-    state.currentPage = 1;
-    syncControls();
-    applyFilters();
-  });
-
-  els.tagFilters.addEventListener("click", event => {
-    const btn = event.target.closest("button");
-    if (!btn) return;
-
-    state.activeTag = btn.dataset.tag;
-    state.currentPage = 1;
-    syncControls();
-    applyFilters();
-  });
-}
-
-function syncControls() {
-  els.raritySelect.value = state.activeRarity;
-  els.sourceSelect.value = state.activeSource;
-
-  els.quickFilters.querySelectorAll("[data-rarity]").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.rarity === state.activeRarity);
-  });
-
-  els.quickFilters.querySelectorAll("[data-source]").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.source === state.activeSource);
-  });
-
-  els.tagFilters.querySelectorAll("[data-tag]").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.tag === state.activeTag);
-  });
-}
-
-function renderRarityOverview() {
-  const stats = state.database?.statistics?.rarity || countBy(state.cards, "rarity");
-
-  els.rarityOverview.innerHTML = getRarityOrder().map(rarity => `
-    <article class="overview-card">
-      <h3><span class="rarity-badge ${rarityClass(rarity)}">${rarity}</span></h3>
-      <div class="overview-number">${stats[rarity] || 0}</div>
-      <small>kártya ebben a rarityben</small>
-    </article>
-  `).join("");
-}
-
-function renderSourceOverview() {
-  const stats = state.database?.statistics?.source || countBy(state.cards, "source");
-
-  els.sourceOverview.innerHTML = Object.entries(stats)
-    .sort((a, b) => b[1] - a[1])
-    .map(([source, count]) => `
-      <article class="overview-card">
-        <h3><span class="source-badge">${source}</span></h3>
-        <div class="overview-number">${count}</div>
-        <small>kártya ebben a source-ban</small>
-      </article>
-    `).join("");
-}
-
-function getAllTags() {
-  const tags = new Set();
-  state.cards.forEach(card => card.tags.forEach(tag => tags.add(tag)));
-  return [...tags].sort((a, b) => a.localeCompare(b, "hu"));
-}
-
-function countBy(list, key) {
-  return list.reduce((acc, item) => {
-    const value = item[key] || "Unknown";
-    acc[value] = (acc[value] || 0) + 1;
-    return acc;
-  }, {});
-}
-
-function applyFilters() {
-  const search = state.search.trim().toLowerCase();
-
-  let result = state.cards.filter(card => {
-    const matchesRarity = state.activeRarity === "All" || card.rarity === state.activeRarity;
-    const matchesSource = state.activeSource === "All" || card.source === state.activeSource;
-    const matchesTag = state.activeTag === "All" || card.tags.includes(state.activeTag);
-
-    const haystack = [
-      card.name,
-      card.rarity,
-      card.source,
-      card.category,
-      card.series,
-      card.event,
-      card.description,
-      ...card.tags
-    ].filter(Boolean).join(" ").toLowerCase();
-
-    const matchesSearch = !search || haystack.includes(search);
-
-    return matchesRarity && matchesSource && matchesTag && matchesSearch;
-  });
-
-  result.sort(sortCards);
-
-  state.filtered = result;
-  clampPage();
-  renderCards();
-  renderPagination();
-}
-
-function sortCards(a, b) {
-  switch (state.sort) {
-    case "id-desc": return b._sortId - a._sortId;
-    case "name-asc": return a.name.localeCompare(b.name, "hu");
-    case "name-desc": return b.name.localeCompare(a.name, "hu");
-    case "rarity-desc": return getRarityRank(b.rarity) - getRarityRank(a.rarity) || a.name.localeCompare(b.name, "hu");
-    case "rarity-asc": return getRarityRank(a.rarity) - getRarityRank(b.rarity) || a.name.localeCompare(b.name, "hu");
-    case "id-asc":
-    default: return a._sortId - b._sortId;
-  }
-}
-
-function clampPage() {
-  const maxPage = Math.max(1, Math.ceil(state.filtered.length / state.perPage));
-  if (state.currentPage > maxPage) state.currentPage = maxPage;
-  if (state.currentPage < 1) state.currentPage = 1;
-}
-
-function renderCards() {
-  const start = (state.currentPage - 1) * state.perPage;
-  const visible = state.filtered.slice(start, start + state.perPage);
-
-  els.resultCount.textContent = `${state.filtered.length} kártya`;
-  els.emptyState.style.display = visible.length ? "none" : "block";
-  els.cardGallery.classList.toggle("compact", state.compact);
-
-  els.cardGallery.innerHTML = visible.map(card => createCardHTML(card)).join("");
-
-  els.cardGallery.querySelectorAll(".card").forEach(cardEl => {
-    cardEl.addEventListener("click", () => {
-      const uid = Number(cardEl.dataset.uid);
-      openModal(state.cards.find(card => card._uid === uid));
-    });
-  });
-
-  els.cardGallery.querySelectorAll("img[data-src]").forEach(img => {
-    img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
-    img.addEventListener("error", () => {
-      img.alt = "A kép nem tölthető be";
-      img.classList.add("loaded");
-    }, { once: true });
-    img.src = img.dataset.src;
-  });
-}
-
-
-function formatCardId(card) {
-  return typeof card.id === "number" ? `#${String(card.id).padStart(3, "0")}` : String(card.id || "-");
-}
-
-function formatValue(value, fallback = "-") {
-  if (value === null || value === undefined || value === "") return fallback;
-  return String(value);
-}
-
-function formatRarityLabel(card) {
-  const name = card.rarityName || card.rarity || "Unknown";
-  return `${card.rarityIcon ? `${card.rarityIcon} ` : ""}${name}`;
-}
-
-function currencyIconHTML(card) {
-  if (card.currencyIcon && /^https?:\/\//i.test(card.currencyIcon)) {
-    return `<img class="currency-icon" src="${escapeAttr(card.currencyIcon)}" alt="${escapeAttr(card.currencyName || card.currency || "Currency")}">`;
-  }
-
-  if (card.currencyIcon) {
-    return `<span class="currency-emoji">${escapeHtml(card.currencyIcon)}</span>`;
-  }
-
-  if ((card.currency || "default") === "default") {
-    return `<span class="currency-emoji">$</span>`;
-  }
-
-  return "";
-}
-
-function formatCurrencyValue(card, value) {
-  if (value === null || value === undefined || value === "") return "-";
-  return `<span class="currency-value">${currencyIconHTML(card)}<b>${escapeHtml(value)}</b></span>`;
-}
-
-function createCardHTML(card) {
-  const cls = rarityClass(card.rarity);
-  const imageUrl = getImageUrl(card);
-
-  return `
-    <article class="card ${cls}" data-uid="${card._uid}">
-      <div class="image-shell">
-        <div class="placeholder">${escapeHtml(card.rarity)}</div>
-        <img data-src="${escapeAttr(imageUrl)}" alt="${escapeAttr(card.name)}" loading="lazy">
-      </div>
-
-      <div class="card-info">
-        <div class="card-name">${escapeHtml(card.name)}</div>
-        <div class="card-meta">
-          <span class="rarity-badge ${cls}">${escapeHtml(formatRarityLabel(card))}</span>
-          <span class="card-id">${formatCardId(card)}</span>
-        </div>
-      </div>
-    </article>
-  `;
-}
-
-function renderPagination() {
-  const totalPages = Math.max(1, Math.ceil(state.filtered.length / state.perPage));
-
-  els.prevPage.disabled = state.currentPage <= 1;
-  els.nextPage.disabled = state.currentPage >= totalPages;
-
-  const pages = buildPageList(state.currentPage, totalPages);
-  els.pageNumbers.innerHTML = pages.map(page => {
-    if (page === "...") return `<span class="dots">...</span>`;
-    return `<button class="${page === state.currentPage ? "active" : ""}" data-page="${page}">${page}</button>`;
-  }).join("");
-
-  els.pageNumbers.querySelectorAll("[data-page]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      state.currentPage = Number(btn.dataset.page);
-      renderCards();
-      renderPagination();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  });
-}
-
-function buildPageList(current, total) {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-
-  const pages = [1];
-  if (current > 4) pages.push("...");
-
-  const start = Math.max(2, current - 1);
-  const end = Math.min(total - 1, current + 1);
-
-  for (let i = start; i <= end; i++) pages.push(i);
-
-  if (current < total - 3) pages.push("...");
-  pages.push(total);
-
-  return pages;
-}
-
-function openModal(card) {
-  if (!card) return;
-
-  const cls = rarityClass(card.rarity);
-  const imageUrl = getImageUrl(card);
-
-  els.cardModal.classList.add("open");
-  els.cardModal.setAttribute("aria-hidden", "false");
-
-  els.modalImage.classList.remove("loaded");
-  els.modalImage.src = "";
-  els.modalImage.alt = card.name;
-
-  els.modalPlaceholder.className = `modal-placeholder ${cls}`;
-  els.modalImage.onload = () => els.modalImage.classList.add("loaded");
-  els.modalImage.src = imageUrl;
-
-  els.modalId.textContent = formatCardId(card);
-  els.modalRarity.className = `rarity-badge ${cls}`;
-  els.modalRarity.textContent = formatRarityLabel(card);
-  els.modalSource.textContent = card.source;
-
-  els.modalTitle.textContent = card.name;
-  els.modalDescription.textContent = card.description || "Nincs külön leírás megadva.";
-  els.modalCategory.textContent = safeText(card.category);
-  els.modalSeries.textContent = safeText(card.series);
-  els.modalEvent.textContent = safeText(card.event);
-  if (els.modalType) els.modalType.textContent = safeText(card.type || card.source);
-  if (els.modalSell) els.modalSell.innerHTML = formatCurrencyValue(card, card.sell);
-  if (els.modalBuy) els.modalBuy.innerHTML = formatCurrencyValue(card, card.buy);
-  if (els.modalStock) els.modalStock.textContent = formatValue(card.stock);
-  if (els.modalMaxUser) els.modalMaxUser.textContent = formatValue(card.maxPerUser);
-  if (els.modalRole) els.modalRole.textContent = formatValue(card.role);
-
-  els.modalTags.innerHTML = card.tags.length
-    ? card.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")
-    : `<span>Nincs tag</span>`;
-}
-
-function closeModal() {
-  els.cardModal.classList.remove("open");
-  els.cardModal.setAttribute("aria-hidden", "true");
-}
-
-function showPage(pageId) {
-  state.activePage = pageId;
-
-  document.querySelectorAll(".page").forEach(page => page.classList.remove("active"));
-  document.getElementById(pageId)?.classList.add("active");
-
-  document.querySelectorAll("[data-page]").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.page === pageId);
-  });
-
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function escapeAttr(value) {
-  return escapeHtml(value).replaceAll("`", "&#096;");
-}
-
-function bindEvents() {
-  document.querySelectorAll("[data-page]").forEach(btn => {
-    btn.addEventListener("click", () => showPage(btn.dataset.page));
-  });
-
-  els.searchInput.addEventListener("input", () => {
-    state.search = els.searchInput.value;
-    state.currentPage = 1;
-    applyFilters();
-  });
-
-  els.clearSearchBtn.addEventListener("click", () => {
-    els.searchInput.value = "";
-    state.search = "";
-    state.currentPage = 1;
-    applyFilters();
-  });
-
-  els.raritySelect.addEventListener("change", () => {
-    state.activeRarity = els.raritySelect.value;
-    state.currentPage = 1;
-    syncControls();
-    applyFilters();
-  });
-
-  els.sourceSelect.addEventListener("change", () => {
-    state.activeSource = els.sourceSelect.value;
-    state.currentPage = 1;
-    syncControls();
-    applyFilters();
-  });
-
-  els.sortSelect.addEventListener("change", () => {
-    state.sort = els.sortSelect.value;
-    applyFilters();
-  });
-
-  els.perPageSelect.addEventListener("change", () => {
-    state.perPage = Number(els.perPageSelect.value);
-    state.currentPage = 1;
-    applyFilters();
-  });
-
-  els.prevPage.addEventListener("click", () => {
-    state.currentPage -= 1;
-    clampPage();
-    renderCards();
-    renderPagination();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  els.nextPage.addEventListener("click", () => {
-    state.currentPage += 1;
-    clampPage();
-    renderCards();
-    renderPagination();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  els.gridViewBtn.addEventListener("click", () => {
-    state.compact = false;
-    els.gridViewBtn.classList.add("active");
-    els.compactViewBtn.classList.remove("active");
-    renderCards();
-  });
-
-  els.compactViewBtn.addEventListener("click", () => {
-    state.compact = true;
-    els.compactViewBtn.classList.add("active");
-    els.gridViewBtn.classList.remove("active");
-    renderCards();
-  });
-
-  els.closeModal.addEventListener("click", closeModal);
-  els.cardModal.addEventListener("click", event => {
-    if (event.target.classList.contains("modal-backdrop")) closeModal();
-  });
-
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape") closeModal();
-  });
-}
-
-async function init() {
-  setupElements();
-  bindEvents();
-
-  try {
-    await loadDatabase();
-  } catch (error) {
-    console.error(error);
-    els.resultCount.textContent = "Nem sikerült betölteni az adatbázist.";
-    els.cardGallery.innerHTML = `
-      <article class="guide-card">
-        <h3>Hiba</h3>
-        <p>${escapeHtml(error.message)}</p>
-      </article>
-    `;
-  }
-}
-
+function $(id){ return document.getElementById(id); }
+function setupElements(){ ["sideTotal","sideRarityCount","sideSourceCount","resultCount","totalCardsNumber","totalProgressBar","rarityPanelTotal","rarityStatsGrid","searchInput","clearSearchBtn","raritySelect","sourceSelect","sortSelect","quickFilters","tagFilters","cardGallery","prevPage","nextPage","pageNumbers","perPageSelect","emptyState","rarityOverview","sourceOverview","gridViewBtn","compactViewBtn","cardModal","closeModal","modalImage","modalPlaceholder","modalId","modalRarity","modalSource","modalTitle","modalDescription","modalCategory","modalSeries","modalEvent","modalType","modalSell","modalBuy","modalStock","modalMaxUser","modalRole","modalTags"].forEach(id=>els[id]=$(id)); }
+function injectRuntimeCss(){ const s=document.createElement("style"); s.textContent=`.image-shell{background:#050811}.card img{object-fit:contain!important;background:transparent!important}.modal-image-wrap{background:transparent!important;display:grid;place-items:center}#modalImage{object-fit:contain!important;background:transparent!important}.currency-value{display:inline-flex;align-items:center;justify-content:flex-end;gap:6px;white-space:nowrap}.currency-value b{font:inherit;font-weight:800}.currency-icon{width:18px;height:18px;object-fit:contain;border-radius:50%;vertical-align:middle}.currency-emoji{display:inline-flex;align-items:center;justify-content:center;min-width:18px;font-weight:900;color:#ffd36b}`; document.head.appendChild(s); }
+
+function normalizeKey(v){ return String(v||"").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\+/g," plus ").replace(/\[(.*?)\]/g," $1 ").replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,""); }
+function normalizeRarityId(v,f="unknown"){ if(!v) return f; const raw=String(v).trim(); const direct=normalizeKey(raw); if(RARITY_META[direct]) return direct; const found=Object.entries(RARITY_META).find(([,m])=>m.name.toLowerCase()===raw.toLowerCase()); return found ? found[0] : (direct||f); }
+function normalizeCurrencyId(v,f="default"){ if(!v) return f; const raw=String(v).trim(); const direct=normalizeKey(raw); if(CURRENCY_META[direct]) return direct; const found=Object.entries(CURRENCY_META).find(([,m])=>m.name.toLowerCase()===raw.toLowerCase()); return found ? found[0] : (direct||f); }
+function getRarityLabel(r){ const id=normalizeRarityId(r); return RARITY_META[id]?.name || safeText(r); }
+function getRarityIcon(r){ const id=normalizeRarityId(r); return RARITY_META[id]?.icon || "✦"; }
+function rarityClass(r){ const id=normalizeRarityId(r); if(id.includes("uncommon"))return"uncommon"; if(id.includes("common"))return"common"; if(id.includes("rare"))return"rare"; if(id.includes("epic"))return"epic"; if(id.includes("legendary"))return"legendary"; if(id.includes("relic"))return"relic"; if(id.includes("mythical"))return"mythical"; if(id.includes("cherished"))return"cherished"; if(id.includes("eternity"))return"eternity"; return"unknown"; }
+function safeText(v,f="-"){ return v===null||v===undefined||v==="" ? f : String(v); }
+function getAssetBase(){ return state.database?.assetBaseUrl || "https://cdn.jsdelivr.net/gh/PhantomSouLy/GaCherry-Assets@main/"; }
+function getImageUrl(card){ if(card.image&&/^https?:\/\//i.test(card.image))return card.image; if(card.asset&&/^https?:\/\//i.test(card.asset))return card.asset; if(card.asset)return getAssetBase()+card.asset; return""; }
+function normalizeSource(v){ const t=String(v||"Unknown").trim(); const u=t.toUpperCase().replace(/\s+/g,""); if(u==="NODROP")return"NoDrop"; if(u==="STORE")return"Store"; if(u==="GACHA")return"Gacha"; if(u==="DUNGEON")return"Dungeon"; if(u==="CURRENCY")return"Currency"; if(u==="BUNDLE")return"Bundle"; if(u==="MERGE")return"Merge"; return t||"Unknown"; }
+function normalizeTag(tag){ const t=String(tag||"").trim(); const u=t.toUpperCase().replace(/\s+/g,""); if(!t||u==="PREMIUM")return""; if(u==="NODROP")return"NoDrop"; if(u==="UNTRADABLE")return"Untradable"; if(u==="LIMITED")return"Limited"; if(u==="EVENT")return"Event"; if(u==="BUNDLE"||u==="BUNDLES")return"Bundle"; if(u==="DEDICATED")return"Dedicated"; return t; }
+function uniqueTags(tags){ return [...new Set((Array.isArray(tags)?tags:[]).map(normalizeTag).filter(Boolean))]; }
+function normalizeMergeKey(card){ return [normalizeRarityId(card.rarity||card.rarityName), card.name||""].join("|").toLowerCase(); }
+
+function mergeCardLists(groups){ const merged=[], map=new Map(); groups.forEach(group=>group.forEach(card=>{ const key=normalizeMergeKey(card); if(map.has(key)){ const i=map.get(key), old=merged[i]; merged[i]={...old,...card,id:old.id??card.id,slug:card.slug||old.slug,category:card.category||old.category,series:card.series??old.series??null,event:card.event??old.event??null,tags:uniqueTags([...(old.tags||[]),...(card.tags||[])])}; } else { map.set(key,merged.length); merged.push(card); } })); return merged; }
+function normalizeCard(card,index){ const rid=normalizeRarityId(card.rarity||card.rarityName); const rmeta=RARITY_META[rid]||{}; const cid=normalizeCurrencyId(card.currency||card.currencyName); const cmeta=CURRENCY_META[cid]||{}; const source=normalizeSource(card.type||card.source||"Unknown"); return {_uid:index+1,_sortId:typeof card.id==="number"?card.id:index+1,id:card.id??index+1,slug:card.slug||"",name:card.name||`Card ${index+1}`,rarity:rid,rarityName:card.rarityName||rmeta.name||safeText(rid),rarityIcon:card.rarityIcon||rmeta.icon||"",source,type:source,category:card.category||"Uncategorized",series:card.series??null,event:card.event??null,tags:uniqueTags(card.tags),asset:card.asset||"",image:card.image||"",imageOriginal:card.imageOriginal||"",description:card.description||"",currency:cid,currencyName:card.currencyName||cmeta.name||safeText(cid),currencyIcon:card.currencyIcon??cmeta.icon??null,currencyConfidence:card.currencyConfidence||"unknown",tradable:card.tradable??null,sell:card.sell??null,buy:card.buy??null,stock:card.stock??null,maxPerUser:card.maxPerUser??null,role:card.role??null,rawText:card.rawText||""}; }
+async function fetchJsonOptional(url){ try{ const r=await fetch(url,{cache:"no-store"}); return r.ok ? await r.json() : null; } catch(e){ console.warn("Nem sikerült betölteni:",url,e); return null; } }
+async function getExtraCardFiles(){ const idx=await fetchJsonOptional(CARD_DATA_INDEX_URL); const files=Array.isArray(idx?.files)?idx.files:FALLBACK_CARD_DATA_FILES; return files.filter(Boolean).map(f=>f.startsWith("./")||f.startsWith("/")||/^https?:\/\//i.test(f)?f:`./data/cards/${f}`); }
+function countBy(list,key){ return list.reduce((a,it)=>{ const v=it[key]||"unknown"; a[v]=(a[v]||0)+1; return a; },{}); }
+function calculateStatistics(cards){ return {rarity:countBy(cards,"rarity"), source:countBy(cards,"source"), raritySource:cards.reduce((a,c)=>{ const r=c.rarity||"unknown",s=c.source||"Unknown"; a[r]??={}; a[r][s]=(a[r][s]||0)+1; return a;},{})}; }
+async function loadDatabase(){ const r=await fetch(CORE_DATA_URL,{cache:"no-store"}); if(!r.ok)throw new Error("Nem sikerült betölteni a cards.json fájlt."); const db=await r.json(); const extraFiles=await getExtraCardFiles(); const extraDbs=(await Promise.all(extraFiles.map(fetchJsonOptional))).filter(Boolean); const raw=mergeCardLists([db.cards||[],...extraDbs.map(d=>d.cards||[])]); const normalized=raw.map(normalizeCard); state.database={...db,generatedAt:new Date().toISOString(),totalCards:normalized.length,loadedFiles:[CORE_DATA_URL,...extraFiles],statistics:calculateStatistics(normalized)}; state.cards=normalized; state.filtered=[...state.cards]; renderAll(); }
+function getRarityOrder(){ const stats=state.database?.statistics?.rarity||{}; return Object.keys(stats).sort((a,b)=>(RARITY_META[a]?.order??999)-(RARITY_META[b]?.order??999)||getRarityLabel(a).localeCompare(getRarityLabel(b),"hu")); }
+function getRarityRank(r){ const i=getRarityOrder().indexOf(normalizeRarityId(r)); return i===-1?9999:i; }
+function renderAll(){ renderSidebarStats(); renderRarityDashboard(); renderControls(); renderRarityOverview(); renderSourceOverview(); applyFilters(); }
+function renderSidebarStats(){ const rc=Object.keys(state.database?.statistics?.rarity||{}).length, sc=Object.keys(state.database?.statistics?.source||{}).length; els.sideTotal.textContent=state.cards.length; els.sideRarityCount.textContent=rc; els.sideSourceCount.textContent=sc; els.totalCardsNumber.textContent=state.cards.length; els.rarityPanelTotal.textContent=`${state.cards.length} összesen`; }
+function renderRarityDashboard(){ const stats=state.database?.statistics?.rarity||countBy(state.cards,"rarity"), total=state.cards.length||1; els.rarityStatsGrid.innerHTML=getRarityOrder().map(r=>{ const count=stats[r]||0,pct=Math.round(count/total*1000)/10,cls=rarityClass(r); return `<button class="rarity-stat" data-rarity="${escapeAttr(r)}" title="${escapeAttr(getRarityLabel(r))}"><strong><span class="mini-icon ${cls}">${escapeHtml(getRarityIcon(r))}</span> ${escapeHtml(getRarityLabel(r))}</strong><span>${count} / ${total}</span><b class="rarity-badge ${cls}">${pct}%</b></button>`; }).join(""); els.rarityStatsGrid.querySelectorAll("[data-rarity]").forEach(btn=>btn.addEventListener("click",()=>{state.activeRarity=btn.dataset.rarity;state.currentPage=1;syncControls();applyFilters();})); }
+function renderControls(){ const rarities=["All",...getRarityOrder()], sources=["All",...Object.keys(state.database?.statistics?.source||countBy(state.cards,"source")).sort()], tags=getAllTags(); els.raritySelect.innerHTML=rarities.map(r=>`<option value="${escapeAttr(r)}">${r==="All"?"Rarity (Összes)":escapeHtml(getRarityLabel(r))}</option>`).join(""); els.sourceSelect.innerHTML=sources.map(s=>`<option value="${escapeAttr(s)}">${s==="All"?"Source (Összes)":escapeHtml(s)}</option>`).join(""); els.quickFilters.innerHTML=rarities.map(r=>`<button class="filter-chip ${r==="All"?"active":""}" data-rarity="${escapeAttr(r)}">${r==="All"?"Összes":`${escapeHtml(getRarityIcon(r))} ${escapeHtml(getRarityLabel(r))}`}</button>`).join("")+sources.filter(s=>s!=="All").map(s=>`<button class="filter-chip source-chip" data-source="${escapeAttr(s)}">${escapeHtml(s)}</button>`).join(""); els.tagFilters.innerHTML=[`<button class="tag-chip active" data-tag="All">Minden tag</button>`].concat(tags.slice(0,36).map(t=>`<button class="tag-chip" data-tag="${escapeAttr(t)}">${escapeHtml(t)}</button>`)).join(""); els.quickFilters.addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b)return; if(b.dataset.rarity)state.activeRarity=b.dataset.rarity; if(b.dataset.source)state.activeSource=state.activeSource===b.dataset.source?"All":b.dataset.source; state.currentPage=1; syncControls(); applyFilters(); }); els.tagFilters.addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b)return; state.activeTag=b.dataset.tag; state.currentPage=1; syncControls(); applyFilters(); }); }
+function syncControls(){ els.raritySelect.value=state.activeRarity; els.sourceSelect.value=state.activeSource; els.quickFilters.querySelectorAll("[data-rarity]").forEach(b=>b.classList.toggle("active",b.dataset.rarity===state.activeRarity)); els.quickFilters.querySelectorAll("[data-source]").forEach(b=>b.classList.toggle("active",b.dataset.source===state.activeSource)); els.tagFilters.querySelectorAll("[data-tag]").forEach(b=>b.classList.toggle("active",b.dataset.tag===state.activeTag)); }
+function renderRarityOverview(){ const stats=state.database?.statistics?.rarity||countBy(state.cards,"rarity"); els.rarityOverview.innerHTML=getRarityOrder().map(r=>`<article class="overview-card"><h3><span class="rarity-badge ${rarityClass(r)}">${escapeHtml(getRarityIcon(r))} ${escapeHtml(getRarityLabel(r))}</span></h3><div class="overview-number">${stats[r]||0}</div><small>kártya ebben a rarityben</small></article>`).join(""); }
+function renderSourceOverview(){ const stats=state.database?.statistics?.source||countBy(state.cards,"source"); els.sourceOverview.innerHTML=Object.entries(stats).sort((a,b)=>b[1]-a[1]).map(([s,c])=>`<article class="overview-card"><h3><span class="source-badge">${escapeHtml(s)}</span></h3><div class="overview-number">${c}</div><small>kártya ebben a source-ban</small></article>`).join(""); }
+function getAllTags(){ const tags=new Set(); state.cards.forEach(c=>c.tags.forEach(t=>tags.add(t))); return [...tags].sort((a,b)=>a.localeCompare(b,"hu")); }
+function applyFilters(){ const search=state.search.trim().toLowerCase(); let res=state.cards.filter(c=>{ const mr=state.activeRarity==="All"||c.rarity===state.activeRarity, ms=state.activeSource==="All"||c.source===state.activeSource, mt=state.activeTag==="All"||c.tags.includes(state.activeTag); const hay=[c.name,c.rarity,c.rarityName,c.source,c.type,c.currency,c.currencyName,c.category,c.series,c.event,c.description,...c.tags].filter(Boolean).join(" ").toLowerCase(); return mr&&ms&&mt&&(!search||hay.includes(search)); }); res.sort(sortCards); state.filtered=res; clampPage(); renderCards(); renderPagination(); }
+function sortCards(a,b){ switch(state.sort){ case"id-desc":return b._sortId-a._sortId; case"name-asc":return a.name.localeCompare(b.name,"hu"); case"name-desc":return b.name.localeCompare(a.name,"hu"); case"rarity-desc":return getRarityRank(b.rarity)-getRarityRank(a.rarity)||a.name.localeCompare(b.name,"hu"); case"rarity-asc":return getRarityRank(a.rarity)-getRarityRank(b.rarity)||a.name.localeCompare(b.name,"hu"); default:return a._sortId-b._sortId; } }
+function clampPage(){ const max=Math.max(1,Math.ceil(state.filtered.length/state.perPage)); if(state.currentPage>max)state.currentPage=max; if(state.currentPage<1)state.currentPage=1; }
+function renderCards(){ const start=(state.currentPage-1)*state.perPage, visible=state.filtered.slice(start,start+state.perPage); els.resultCount.textContent=`${state.filtered.length} kártya`; els.emptyState.style.display=visible.length?"none":"block"; els.cardGallery.classList.toggle("compact",state.compact); els.cardGallery.innerHTML=visible.map(createCardHTML).join(""); els.cardGallery.querySelectorAll(".card").forEach(el=>el.addEventListener("click",()=>openModal(state.cards.find(c=>c._uid===Number(el.dataset.uid))))); els.cardGallery.querySelectorAll("img[data-src]").forEach(img=>{ img.addEventListener("load",()=>img.classList.add("loaded"),{once:true}); img.addEventListener("error",()=>{img.alt="A kép nem tölthető be";img.classList.add("loaded")},{once:true}); img.src=img.dataset.src; }); }
+function formatCardId(card){ return typeof card.id==="number"?`#${String(card.id).padStart(3,"0")}`:String(card.id||"-"); }
+function formatValue(v,f="-"){ return v===null||v===undefined||v===""?f:String(v); }
+function formatCurrencyValue(value,card){ if(value===null||value===undefined||value==="")return"-"; const icon=card.currencyIcon,name=card.currencyName||"Default",val=`<b>${escapeHtml(value)}</b>`; if(!icon)return val; if(/^https?:\/\//i.test(icon))return `<span class="currency-value" title="${escapeAttr(name)}"><img class="currency-icon" src="${escapeAttr(icon)}" alt="${escapeAttr(name)}"> ${val}</span>`; return `<span class="currency-value" title="${escapeAttr(name)}"><span class="currency-emoji">${escapeHtml(icon)}</span> ${val}</span>`; }
+function createCardHTML(card){ const cls=rarityClass(card.rarity), img=getImageUrl(card), label=`${card.rarityIcon?card.rarityIcon+" ":""}${card.rarityName||getRarityLabel(card.rarity)}`; return `<article class="card ${cls}" data-uid="${card._uid}"><div class="image-shell"><div class="placeholder">${escapeHtml(card.rarityName||getRarityLabel(card.rarity))}</div><img data-src="${escapeAttr(img)}" alt="${escapeAttr(card.name)}" loading="lazy"></div><div class="card-info"><div class="card-name">${escapeHtml(card.name)}</div><div class="card-meta"><span class="rarity-badge ${cls}">${escapeHtml(label)}</span><span class="card-id">${formatCardId(card)}</span></div></div></article>`; }
+function renderPagination(){ const total=Math.max(1,Math.ceil(state.filtered.length/state.perPage)); els.prevPage.disabled=state.currentPage<=1; els.nextPage.disabled=state.currentPage>=total; const pages=buildPageList(state.currentPage,total); els.pageNumbers.innerHTML=pages.map(p=>p==="..."?`<span class="dots">...</span>`:`<button class="${p===state.currentPage?"active":""}" data-page="${p}">${p}</button>`).join(""); els.pageNumbers.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>{state.currentPage=Number(b.dataset.page);renderCards();renderPagination();window.scrollTo({top:0,behavior:"smooth"});})); }
+function buildPageList(current,total){ if(total<=7)return Array.from({length:total},(_,i)=>i+1); const p=[1]; if(current>4)p.push("..."); for(let i=Math.max(2,current-1);i<=Math.min(total-1,current+1);i++)p.push(i); if(current<total-3)p.push("..."); p.push(total); return p; }
+function openModal(card){ if(!card)return; const cls=rarityClass(card.rarity), img=getImageUrl(card), label=`${card.rarityIcon?card.rarityIcon+" ":""}${card.rarityName||getRarityLabel(card.rarity)}`; els.cardModal.classList.add("open"); els.cardModal.setAttribute("aria-hidden","false"); els.modalImage.classList.remove("loaded"); els.modalImage.src=""; els.modalImage.alt=card.name; els.modalPlaceholder.className=`modal-placeholder ${cls}`; els.modalImage.onload=()=>els.modalImage.classList.add("loaded"); els.modalImage.src=img; els.modalId.textContent=formatCardId(card); els.modalRarity.className=`rarity-badge ${cls}`; els.modalRarity.textContent=label; els.modalSource.textContent=card.source; els.modalTitle.textContent=card.name; els.modalDescription.textContent=card.description||"Nincs külön leírás megadva."; els.modalCategory.textContent=safeText(card.category); els.modalSeries.textContent=safeText(card.series); els.modalEvent.textContent=safeText(card.event); if(els.modalType)els.modalType.textContent=safeText(card.type||card.source); if(els.modalSell)els.modalSell.innerHTML=formatCurrencyValue(card.sell,card); if(els.modalBuy)els.modalBuy.innerHTML=formatCurrencyValue(card.buy,card); if(els.modalStock)els.modalStock.textContent=formatValue(card.stock); if(els.modalMaxUser)els.modalMaxUser.textContent=formatValue(card.maxPerUser); if(els.modalRole)els.modalRole.textContent=formatValue(card.role); els.modalTags.innerHTML=card.tags.length?card.tags.map(t=>`<span>${escapeHtml(t)}</span>`).join(""):`<span>Nincs tag</span>`; }
+function closeModal(){ els.cardModal.classList.remove("open"); els.cardModal.setAttribute("aria-hidden","true"); }
+function showPage(id){ state.activePage=id; document.querySelectorAll(".page").forEach(p=>p.classList.remove("active")); document.getElementById(id)?.classList.add("active"); document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===id)); window.scrollTo({top:0,behavior:"smooth"}); }
+function escapeHtml(v){ return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
+function escapeAttr(v){ return escapeHtml(v).replaceAll("`","&#096;"); }
+function bindEvents(){ document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page))); els.searchInput.addEventListener("input",()=>{state.search=els.searchInput.value;state.currentPage=1;applyFilters();}); els.clearSearchBtn.addEventListener("click",()=>{els.searchInput.value="";state.search="";state.currentPage=1;applyFilters();}); els.raritySelect.addEventListener("change",()=>{state.activeRarity=els.raritySelect.value;state.currentPage=1;syncControls();applyFilters();}); els.sourceSelect.addEventListener("change",()=>{state.activeSource=els.sourceSelect.value;state.currentPage=1;syncControls();applyFilters();}); els.sortSelect.addEventListener("change",()=>{state.sort=els.sortSelect.value;applyFilters();}); els.perPageSelect.addEventListener("change",()=>{state.perPage=Number(els.perPageSelect.value);state.currentPage=1;applyFilters();}); els.prevPage.addEventListener("click",()=>{state.currentPage--;clampPage();renderCards();renderPagination();window.scrollTo({top:0,behavior:"smooth"});}); els.nextPage.addEventListener("click",()=>{state.currentPage++;clampPage();renderCards();renderPagination();window.scrollTo({top:0,behavior:"smooth"});}); els.gridViewBtn.addEventListener("click",()=>{state.compact=false;els.gridViewBtn.classList.add("active");els.compactViewBtn.classList.remove("active");renderCards();}); els.compactViewBtn.addEventListener("click",()=>{state.compact=true;els.compactViewBtn.classList.add("active");els.gridViewBtn.classList.remove("active");renderCards();}); els.closeModal.addEventListener("click",closeModal); els.cardModal.addEventListener("click",e=>{if(e.target.classList.contains("modal-backdrop"))closeModal();}); document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();}); }
+async function init(){ setupElements(); injectRuntimeCss(); bindEvents(); try{ await loadDatabase(); }catch(e){ console.error(e); els.resultCount.textContent="Nem sikerült betölteni az adatbázist."; els.cardGallery.innerHTML=`<article class="guide-card"><h3>Hiba</h3><p>${escapeHtml(e.message)}</p></article>`; } }
 init();
