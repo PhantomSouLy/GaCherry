@@ -795,3 +795,30 @@ select option{background:#111827}
   .card-gallery,
   .card-gallery.compact{grid-template-columns:1fr}
 }
+
+.currency-value{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:6px;
+  white-space:nowrap;
+}
+.currency-value b{
+  font:inherit;
+  font-weight:800;
+}
+.currency-icon{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  border-radius:50%;
+  vertical-align:middle;
+}
+.currency-emoji{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:18px;
+  font-weight:900;
+  color:#ffd36b;
+}

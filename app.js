@@ -125,7 +125,8 @@ function normalizeTag(tag) {
 
   if (upper === "NODROP") return "NoDrop";
   if (upper === "UNTRADABLE") return "Untradable";
-  if (upper === "PREMIUM") return "Premium";
+  // Lootium Premium csak dev/internal jelzés, a Collectionben ne jelenjen meg tagként.
+  if (upper === "PREMIUM") return "";
   if (upper === "LIMITED") return "Limited";
   if (upper === "EVENT") return "Event";
 
@@ -176,6 +177,10 @@ function mergeCardLists(cardGroups) {
 function normalizeCard(card, index) {
   const source = normalizeSource(card.type || card.source || "Unknown");
   const tags = uniqueTags(card.tags);
+  const rarityName = card.rarityName || card.rarity || "Unknown";
+  const rarityIcon = card.rarityIcon || rarityIcons[rarityName] || "";
+  const currency = card.currency || "default";
+  const currencyName = card.currencyName || (currency === "default" ? "Default" : currency);
 
   return {
     _uid: index + 1,
@@ -184,6 +189,8 @@ function normalizeCard(card, index) {
     slug: card.slug || "",
     name: card.name || `Card ${index + 1}`,
     rarity: card.rarity || "Unknown",
+    rarityName,
+    rarityIcon,
     source,
     type: source,
     category: card.category || "Uncategorized",
@@ -194,6 +201,9 @@ function normalizeCard(card, index) {
     image: card.image || "",
     imageOriginal: card.imageOriginal || "",
     description: card.description || "",
+    currency,
+    currencyName,
+    currencyIcon: card.currencyIcon ?? null,
     tradable: card.tradable ?? null,
     sell: card.sell ?? null,
     buy: card.buy ?? null,
@@ -508,6 +518,32 @@ function formatValue(value, fallback = "-") {
   return String(value);
 }
 
+function formatRarityLabel(card) {
+  const name = card.rarityName || card.rarity || "Unknown";
+  return `${card.rarityIcon ? `${card.rarityIcon} ` : ""}${name}`;
+}
+
+function currencyIconHTML(card) {
+  if (card.currencyIcon && /^https?:\/\//i.test(card.currencyIcon)) {
+    return `<img class="currency-icon" src="${escapeAttr(card.currencyIcon)}" alt="${escapeAttr(card.currencyName || card.currency || "Currency")}">`;
+  }
+
+  if (card.currencyIcon) {
+    return `<span class="currency-emoji">${escapeHtml(card.currencyIcon)}</span>`;
+  }
+
+  if ((card.currency || "default") === "default") {
+    return `<span class="currency-emoji">$</span>`;
+  }
+
+  return "";
+}
+
+function formatCurrencyValue(card, value) {
+  if (value === null || value === undefined || value === "") return "-";
+  return `<span class="currency-value">${currencyIconHTML(card)}<b>${escapeHtml(value)}</b></span>`;
+}
+
 function createCardHTML(card) {
   const cls = rarityClass(card.rarity);
   const imageUrl = getImageUrl(card);
@@ -522,7 +558,7 @@ function createCardHTML(card) {
       <div class="card-info">
         <div class="card-name">${escapeHtml(card.name)}</div>
         <div class="card-meta">
-          <span class="rarity-badge ${cls}">${escapeHtml(card.rarity)}</span>
+          <span class="rarity-badge ${cls}">${escapeHtml(formatRarityLabel(card))}</span>
           <span class="card-id">${formatCardId(card)}</span>
         </div>
       </div>
@@ -588,7 +624,7 @@ function openModal(card) {
 
   els.modalId.textContent = formatCardId(card);
   els.modalRarity.className = `rarity-badge ${cls}`;
-  els.modalRarity.textContent = card.rarity;
+  els.modalRarity.textContent = formatRarityLabel(card);
   els.modalSource.textContent = card.source;
 
   els.modalTitle.textContent = card.name;
@@ -597,8 +633,8 @@ function openModal(card) {
   els.modalSeries.textContent = safeText(card.series);
   els.modalEvent.textContent = safeText(card.event);
   if (els.modalType) els.modalType.textContent = safeText(card.type || card.source);
-  if (els.modalSell) els.modalSell.textContent = formatValue(card.sell);
-  if (els.modalBuy) els.modalBuy.textContent = formatValue(card.buy);
+  if (els.modalSell) els.modalSell.innerHTML = formatCurrencyValue(card, card.sell);
+  if (els.modalBuy) els.modalBuy.innerHTML = formatCurrencyValue(card, card.buy);
   if (els.modalStock) els.modalStock.textContent = formatValue(card.stock);
   if (els.modalMaxUser) els.modalMaxUser.textContent = formatValue(card.maxPerUser);
   if (els.modalRole) els.modalRole.textContent = formatValue(card.role);
