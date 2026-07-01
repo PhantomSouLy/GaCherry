@@ -1,8 +1,8 @@
 {
   "files": [
-    "cherished.json"
-    "relic.json"
-    "uncommon.json"
+    "cherished.json",
+    "relic.json",
+    "uncommon.json",
     "uncommon+.json"
   ]
 }
