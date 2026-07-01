@@ -1,4 +1,5 @@
 Total cards: 659
+Input file: GaCherryALLCard(1).json
 Rarity counts:
 - Common: 35
 - Uncommon: 37
@@ -12,10 +13,10 @@ Rarity counts:
 - Dungeon Tier 1: 2
 - Dungeon Tier 2: 2
 - Dungeon Key: 1
-Type counts:
-- Gacha: 469
+Type counts (multi-type cards counted in each type):
+- Gacha: 489
 - NoDrop: 95
-- Store: 62
+- Store: 63
 - Dungeon: 33
 Tags:
 - Untradable: 87

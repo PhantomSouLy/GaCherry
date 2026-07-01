@@ -1,6 +1,6 @@
 {
   "exportedAt": "2026-07-01T19:38:32.276Z",
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "source": "Lootium",
   "rarityFilter": {
     "id": "dungeon_tier_1",
@@ -20,10 +20,14 @@
       "rarityName": "Dungeon Tier 1",
       "rarityIcon": "🔸",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 150,
@@ -46,10 +50,14 @@
       "rarityName": "Dungeon Tier 1",
       "rarityIcon": "🔸",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 50,

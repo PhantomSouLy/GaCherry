@@ -1,6 +1,6 @@
 {
   "exportedAt": "2026-07-01T19:38:32.276Z",
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "source": "Lootium",
   "rarityFilter": {
     "id": "relic",
@@ -20,10 +20,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -46,10 +50,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 20000,
@@ -72,10 +80,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 3000,
@@ -101,10 +113,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -127,10 +143,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 3000,
@@ -156,10 +176,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -182,10 +206,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 20000,
@@ -208,10 +236,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 3000,
@@ -237,10 +269,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -263,10 +299,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -289,10 +329,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 3000,
@@ -317,10 +361,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -343,10 +391,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 20000,
@@ -369,10 +421,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -395,10 +451,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 7000,
@@ -423,10 +483,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 3000,
@@ -451,10 +515,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -477,10 +545,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -503,10 +575,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 20000,
@@ -529,10 +605,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -555,10 +635,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 3000,
@@ -584,10 +668,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 3000,
@@ -612,10 +700,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -638,10 +730,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -664,10 +760,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -690,10 +790,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 3000,
@@ -719,10 +823,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -745,10 +853,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 30000,
@@ -771,10 +883,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 160000,
@@ -799,10 +915,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 5500,
@@ -825,10 +945,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 30000,
@@ -851,10 +975,14 @@
       "rarityName": "Relic",
       "rarityIcon": "🟡",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 30000,

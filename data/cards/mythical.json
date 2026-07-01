@@ -1,6 +1,6 @@
 {
   "exportedAt": "2026-07-01T19:38:32.276Z",
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "source": "Lootium",
   "rarityFilter": {
     "id": "mythical",
@@ -20,10 +20,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Dungeon"
+      ],
       "type": "Dungeon",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 10,
@@ -48,10 +52,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -74,10 +82,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -102,10 +114,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -128,10 +144,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 2,
@@ -154,10 +174,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -180,10 +204,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 2,
@@ -206,10 +234,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -232,10 +264,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -258,10 +294,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 2,
@@ -284,10 +324,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 5,
@@ -313,10 +357,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 2,
@@ -339,10 +387,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 5,
@@ -368,10 +420,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 10,
@@ -398,10 +454,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 2,
@@ -424,10 +484,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -452,10 +516,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -480,10 +548,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 180000,
@@ -509,10 +581,15 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
-      "type": "Store",
+      "types": [
+        "Gacha",
+        "Store"
+      ],
+      "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 1,
@@ -537,10 +614,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 2,
@@ -565,10 +646,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -591,10 +676,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Store"
+      ],
       "type": "Store",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 2,
@@ -617,10 +706,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "Gacha"
+      ],
       "type": "Gacha",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": null,
       "sell": 1,
@@ -643,10 +736,14 @@
       "rarityName": "Mythical",
       "rarityIcon": "⚪",
       "series": "Legacy",
+      "types": [
+        "NoDrop"
+      ],
       "type": "NoDrop",
       "currency": "default",
       "currencyName": "Default",
       "currencyIcon": "$",
+      "currencyType": "symbol",
       "currencyConfidence": "default_fallback",
       "tradable": false,
       "sell": 10,

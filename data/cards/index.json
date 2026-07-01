@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 4,
   "files": [
     "common.json",
     "uncommon.json",
