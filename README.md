@@ -1,22 +1,14 @@
-# GaCherry Collection Viewer v4
+# GaCherry Collection Book
 
-Egyszerű, modern Collection nézegető oldal.
+Egyszerű, Collection nézegető oldal a GaCherryhez!
 
-Nincs benne:
-- Discord/Lootium állapotfigyelés
-- mentett saját collection
-- kedvencek
-- XP / level rendszer
-
-Van benne:
+Tartalmazza:
 - kártya nézegető
 - rarity/source/tag szűrők
 - keresés
 - rarity és source statisztika
 - lapozás
-- modal nagy nézet
-- blur placeholder + fade-in képbetöltés
 
-GitHub Pages:
-- Töltsd fel a fájlokat a GaCherry repo gyökerébe.
-- A data/cards.json maradjon ezen az útvonalon.
+Későbbiekben még bővül.
+
+Jelenleg teszt fázis alatt van.
