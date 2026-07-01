@@ -175,7 +175,7 @@
 
           <article class="guide-card">
             <h3>Honnan jönnek a képek?</h3>
-            <p>A kártyák a <b>data/cards.json</b> fájlból töltődnek, a képek pedig a GaCherry-Assets CDN útvonalból.</p>
+            <p>A régi adatbázis a <b>data/cards.json</b> fájlból töltődik. Az új Lootium exportok a <b>data/cards/</b> mappából jönnek, a képek pedig közvetlen GitHub RAW linkekről vagy a GaCherry-Assets CDN útvonalból.</p>
           </article>
 
           <article class="guide-card">
@@ -185,7 +185,7 @@
 
           <article class="guide-card">
             <h3>Hogyan bővíthető?</h3>
-            <p>Új kártyáknál elég a <b>cards.json</b> adatbázist frissíteni, és az asset képet feltölteni a megfelelő mappába.</p>
+            <p>Új Lootium exportnál tedd a JSON-t a <b>data/cards/</b> mappába, majd add hozzá a fájl nevét a <b>data/cards/index.json</b> listához.</p>
           </article>
         </div>
       </section>
@@ -216,6 +216,12 @@
           <div><span>Category</span><b id="modalCategory"></b></div>
           <div><span>Series</span><b id="modalSeries"></b></div>
           <div><span>Event</span><b id="modalEvent"></b></div>
+          <div><span>Type</span><b id="modalType"></b></div>
+          <div><span>Sell</span><b id="modalSell"></b></div>
+          <div><span>Buy</span><b id="modalBuy"></b></div>
+          <div><span>Stock</span><b id="modalStock"></b></div>
+          <div><span>Max/User</span><b id="modalMaxUser"></b></div>
+          <div><span>Role</span><b id="modalRole"></b></div>
         </div>
 
         <div id="modalTags" class="modal-tags"></div>

@@ -1,4 +1,11 @@
-const DATA_URL = "./data/cards.json";
+const CORE_DATA_URL = "./data/cards.json";
+const CARD_DATA_INDEX_URL = "./data/cards/index.json";
+
+// Ide elég később új sorokat tenni a data/cards/index.json fájlban.
+// Példa: "common.json", "rare.json", "epic.json"
+const FALLBACK_CARD_DATA_FILES = [
+  "cherished.json"
+];
 
 const fallbackRarityOrder = [
   "Common",
@@ -58,7 +65,8 @@ function setupElements() {
     "compactViewBtn", "cardModal", "closeModal", "modalImage",
     "modalPlaceholder", "modalId", "modalRarity", "modalSource",
     "modalTitle", "modalDescription", "modalCategory", "modalSeries",
-    "modalEvent", "modalTags"
+    "modalEvent", "modalType", "modalSell", "modalBuy", "modalStock",
+    "modalMaxUser", "modalRole", "modalTags"
   ].forEach(id => els[id] = $(id));
 }
 
@@ -96,30 +104,165 @@ function getRarityRank(rarity) {
   return getRarityOrder().indexOf(rarity);
 }
 
+function normalizeSource(value) {
+  const text = String(value || "Unknown").trim();
+  const upper = text.toUpperCase().replace(/\s+/g, "");
+
+  if (upper === "NODROP" || upper === "NODROP") return "NoDrop";
+  if (upper === "STORE") return "Store";
+  if (upper === "GACHA") return "Gacha";
+  if (upper === "DUNGEON") return "Dungeon";
+  if (upper === "CURRENCY") return "Currency";
+  if (upper === "BUNDLE") return "Bundle";
+  if (upper === "MERGE") return "Merge";
+
+  return text;
+}
+
+function normalizeTag(tag) {
+  const text = String(tag || "").trim();
+  const upper = text.toUpperCase().replace(/\s+/g, "");
+
+  if (upper === "NODROP") return "NoDrop";
+  if (upper === "UNTRADABLE") return "Untradable";
+  if (upper === "PREMIUM") return "Premium";
+  if (upper === "LIMITED") return "Limited";
+  if (upper === "EVENT") return "Event";
+
+  return text;
+}
+
+function uniqueTags(tags) {
+  return [...new Set((Array.isArray(tags) ? tags : []).map(normalizeTag).filter(Boolean))];
+}
+
+function normalizeMergeKey(card) {
+  return [card.rarity || "Unknown", card.name || ""].join("|").toLowerCase();
+}
+
+function mergeCardLists(cardGroups) {
+  const merged = [];
+  const indexByKey = new Map();
+
+  cardGroups.forEach(group => {
+    group.forEach(card => {
+      const key = normalizeMergeKey(card);
+
+      if (indexByKey.has(key)) {
+        const existingIndex = indexByKey.get(key);
+        const existing = merged[existingIndex];
+
+        merged[existingIndex] = {
+          ...existing,
+          ...card,
+          // A régi cards.json numerikus ID-ja maradjon meg, hogy a sorrend stabil legyen.
+          id: existing.id ?? card.id,
+          slug: card.slug || existing.slug,
+          category: card.category || existing.category,
+          series: card.series ?? existing.series ?? null,
+          event: card.event ?? existing.event ?? null,
+          tags: uniqueTags([...(existing.tags || []), ...(card.tags || [])])
+        };
+      } else {
+        indexByKey.set(key, merged.length);
+        merged.push(card);
+      }
+    });
+  });
+
+  return merged;
+}
+
 function normalizeCard(card, index) {
+  const source = normalizeSource(card.type || card.source || "Unknown");
+  const tags = uniqueTags(card.tags);
+
   return {
+    _uid: index + 1,
+    _sortId: typeof card.id === "number" ? card.id : index + 1,
     id: card.id ?? index + 1,
     slug: card.slug || "",
     name: card.name || `Card ${index + 1}`,
     rarity: card.rarity || "Unknown",
-    source: card.source || card.type || "Unknown",
+    source,
+    type: source,
     category: card.category || "Uncategorized",
     series: card.series ?? null,
     event: card.event ?? null,
-    tags: Array.isArray(card.tags) ? card.tags : [],
+    tags,
     asset: card.asset || "",
     image: card.image || "",
-    description: card.description || ""
+    imageOriginal: card.imageOriginal || "",
+    description: card.description || "",
+    tradable: card.tradable ?? null,
+    sell: card.sell ?? null,
+    buy: card.buy ?? null,
+    stock: card.stock ?? null,
+    maxPerUser: card.maxPerUser ?? null,
+    role: card.role ?? null,
+    rawText: card.rawText || ""
+  };
+}
+
+async function fetchJsonOptional(url) {
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch (error) {
+    console.warn("Nem sikerült betölteni:", url, error);
+    return null;
+  }
+}
+
+async function getExtraCardFiles() {
+  const index = await fetchJsonOptional(CARD_DATA_INDEX_URL);
+  const files = Array.isArray(index?.files) ? index.files : FALLBACK_CARD_DATA_FILES;
+
+  return files
+    .filter(Boolean)
+    .map(file => file.startsWith("./") || file.startsWith("/") || /^https?:\/\//i.test(file)
+      ? file
+      : `./data/cards/${file}`
+    );
+}
+
+function calculateStatistics(cards) {
+  return {
+    rarity: countBy(cards, "rarity"),
+    source: countBy(cards, "source"),
+    raritySource: cards.reduce((acc, card) => {
+      const rarity = card.rarity || "Unknown";
+      const source = card.source || "Unknown";
+      acc[rarity] ??= {};
+      acc[rarity][source] = (acc[rarity][source] || 0) + 1;
+      return acc;
+    }, {})
   };
 }
 
 async function loadDatabase() {
-  const response = await fetch(DATA_URL, { cache: "no-store" });
+  const response = await fetch(CORE_DATA_URL, { cache: "no-store" });
   if (!response.ok) throw new Error("Nem sikerült betölteni a cards.json fájlt.");
 
   const database = await response.json();
-  state.database = database;
-  state.cards = (database.cards || []).map(normalizeCard);
+  const extraFiles = await getExtraCardFiles();
+  const extraDatabases = (await Promise.all(extraFiles.map(fetchJsonOptional))).filter(Boolean);
+
+  const rawCards = mergeCardLists([
+    database.cards || [],
+    ...extraDatabases.map(db => db.cards || [])
+  ]);
+
+  state.database = {
+    ...database,
+    generatedAt: new Date().toISOString(),
+    totalCards: rawCards.length,
+    loadedFiles: [CORE_DATA_URL, ...extraFiles],
+    statistics: calculateStatistics(rawCards.map((card, index) => normalizeCard(card, index)))
+  };
+
+  state.cards = rawCards.map(normalizeCard);
   state.filtered = [...state.cards];
 
   renderAll();
@@ -312,13 +455,13 @@ function applyFilters() {
 
 function sortCards(a, b) {
   switch (state.sort) {
-    case "id-desc": return b.id - a.id;
+    case "id-desc": return b._sortId - a._sortId;
     case "name-asc": return a.name.localeCompare(b.name, "hu");
     case "name-desc": return b.name.localeCompare(a.name, "hu");
     case "rarity-desc": return getRarityRank(b.rarity) - getRarityRank(a.rarity) || a.name.localeCompare(b.name, "hu");
     case "rarity-asc": return getRarityRank(a.rarity) - getRarityRank(b.rarity) || a.name.localeCompare(b.name, "hu");
     case "id-asc":
-    default: return a.id - b.id;
+    default: return a._sortId - b._sortId;
   }
 }
 
@@ -340,8 +483,8 @@ function renderCards() {
 
   els.cardGallery.querySelectorAll(".card").forEach(cardEl => {
     cardEl.addEventListener("click", () => {
-      const id = Number(cardEl.dataset.id);
-      openModal(state.cards.find(card => card.id === id));
+      const uid = Number(cardEl.dataset.uid);
+      openModal(state.cards.find(card => card._uid === uid));
     });
   });
 
@@ -355,12 +498,22 @@ function renderCards() {
   });
 }
 
+
+function formatCardId(card) {
+  return typeof card.id === "number" ? `#${String(card.id).padStart(3, "0")}` : String(card.id || "-");
+}
+
+function formatValue(value, fallback = "-") {
+  if (value === null || value === undefined || value === "") return fallback;
+  return String(value);
+}
+
 function createCardHTML(card) {
   const cls = rarityClass(card.rarity);
   const imageUrl = getImageUrl(card);
 
   return `
-    <article class="card ${cls}" data-id="${card.id}">
+    <article class="card ${cls}" data-uid="${card._uid}">
       <div class="image-shell">
         <div class="placeholder">${escapeHtml(card.rarity)}</div>
         <img data-src="${escapeAttr(imageUrl)}" alt="${escapeAttr(card.name)}" loading="lazy">
@@ -370,7 +523,7 @@ function createCardHTML(card) {
         <div class="card-name">${escapeHtml(card.name)}</div>
         <div class="card-meta">
           <span class="rarity-badge ${cls}">${escapeHtml(card.rarity)}</span>
-          <span class="card-id">#${String(card.id).padStart(3, "0")}</span>
+          <span class="card-id">${formatCardId(card)}</span>
         </div>
       </div>
     </article>
@@ -433,7 +586,7 @@ function openModal(card) {
   els.modalImage.onload = () => els.modalImage.classList.add("loaded");
   els.modalImage.src = imageUrl;
 
-  els.modalId.textContent = `#${String(card.id).padStart(3, "0")}`;
+  els.modalId.textContent = formatCardId(card);
   els.modalRarity.className = `rarity-badge ${cls}`;
   els.modalRarity.textContent = card.rarity;
   els.modalSource.textContent = card.source;
@@ -443,6 +596,12 @@ function openModal(card) {
   els.modalCategory.textContent = safeText(card.category);
   els.modalSeries.textContent = safeText(card.series);
   els.modalEvent.textContent = safeText(card.event);
+  if (els.modalType) els.modalType.textContent = safeText(card.type || card.source);
+  if (els.modalSell) els.modalSell.textContent = formatValue(card.sell);
+  if (els.modalBuy) els.modalBuy.textContent = formatValue(card.buy);
+  if (els.modalStock) els.modalStock.textContent = formatValue(card.stock);
+  if (els.modalMaxUser) els.modalMaxUser.textContent = formatValue(card.maxPerUser);
+  if (els.modalRole) els.modalRole.textContent = formatValue(card.role);
 
   els.modalTags.innerHTML = card.tags.length
     ? card.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")
