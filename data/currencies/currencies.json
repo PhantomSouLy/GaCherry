@@ -1,6 +1,5 @@
 {
-  "schemaVersion": 5,
-  "count": 8,
+  "schemaVersion": 7,
   "currencies": [
     {
       "id": "default",

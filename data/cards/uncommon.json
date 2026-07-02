@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "uncommon",
   "count": 37,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Big_Mac.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -44,8 +44,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Cherry_Queen_BonBon.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -75,8 +75,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Bounty_Cherry.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -106,8 +106,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Burn_Cherry.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -137,8 +137,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Cpt._Americas_Shield.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -168,8 +168,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Carrot.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -200,8 +200,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Cherries.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -232,8 +232,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/KPfoCgU.png?raw=true",
       "rarity": "uncommon_plus",
       "rarityName": "Uncommon+",
-      "rarityGroup": "uncommon",
       "rarityIcon": "◼️",
+      "rarityGroup": "uncommon",
       "types": [
         "NoDrop"
       ],
@@ -263,8 +263,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/ChocoChips.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -295,8 +295,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Suti.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -326,8 +326,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/FireCrackers.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -357,8 +357,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Haribo_Happy_Cherries.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -388,8 +388,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Heart_Macaron.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -419,8 +419,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/HELL_Black_Cherry.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -451,8 +451,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Infinity_Gauntlet.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -482,8 +482,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Kentucky_Gold_Burger.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -513,8 +513,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/KinderCherry.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -544,8 +544,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Kryptonite.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -575,8 +575,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Love_Letter.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -606,8 +606,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/LovePotion.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -637,8 +637,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/MilkaOreo.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -668,8 +668,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Mochi.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -700,8 +700,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/MonCherrie.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -731,8 +731,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Monster.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -762,8 +762,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Monster_Energy_Ultra_Red.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -793,8 +793,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Monster_Energy_Ultra_Rosa.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -824,8 +824,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/MonsterJuice.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -855,8 +855,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Monster_Ultra_Black.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -886,8 +886,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/SkyLantern.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -917,8 +917,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/PockyChoco.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -949,8 +949,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Krumpli.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha",
         "Dungeon"
@@ -981,8 +981,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Rockstar_Cherry.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -1012,8 +1012,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Rose.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -1043,8 +1043,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/Strawberry.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -1074,8 +1074,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/SUPERHERO_-_Energy_Drink.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],
@@ -1105,8 +1105,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/I6iJd8E.png?raw=true",
       "rarity": "uncommon_plus",
       "rarityName": "Uncommon+",
-      "rarityGroup": "uncommon",
       "rarityIcon": "◼️",
+      "rarityGroup": "uncommon",
       "types": [
         "Store"
       ],
@@ -1137,8 +1137,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncommon/V_Energy_-_Deadpool.png?raw=true",
       "rarity": "uncommon",
       "rarityName": "Uncommon",
-      "rarityGroup": "uncommon",
       "rarityIcon": "⚫",
+      "rarityGroup": "uncommon",
       "types": [
         "Gacha"
       ],

@@ -1,4 +1,7 @@
-GaCherry Database v6
-Cards: 659
-Simulator: only Gacha type cards
-Expired codes added
+GaCherry Database v7 READY
+Forrás JSON: GaCherryALLCard(1).json
+Kártyák: 659
+Gacha type kártyák: 489
+Redeem lejárt kódok: SORRY00, GOODDUNGE, 1DOT1UPDATE, APRILFOOL, G4CH3RRY1TH
+Gacha Simulator drop table:
+Common 20%, Uncommon 25%, Rare 20%, Epic 10%, Epic+ 5%, Legendary 7.5%, Legendary+ 4%, Relic 3.45%, Mythical 0.8%, Cherished 0.2%, Eternity 0.05%, Dungeon Key 4%

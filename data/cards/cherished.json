@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "cherished",
   "count": 37,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl0.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Store",
         "NoDrop"
@@ -47,8 +47,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl1.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -80,8 +80,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl2.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -113,8 +113,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl3.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -146,8 +146,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/LVL4.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha",
         "NoDrop"
@@ -180,8 +180,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl5.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -213,8 +213,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl6.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -246,8 +246,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl7.png?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -279,8 +279,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Cherished/lvl8.gif?raw=true",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha",
         "NoDrop"
@@ -313,8 +313,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/e7p1CZQ.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -345,8 +345,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/vdOSFO9.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -376,8 +376,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/rGTWYhv.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Store"
       ],
@@ -407,8 +407,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/UU4SXLh.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Store"
       ],
@@ -438,8 +438,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/pfT2fPt.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -469,8 +469,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/JDh2e8T.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "NoDrop"
       ],
@@ -501,8 +501,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/aq14r8S.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Store"
       ],
@@ -533,8 +533,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/qSkMro5.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Store"
       ],
@@ -564,8 +564,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/UMEbfN6.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -596,8 +596,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/MoDwTjZ.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -628,8 +628,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/rLOsLpa.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -660,8 +660,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/iQcAQPQ.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -692,8 +692,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/qPdgt7W.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -724,8 +724,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/aq8Y3Di.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -756,8 +756,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/NFVORV1.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -788,8 +788,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/HZHgP8z.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -820,8 +820,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/iCNCde2.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -852,8 +852,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/B1zon4q.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -884,8 +884,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/kRNKUJa.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -916,8 +916,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/7kQCf8n.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -948,8 +948,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/9tMjJpS.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -980,8 +980,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/feuityj.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -1012,8 +1012,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/S2euLDU.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -1044,8 +1044,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/FgY2tie.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -1076,8 +1076,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/7fiCyfG.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -1108,8 +1108,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/0DFhauk.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -1140,8 +1140,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/sT0U4vN.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],
@@ -1172,8 +1172,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Cherished/xO6ZeAQ.png",
       "rarity": "cherished",
       "rarityName": "Cherished",
-      "rarityGroup": "cherished",
       "rarityIcon": "🌸",
+      "rarityGroup": "cherished",
       "types": [
         "Gacha"
       ],

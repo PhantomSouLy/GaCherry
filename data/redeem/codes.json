@@ -1,12 +1,38 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "active": [
     {
       "code": "HAMAROSAN",
       "reward": "Később kerül feltöltésre",
       "expires": "Nincs megadva",
-      "note": "A beváltás Discordon, /redeem paranccsal történik."
+      "note": "Beváltás Discordon: /redeem"
     }
   ],
-  "expired": []
+  "expired": [
+    {
+      "title": "Kompenzáció kód.",
+      "code": "SORRY00",
+      "status": "Expired"
+    },
+    {
+      "title": "Dungeon Fix.",
+      "code": "GOODDUNGE",
+      "status": "Expired"
+    },
+    {
+      "title": "First Update Code.",
+      "code": "1DOT1UPDATE",
+      "status": "Expired"
+    },
+    {
+      "title": "Április Bolondja!",
+      "code": "APRILFOOL",
+      "status": "Expired"
+    },
+    {
+      "title": "First GaCherry Code!",
+      "code": "G4CH3RRY1TH",
+      "status": "Expired"
+    }
+  ]
 }

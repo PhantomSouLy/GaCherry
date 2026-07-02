@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "mythical",
   "count": 24,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/HappyCherryChan_Dedicated_Version.png?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Dungeon"
       ],
@@ -44,8 +44,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Angel%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -75,8 +75,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Ascendent%20Essence.webp?raw=true",
       "rarity": "mythical_plus",
       "rarityName": "Mythical+",
-      "rarityGroup": "mythical",
       "rarityIcon": "◻️",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -107,8 +107,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Blossom%20Heart%20Goddess%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -138,8 +138,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Bride%20Queen%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -169,8 +169,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Celestial%20Romance%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -200,8 +200,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Cherry%20the%20Spring%20Fairy%20Q.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -231,8 +231,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Cosmic%20Queen%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -262,8 +262,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Demon%20Queen%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -293,8 +293,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Eternal%20Love%20Empress%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -324,8 +324,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/LIMITED/Eternal%20Mermaid%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -342,6 +342,7 @@
       "tradable": false,
       "tags": [
         "Event",
+        "Limited",
         "Untradable"
       ],
       "rawText": "⚪ Mythical [EVENT] Eternal Mermaid Cherry [CherryFest2025] NODROP UNTRADABLE PREMIUM ⭐️⭐️⭐️⭐️⭐️ SELL 5 BUY 5 STOCK 0 MAX/USER 1 ROLE 𝙲𝚑𝚎𝚛𝚛𝚢𝙵𝚎𝚜𝚝𝟸𝟶𝟸𝟻"
@@ -356,8 +357,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Store%20Original%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -387,8 +388,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/EVENT/Haunted%20Queen%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -404,6 +405,7 @@
       "role": null,
       "tradable": false,
       "tags": [
+        "Event",
         "Limited",
         "Untradable"
       ],
@@ -419,8 +421,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/LIMITED/Heaven%E2%80%99s%20Bloom%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -437,6 +439,7 @@
       "tradable": false,
       "tags": [
         "Event",
+        "Limited",
         "Dedicated",
         "Untradable"
       ],
@@ -452,8 +455,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Hero%20Fanatic%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -483,8 +486,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Mythical%20Crystal.webp?raw=true",
       "rarity": "mythical_plus",
       "rarityName": "Mythical+",
-      "rarityGroup": "mythical",
       "rarityIcon": "◻️",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -515,8 +518,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Mythical%20Essence.webp?raw=true",
       "rarity": "mythical_plus",
       "rarityName": "Mythical+",
-      "rarityGroup": "mythical",
       "rarityIcon": "◻️",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -547,8 +550,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Craft/Mythical%20Money%20Bag.webp?raw=true",
       "rarity": "mythical_plus",
       "rarityName": "Mythical+",
-      "rarityGroup": "mythical",
       "rarityIcon": "◻️",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -580,8 +583,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Mythical_Shard.png?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha",
         "Store"
@@ -613,8 +616,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Mythical_Shards.png?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -645,8 +648,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Queen%20of%20Illusions%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -676,8 +679,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Radiant%20Mirage%20Cherry.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Store"
       ],
@@ -707,8 +710,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/Super%20HappyCherryChan.gif?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "Gacha"
       ],
@@ -738,8 +741,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Mythical/LIMITED/ZombieCherryChan.png?raw=true",
       "rarity": "mythical",
       "rarityName": "Mythical",
-      "rarityGroup": "mythical",
       "rarityIcon": "⚪",
+      "rarityGroup": "mythical",
       "types": [
         "NoDrop"
       ],
@@ -756,6 +759,7 @@
       "tradable": false,
       "tags": [
         "Event",
+        "Limited",
         "Dedicated",
         "Untradable"
       ],

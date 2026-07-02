@@ -1,146 +1,165 @@
 {
-  "schemaVersion": 5,
-  "count": 20,
+  "schemaVersion": 7,
   "rarities": [
     {
       "id": "common",
       "name": "Common",
       "icon": "🟢",
+      "color": "#65e79a",
       "order": 10,
-      "group": "common"
+      "filterGroup": "common"
     },
     {
       "id": "common_plus",
       "name": "Common+",
       "icon": "🟢",
+      "color": "#65e79a",
       "order": 11,
-      "group": "common"
+      "filterGroup": "common"
     },
     {
       "id": "uncommon",
       "name": "Uncommon",
       "icon": "⚫",
+      "color": "#6b6176",
       "order": 20,
-      "group": "uncommon"
+      "filterGroup": "uncommon"
     },
     {
       "id": "uncommon_plus",
       "name": "Uncommon+",
       "icon": "◼️",
+      "color": "#6b6176",
       "order": 21,
-      "group": "uncommon"
+      "filterGroup": "uncommon"
     },
     {
       "id": "rare",
       "name": "Rare",
       "icon": "🔵",
+      "color": "#4b9eff",
       "order": 30,
-      "group": "rare"
+      "filterGroup": "rare"
     },
     {
       "id": "rare_plus",
       "name": "Rare+",
       "icon": "🟦",
+      "color": "#4b9eff",
       "order": 31,
-      "group": "rare"
+      "filterGroup": "rare"
     },
     {
       "id": "epic",
       "name": "Epic",
       "icon": "🟣",
+      "color": "#9b6cff",
       "order": 40,
-      "group": "epic"
+      "filterGroup": "epic"
     },
     {
       "id": "epic_plus",
       "name": "Epic+",
       "icon": "🟪",
+      "color": "#9b6cff",
       "order": 41,
-      "group": "epic"
+      "filterGroup": "epic"
     },
     {
       "id": "legendary",
       "name": "Legendary",
       "icon": "🟠",
+      "color": "#ff884d",
       "order": 50,
-      "group": "legendary"
+      "filterGroup": "legendary"
     },
     {
       "id": "legendary_plus",
       "name": "Legendary+",
       "icon": "🟧",
+      "color": "#ff884d",
       "order": 51,
-      "group": "legendary"
+      "filterGroup": "legendary"
     },
     {
       "id": "relic",
       "name": "Relic",
       "icon": "🟡",
+      "color": "#f4c542",
       "order": 60,
-      "group": "relic"
+      "filterGroup": "relic"
     },
     {
       "id": "relic_plus",
       "name": "Relic+",
       "icon": "🟨",
+      "color": "#f4c542",
       "order": 61,
-      "group": "relic"
+      "filterGroup": "relic"
     },
     {
       "id": "mythical",
       "name": "Mythical",
       "icon": "⚪",
+      "color": "#d8cdf5",
       "order": 70,
-      "group": "mythical"
+      "filterGroup": "mythical"
     },
     {
       "id": "mythical_plus",
       "name": "Mythical+",
       "icon": "◻️",
+      "color": "#d8cdf5",
       "order": 71,
-      "group": "mythical"
+      "filterGroup": "mythical"
     },
     {
       "id": "cherished",
       "name": "Cherished",
       "icon": "🌸",
+      "color": "#ff79bd",
       "order": 80,
-      "group": "cherished"
+      "filterGroup": "cherished"
     },
     {
       "id": "eternity",
       "name": "Eternity",
       "icon": "🔴",
+      "color": "#e84b63",
       "order": 90,
-      "group": "eternity"
+      "filterGroup": "eternity"
     },
     {
       "id": "dungeon_tier_1",
       "name": "Dungeon Tier 1",
       "icon": "🔸",
+      "color": "#ff7755",
       "order": 100,
-      "group": "dungeon_tier_1"
+      "filterGroup": "dungeon_tier_1"
     },
     {
       "id": "dungeon_tier_2",
       "name": "Dungeon Tier 2",
       "icon": "🔶",
+      "color": "#ff7755",
       "order": 101,
-      "group": "dungeon_tier_2"
+      "filterGroup": "dungeon_tier_2"
     },
     {
       "id": "dungeon_key",
       "name": "Dungeon Key",
       "icon": "🗝️",
+      "color": "#f4c542",
       "order": 102,
-      "group": "dungeon_key"
+      "filterGroup": "dungeon_key"
     },
     {
       "id": "unknown",
       "name": "Unknown",
       "icon": "?",
+      "color": "#8990a3",
       "order": 999,
-      "group": "unknown"
+      "filterGroup": "unknown"
     }
   ]
 }

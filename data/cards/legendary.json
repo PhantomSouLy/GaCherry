@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "legendary",
   "count": 250,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/All_Hallows_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -45,8 +45,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Amber_Rail_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -76,8 +76,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Arcade_Brawler_Pixel-Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -108,8 +108,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Arctic_Elegance_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -139,8 +139,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Autumn_Raindrop_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -170,8 +170,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Autumn_Reverie_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -201,8 +201,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Baywatch_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -232,8 +232,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Beach_Battle_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -263,8 +263,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Beach_Float_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -294,8 +294,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Berach_Spray_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -325,8 +325,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/BeatDrop_Idol_Pixel-Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -357,8 +357,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Bizarre_Weird_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -388,8 +388,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Black_Bride.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -419,8 +419,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Black_Bunny_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -450,8 +450,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Blazeform_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -481,8 +481,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Bloody_Valentine_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -512,8 +512,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Kimono.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -543,8 +543,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Blossom_Sorceress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -574,8 +574,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Blushing_Succubus_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -605,8 +605,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Boo-tiful_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -636,8 +636,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Borealis_Dream_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -667,8 +667,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Bunny__Fox_P_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -698,8 +698,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Bunny_Cover-Up_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -729,8 +729,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Bunnys_Secret_Garden_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -760,8 +760,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/BunnyCherryBath.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -791,8 +791,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Burger_Bite_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -822,8 +822,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cactus_Monk_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -853,8 +853,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Capybara_Soak_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -884,8 +884,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Carrot_Astronaut_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -915,8 +915,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Castle_Crafter_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -947,8 +947,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Celestial_Arcana_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -978,8 +978,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Celestial_Night_Blossom_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1009,8 +1009,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Celestial_Valentine_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1040,8 +1040,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherry_of_Blossoming_Spring.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1072,8 +1072,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherry_of_Endless_Summer.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1104,8 +1104,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherry_of_Falling_Autumn.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1136,8 +1136,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherry_of_Winter_Bloom.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1168,8 +1168,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherry_the_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1199,8 +1199,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherrys_Cozy_Sip.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1230,8 +1230,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherrys_Gift_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1261,8 +1261,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/Oy1ENYK.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1292,8 +1292,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/tSQo68W.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1323,8 +1323,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherrys_Passionate_Bloom.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1355,8 +1355,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherrys_Perfumed_Blessing_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1386,8 +1386,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cherrys_Sinister_Love.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1417,8 +1417,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/ChibiCherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1448,8 +1448,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sweety_Homie_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1479,8 +1479,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Chilly_Expedition_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1510,8 +1510,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Chocolate_Truffle_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1541,8 +1541,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Teacher_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1572,8 +1572,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/ClickStar_Chibi_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1604,8 +1604,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Coral_Diver_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1635,8 +1635,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Corvette_Queen_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1666,8 +1666,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cozy_Campus_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1697,8 +1697,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cozy_Date_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1729,8 +1729,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cozy_Supra_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1760,8 +1760,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cpt_America_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1791,8 +1791,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Craze_Carrot_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1822,8 +1822,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Crimson_Blade_Warrior_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1854,8 +1854,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Kawaii.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -1885,8 +1885,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cursed_Puppet_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -1917,8 +1917,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cute_Battleborn_Valkyrie_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1948,8 +1948,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Cyber_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -1979,8 +1979,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Dakar_Princess_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2010,8 +2010,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Dark_Temptation_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2041,8 +2041,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/DarkCore_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2072,8 +2072,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Darkwave_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2103,8 +2103,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Dawn__Dusk_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2134,8 +2134,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Deal_With_it_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2165,8 +2165,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/DemonQueenCherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2196,8 +2196,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/DemonBun_Tamer_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2227,8 +2227,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Belly_Dancer_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2258,8 +2258,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Desert_Noman_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2289,8 +2289,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Divine_Aphrodite_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2320,8 +2320,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Dragon_Warrior_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2351,8 +2351,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Drifting_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2382,8 +2382,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Drive_Focus_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2413,8 +2413,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/DarkFallen_Angel.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2444,8 +2444,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Easter_Picnic_Flirt_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -2475,8 +2475,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Egg-citing_Adventure_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -2506,8 +2506,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Elegant_Bloom_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2537,8 +2537,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Enchanted_Spring_Fairy_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2568,8 +2568,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Enchanting_Cupid_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2599,8 +2599,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Succubus.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2630,8 +2630,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Everfrost_Mother_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2661,8 +2661,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Evergreen_Stroll_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2692,8 +2692,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Festive_Elf_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2723,8 +2723,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Festive_Flirt_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2754,8 +2754,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Festive_Melody_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2785,8 +2785,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Festive_Santa_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2816,8 +2816,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Flame_Dragon_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -2847,8 +2847,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Flirtbunny_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2878,8 +2878,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Floral_Sorceress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2909,8 +2909,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Flower-Petal_Charm_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2940,8 +2940,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Frost_Empress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -2971,8 +2971,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Frost_Fairy_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3002,8 +3002,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Frost_Rider_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3033,8 +3033,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Frozen_Crystal_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -3064,8 +3064,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Galactic_Blaster_Pixel-Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3096,8 +3096,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Glacial_Majesty_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3127,8 +3127,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Glimmering_Sorceress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3158,8 +3158,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Golden_Bloom_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3189,8 +3189,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Golden_Espresso_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3220,8 +3220,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Golden_Nocturne_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3252,8 +3252,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Hanami_Huntress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3284,8 +3284,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Harvest_Knowledge_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3315,8 +3315,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Healbloom_Priest_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3347,8 +3347,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Nurse_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3378,8 +3378,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Highway_Dream_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3409,8 +3409,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Holiday_Glam_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3440,8 +3440,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Hoodie_Drift_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3471,8 +3471,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Ice_Chill_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3502,8 +3502,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Invisible_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3533,8 +3533,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Jade_Red_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3564,8 +3564,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/ZtTldJO.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3595,8 +3595,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Jingle_Deer_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3626,8 +3626,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Ninja.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3657,8 +3657,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/L.A._Cherry_Hop.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3688,8 +3688,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Lamboshine_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3719,8 +3719,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/su6pWFf.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3750,8 +3750,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/1lLdqFz.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -3782,8 +3782,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Legendary_Shard.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha",
         "Store"
@@ -3815,8 +3815,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/Legendary_Shards.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha",
         "Store"
@@ -3848,8 +3848,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Legendary_Surf_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3879,8 +3879,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Lightwarden_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -3911,8 +3911,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Little_Boat_Time_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -3942,8 +3942,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Little_Bunny_Blossom_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -3973,8 +3973,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Mini_Maid.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4004,8 +4004,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Violet_Specter.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4035,8 +4035,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Luminous_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4066,8 +4066,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Lush_Blossom_Diva_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4097,8 +4097,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Lustful_Cherry_Empress.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4128,8 +4128,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Luxe_Poolside_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4159,8 +4159,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Luxurious_Valentine_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4190,8 +4190,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/MaCherrie.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4221,8 +4221,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Magi_Pixel-Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4253,8 +4253,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Maple_Breeze_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4284,8 +4284,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Maple_Express_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4315,8 +4315,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Marshmallow_Camper_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4346,8 +4346,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Master_of_Hackers_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4377,8 +4377,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Meadow_Flower_Empress_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -4408,8 +4408,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Melody_Pop_Chibi_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4440,8 +4440,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Mesmerizing_Magican_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4471,8 +4471,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Midnight_Glance_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4502,8 +4502,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Midnight_Spark_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4533,8 +4533,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Mismatched_Limb_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4564,8 +4564,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/RainCoatCherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4595,8 +4595,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Mitas_School_Uniform_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -4626,8 +4626,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Mocha_Chibi_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4658,8 +4658,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Moon_Knight_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4689,8 +4689,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Mysticflare_Mage_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -4721,8 +4721,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Natures_Guardian_Matron_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4752,8 +4752,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Naval_Commander_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4783,8 +4783,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Nebula_Knight_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4814,8 +4814,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Neon_Spike_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4845,8 +4845,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Night_Duel_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4876,8 +4876,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Nightline_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4907,8 +4907,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Old_Time_Rider_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4938,8 +4938,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/OmniDoom_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -4969,8 +4969,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pack_of_Legendary_Shards.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -5001,8 +5001,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Peekaboo_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5032,8 +5032,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Petal_Passion_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5064,8 +5064,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pharaoh_Empress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5095,8 +5095,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pharaohs_Wrath_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5126,8 +5126,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pickup_Bliss_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5157,8 +5157,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pink_Fluffy_Tamer_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5188,8 +5188,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pink_Vintage_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5219,8 +5219,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pixel_Jumper_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5251,8 +5251,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pixel_Rockette_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5283,8 +5283,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pool_Sailor_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5314,8 +5314,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Prank_Guard_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5345,8 +5345,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pumpkin_Heist_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5377,8 +5377,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Pyrosand_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5408,8 +5408,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Radiant_Spring_Queen_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -5439,8 +5439,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Ready_Set_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -5470,8 +5470,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Chinese_Dress.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5501,8 +5501,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Roadside_Chill_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5532,8 +5532,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Rollin_Vibe_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5563,8 +5563,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Rose_Petal_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -5595,8 +5595,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Rose-Kissed_Desire_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5626,8 +5626,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Route_66_CherrySTORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -5657,8 +5657,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Ruby_Blossom_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5688,8 +5688,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Ruby_Veil_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5719,8 +5719,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sable_Rose_Overlady_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5750,8 +5750,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sacred_Sakura_Veil_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5781,8 +5781,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Samurai_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5812,8 +5812,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sand_Voyager_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5843,8 +5843,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Scarlet_Heat_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5874,8 +5874,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Scarlet_Witch.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5905,8 +5905,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Seductive_Noel_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5936,8 +5936,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Serene_Blossom_Siren_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -5967,8 +5967,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Serene_Wave_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -5998,8 +5998,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Serenity_Sunrise_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6029,8 +6029,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/SnakeYear_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6060,8 +6060,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Shadowstep_Rogue_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6092,8 +6092,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Moonshot_Archer_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6124,8 +6124,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/z7M179l.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6155,8 +6155,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sir_Goat_Chery.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6186,8 +6186,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Slide_Mode_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6217,8 +6217,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Slidezone_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6248,8 +6248,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Slime_Bouncer_Chibi_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6280,8 +6280,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Snugglebun_Chibi_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6312,8 +6312,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/Spectral_Cherry.png?raw=true",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6343,8 +6343,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Spiderwoman_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6374,8 +6374,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Springtime_Desire_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6405,8 +6405,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Springtime_Seductress_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6436,8 +6436,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Storm_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6467,8 +6467,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Story_Teller_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6498,8 +6498,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Street_Breeze_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6529,8 +6529,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Street_Queen_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6560,8 +6560,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Succubuss_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6591,8 +6591,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/CookieCherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -6622,8 +6622,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sweet.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6653,8 +6653,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sugarmaid_Chibi_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6685,8 +6685,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sunlit_Charm_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6716,8 +6716,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sunlit_Picnic_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6747,8 +6747,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sunset_Cruiser_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6778,8 +6778,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Superwoman_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6809,8 +6809,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Surf_Champion_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6840,8 +6840,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Swarm_Survivor_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6871,8 +6871,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/SleepyCherry.png?raw=true",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6902,8 +6902,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Maid.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6933,8 +6933,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Sylvan_Spring_Muse_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -6964,8 +6964,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/The_Furry_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -6995,8 +6995,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Tomboy_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7026,8 +7026,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/VirsQ8d.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -7058,8 +7058,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Legendary/1DqnfAg.png?raw=true",
       "rarity": "legendary_plus",
       "rarityName": "Legendary+",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟧",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -7089,8 +7089,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Tropical_Diva_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7120,8 +7120,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Truck_Bed_Rider_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7151,8 +7151,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Twilight_Mocha_Charm_C.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7182,8 +7182,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Twilight_Pumpkin_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -7213,8 +7213,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Valentine_Princess_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -7244,8 +7244,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Velocity_Vixen_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -7275,8 +7275,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Velvet_Winter_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7306,8 +7306,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Venom_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7337,8 +7337,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Violet_Lantern_Warden_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7368,8 +7368,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Violet_Specter_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7399,8 +7399,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Volley_Pose_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -7431,8 +7431,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Wave_Rider_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7462,8 +7462,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Whispering_Blossom_Maiden_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7493,8 +7493,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/White_Fairy_Queen_Cherry_STORE.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -7524,8 +7524,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Winged_Illusions_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7555,8 +7555,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Winter_Sky_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7586,8 +7586,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Winter_Spell_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7617,8 +7617,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/WinterWonder_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -7649,8 +7649,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Witchflare_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7680,8 +7680,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/World_Domination_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Gacha"
       ],
@@ -7711,8 +7711,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/XMAS_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "NoDrop"
       ],
@@ -7743,8 +7743,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Yandere_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],
@@ -7774,8 +7774,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Legendary/Yokai_Pumpkin_Cherry.png",
       "rarity": "legendary",
       "rarityName": "Legendary",
-      "rarityGroup": "legendary",
       "rarityIcon": "🟠",
+      "rarityGroup": "legendary",
       "types": [
         "Store"
       ],

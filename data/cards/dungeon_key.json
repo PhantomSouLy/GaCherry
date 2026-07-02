@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "dungeon_key",
   "count": 1,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncategorized/DungeonKey.png?raw=true",
       "rarity": "dungeon_key",
       "rarityName": "Dungeon Key",
-      "rarityGroup": "dungeon_key",
       "rarityIcon": "🗝️",
+      "rarityGroup": "dungeon_key",
       "types": [
         "Gacha",
         "Dungeon"

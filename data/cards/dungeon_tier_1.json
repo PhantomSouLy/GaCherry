@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "dungeon_tier_1",
   "count": 2,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncategorized/Coins.png?raw=true",
       "rarity": "dungeon_tier_1",
       "rarityName": "Dungeon Tier 1",
-      "rarityGroup": "dungeon_tier_1",
       "rarityIcon": "🔸",
+      "rarityGroup": "dungeon_tier_1",
       "types": [
         "Dungeon"
       ],
@@ -44,8 +44,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Uncategorized/Coin.png?raw=true",
       "rarity": "dungeon_tier_1",
       "rarityName": "Dungeon Tier 1",
-      "rarityGroup": "dungeon_tier_1",
       "rarityIcon": "🔸",
+      "rarityGroup": "dungeon_tier_1",
       "types": [
         "Dungeon"
       ],

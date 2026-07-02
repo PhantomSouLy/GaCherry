@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "eternity",
   "count": 1,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main/Rarities/Eternity/GMCherry.gif?raw=true",
       "rarity": "eternity",
       "rarityName": "Eternity",
-      "rarityGroup": "eternity",
       "rarityIcon": "🔴",
+      "rarityGroup": "eternity",
       "types": [
         "Gacha"
       ],

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 7,
   "group": "relic",
   "count": 32,
   "cards": [
@@ -13,8 +13,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/vAIg5IP.png",
       "rarity": "relic_plus",
       "rarityName": "Relic+",
-      "rarityGroup": "relic",
       "rarityIcon": "🟨",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -44,8 +44,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Albino_Phantom_Cherry-Store.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -75,8 +75,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Blood_Moon_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -107,8 +107,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Bloodfang_Spider_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -138,8 +138,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Celestial_Harmony_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -170,8 +170,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Charmed_Jiangshi_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -201,8 +201,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/WaqeSM9.png",
       "rarity": "relic_plus",
       "rarityName": "Relic+",
-      "rarityGroup": "relic",
       "rarityIcon": "🟨",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -232,8 +232,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Cryptwing_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -264,8 +264,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Cursed_Jiangshi_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -295,8 +295,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/emUnsza.png",
       "rarity": "relic_plus",
       "rarityName": "Relic+",
-      "rarityGroup": "relic",
       "rarityIcon": "🟨",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -326,8 +326,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Cute_Tripod_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -357,8 +357,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Cyber_Sorceress_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -388,8 +388,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Ebon_Soul_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -419,8 +419,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Eclipsing_Wyvern_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -450,8 +450,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Egg_of_the_Abyss_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -481,8 +481,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Extra_Hand_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -512,8 +512,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Glimmer_Kobold_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -543,8 +543,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Goblin_Vixen_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -574,8 +574,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Haunted_Whispers_Cherry-Store.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -605,8 +605,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Jersey_Devil_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -636,8 +636,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Luminous_Seraph_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -668,8 +668,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Magical_Trickster_Tamer_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -699,8 +699,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Minotauress_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -730,8 +730,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Phantom_Jiangshi_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -761,8 +761,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Pink_Spring_Fairy_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -792,8 +792,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Prismatic_Grace_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "NoDrop"
       ],
@@ -824,8 +824,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Quantum_Illusionist_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -855,8 +855,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Radiant_Xmas_Angel_C.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -886,8 +886,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/sQKlYYH.png",
       "rarity": "relic_plus",
       "rarityName": "Relic+",
-      "rarityGroup": "relic",
       "rarityIcon": "🟨",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -918,8 +918,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Sapphire_Sky_Fairy_Cherry.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Dungeon"
       ],
@@ -949,8 +949,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Spectral_Cherry-Store.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
@@ -980,8 +980,8 @@
       "imageOriginal": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main/Rarities/Relic/Sultry_Goblin_Cherry-Store.png",
       "rarity": "relic",
       "rarityName": "Relic",
-      "rarityGroup": "relic",
       "rarityIcon": "🟡",
+      "rarityGroup": "relic",
       "types": [
         "Store"
       ],
