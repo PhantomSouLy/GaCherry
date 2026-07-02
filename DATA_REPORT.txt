@@ -1,28 +1,4 @@
-Total cards: 659
-Input file: GaCherryALLCard(1).json
-Rarity counts:
-- Common: 35
-- Uncommon: 37
-- Rare: 98
-- Epic: 140
-- Legendary: 250
-- Relic: 32
-- Mythical: 24
-- Cherished: 37
-- Eternity: 1
-- Dungeon Tier 1: 2
-- Dungeon Tier 2: 2
-- Dungeon Key: 1
-Type counts (multi-type cards counted in each type):
-- Gacha: 489
-- NoDrop: 95
-- Store: 63
-- Dungeon: 33
-Tags:
-- Untradable: 87
-- Limited: 42
-- Bundle: 23
-- Badge: 11
-- Event: 7
-- Craft: 4
-- Dedicated: 3
+GaCherry Database v6
+Cards: 659
+Simulator: only Gacha type cards
+Expired codes added
