@@ -1,0 +1,48 @@
+{
+  "intro": {
+    "title": "Bevezetés",
+    "body": [
+      "<strong>Cherry egyedi gacha játékához itt találsz leírást és útmutatót!</strong>",
+    ]
+  },
+
+  "commands": {
+    "title": "Parancs lista",
+    "body": [
+      "Csak is a GaCherry bot-al működnek!"
+    ],
+    "items": [
+      "<code>/gacha</code> – Ezzel nyitsz kártyákat.",
+      "<code>/store</code> – Bolt megnyitása.",
+      "<code>/dungeon</code> – Dungeon elindítása.",
+      "<code>/daily</code> – Napi jutalom felvétele.",
+      "<code>/work</code> – Kis bónusz pénzért munkálkodás.",
+      "<code>/rob</code> – Más játékos kirablása.",
+      "<code>/inventory</code> – Kártya kollekciód megnyitása.",
+      "<code>/wallet</code> – Fizetőeszközeid megnézése.",
+      "<code>/profile</code> – Profil megnézése. Másokét is.",
+      "<code>/redeem</code> – Kupon kód beváltása.",
+      "<code>/top</code> – Top lista.",
+      "<code>/merge</code> – Craftolás. Badge Craft.",
+      "<code>/show</code> – Egy kártya megmutatása a chaten.",
+      "<code>/trade</code> – Trade indítása."
+    ],
+    "note": "Egyes parancsoknál több opció is lehetséges."
+  },
+
+  "profile": {
+    "title": "Profil",
+    "body": [
+      "Profilt készíthetsz magadnak. Saját kiírást, profil képet és egyebeket állíthatsz be.",
+      "Mások profilját is megnézheted, ezen belül kártyáira is rá leshetsz vagy akár kommentelhetsz alá."
+    ],
+    "items": [
+      "<strong>Parancs:</strong> <code>/profile</code>",
+      "Ha nincs profilod, a parancs után feldob egy panelt: \"Create Profile\".",
+      "Kommentet írni / nézni egy adott profilnál.",
+      "Szavazni rá. Upvote.",
+      "Kártya kollekciót megnézni. Inventory.",
+      "Profil szerkesztés."
+    ]
+  }
+}
