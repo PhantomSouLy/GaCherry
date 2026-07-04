@@ -44,5 +44,81 @@
       "Kártya kollekciót megnézni. Inventory.",
       "Profil szerkesztés."
     ]
+  },
+
+  "gacha": {
+    "title": "Gacha",
+    "body": [
+      "A Gacha rendszerrel kártyákat tudsz nyitni Cherry Discord szerverén.",
+      "A nyitás rarity alapú esélyekkel működik, és a megszerzett kártyák bekerülnek a kollekciódba."
+    ],
+    "items": [
+      "<strong>Parancs:</strong> <code>/gacha</code>",
+      "Nyitás után a kártya megjelenik a Discordon.",
+      "A kártyák rarity, series, type és tag alapján különülnek el.",
+      "Duplikált kártyákból később craft vagy gazdasági rendszer is épülhet."
+    ]
+  },
+
+  "shop": {
+    "title": "Bolt",
+    "body": [
+      "A boltban megvásárolható itemek, badge-ek és speciális tárgyak találhatók."
+    ],
+    "items": [
+      "<strong>Parancs:</strong> <code>/store</code>",
+      "Egyes tárgyak limitáltak vagy max/user korláttal rendelkeznek.",
+      "A vásárláshoz megfelelő pénznem szükséges."
+    ]
+  },
+
+  "dungeon": {
+    "title": "Dungeon",
+    "body": [
+      "A Dungeon rendszer külön kihívásokat, jutalmakat és speciális dropokat ad."
+    ],
+    "items": [
+      "<strong>Parancs:</strong> <code>/dungeon</code>",
+      "Dungeon kulcs vagy külön feltétel szükséges lehet.",
+      "A Dungeon jutalmak külön rarity vagy tag alatt jelenhetnek meg."
+    ]
+  },
+
+  "money": {
+    "title": "Pénznemek",
+    "body": [
+      "A GaCherry rendszer több külön pénznemet használ vásárláshoz, craftoláshoz és speciális jutalmakhoz."
+    ],
+    "items": [
+      "<code>/wallet</code> – Pénznemek megnézése.",
+      "<code>/daily</code> – Napi jutalom.",
+      "<code>/work</code> – Extra pénzszerzés.",
+      "Egyes kártyákhoz külön currency tartozhat."
+    ]
+  },
+
+  "coupons": {
+    "title": "Kuponok",
+    "body": [
+      "A kuponok redeem kódokként működnek, amikkel jutalmakat lehet beváltani."
+    ],
+    "items": [
+      "<strong>Parancs:</strong> <code>/redeem</code>",
+      "A kódok lehetnek aktívak vagy lejártak.",
+      "A jutalom lehet pénznem, item vagy külön eseményjutalom."
+    ]
+  },
+
+  "faq": {
+    "title": "GYIK",
+    "body": [
+      "Gyakori kérdések és gyors válaszok a GaCherry rendszerhez."
+    ],
+    "items": [
+      "<strong>Hol nyitok kártyát?</strong> <code>/gacha</code>",
+      "<strong>Hol látom a pénzem?</strong> <code>/wallet</code>",
+      "<strong>Hol látom a kártyáimat?</strong> <code>/inventory</code>",
+      "<strong>Hol váltok be kódot?</strong> <code>/redeem</code>"
+    ]
   }
 }
