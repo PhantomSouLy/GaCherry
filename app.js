@@ -78,3 +78,103 @@ function renderDrop() { $('dropTable').innerHTML = DROP.map(([r, p]) => { let m 
 function rollRarity() { let total = DROP.reduce((s, x) => s + x[1], 0), r = Math.random() * total; for (let [id, p] of DROP) { r -= p; if (r <= 0) return id } return DROP[0][0] }
 function rollGacha(n) { let res = []; for (let i = 0; i < n; i++) { let rid = rollRarity(); let pool = db.cards.filter(c => (c.types || []).includes('Gacha') && c.rarity === rid); if (!pool.length) pool = db.cards.filter(c => (c.types || []).includes('Gacha') && c.rarityGroup === rid); if (pool.length) res.push(pool[Math.floor(Math.random() * pool.length)]) } $('simResults').innerHTML = res.map(cardHTML).join(''); $('simResults').querySelectorAll('.card').forEach(e => e.onclick = () => openModal(db.cards.find(c => String(c.number) === e.dataset.number))) }
 load().catch(err => { console.error(err); document.body.innerHTML = `<main style="padding:30px;color:white;font-family:sans-serif"><h1>Hiba</h1><p>${esc(err.message)}</p></main>` });
+
+from pathlib import Path
+
+snippet = r"""/* GaCherry homepage news section
+   Beillesztés: app.js legvégére, a load().catch(...) sor után.
+   Szerkesztés: a NEWS_ITEMS tömbben írd át a híreket.
+*/
+
+const NEWS_ITEMS = [
+    {
+        icon: '✨',
+        type: 'Update',
+        date: '2026.07.05',
+        title: 'Hírek rész a főoldalon',
+        text: 'A főoldal kapott egy külön hírek blokkot, ahova update, event, redeem vagy bármilyen fontos GaCherry infó kerülhet.'
+    },
+    {
+        icon: '🎉',
+        type: 'Event',
+        date: 'Hamarosan',
+        title: 'Event bejelentések helye',
+        text: 'Ide jöhetnek a limitált kártyák, szezonális események, új nyitások vagy külön Discord programok.'
+    },
+    {
+        icon: '📌',
+        type: 'Info',
+        date: 'Mindig aktuális',
+        title: 'Fontos infók egy helyen',
+        text: 'Craft változások, új redeem kódok, guide frissítések vagy rendszerüzenetek is szépen kiemelhetők itt.'
+    }
+];
+
+function injectNewsStyles() {
+    if (document.getElementById('newsStyles')) return;
+
+    const style = document.createElement('style');
+    style.id = 'newsStyles';
+    style.textContent = `
+        .news-panel{margin-bottom:18px;position:relative;overflow:hidden}
+        .news-panel::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(255,101,183,.18),transparent 42%);pointer-events:none}
+        .news-panel>*{position:relative;z-index:1}
+        .news-grid{display:grid;grid-template-columns:1.15fr .9fr .9fr;gap:14px}
+        .news-card{border:1px solid var(--line);border-radius:20px;padding:18px;background:rgba(255,255,255,.055);display:flex;flex-direction:column;gap:10px;min-height:190px;box-shadow:0 16px 42px rgba(0,0,0,.12)}
+        .news-card.featured{background:linear-gradient(135deg,rgba(255,101,183,.22),rgba(168,79,229,.14));border-color:rgba(255,147,212,.55)}
+        .news-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+        .news-type{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.1);border-radius:999px;padding:7px 10px;font-weight:900;color:var(--pink2)}
+        .news-date{color:var(--muted);font-size:13px;font-weight:800;text-align:right}
+        .news-card h3{font-size:24px;margin:4px 0 0}
+        .news-card p{color:var(--muted);line-height:1.55;margin:0}
+        .news-footer{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+        .news-footer span{border:1px solid var(--line);border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.07);font-size:12px;font-weight:900;color:var(--muted)}
+        body[data-theme=light] .news-card{background:rgba(255,255,255,.72)}
+        @media(max-width:1000px){.news-grid{grid-template-columns:1fr}}
+    `;
+    document.head.appendChild(style);
+}
+
+function insertNewsSection() {
+    const home = $('homePage');
+    if (!home || document.getElementById('newsSection')) return;
+
+    injectNewsStyles();
+
+    const section = document.createElement('section');
+    section.className = 'panel news-panel';
+    section.id = 'newsSection';
+    section.innerHTML = `
+        <div class="panel-head">
+            <div>
+                <span class="section-kicker">GaCherry News</span>
+                <h2>Hírek</h2>
+            </div>
+            <small>Update · Event · Infó</small>
+        </div>
+        <div class="news-grid">
+            ${NEWS_ITEMS.map((item, index) => `
+                <article class="news-card ${index === 0 ? 'featured' : ''}">
+                    <div class="news-top">
+                        <span class="news-type">${esc(item.icon)} ${esc(item.type)}</span>
+                        <span class="news-date">${esc(item.date)}</span>
+                    </div>
+                    <h3>${esc(item.title)}</h3>
+                    <p>${esc(item.text)}</p>
+                    <div class="news-footer"><span>GaCherry</span><span>${esc(item.type)}</span></div>
+                </article>
+            `).join('')}
+        </div>
+    `;
+
+    const homeGrid = home.querySelector('.home-grid');
+    if (homeGrid) homeGrid.insertAdjacentElement('afterend', section);
+    else home.prepend(section);
+}
+
+insertNewsSection();
+"""
+
+path = Path("/mnt/data/gacherry_homepage_news_snippet.js")
+path.write_text(snippet, encoding="utf-8")
+path.as_posix()
