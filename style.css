@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap');
+
+/* Font fix: Fredoka helyett Nunito, jobb magyar Ű / ű megjelenítés */
+html,
+body,
+button,
+a,
+input,
+select,
+textarea {
+  font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+}
+
 img{max-width:100%}
 :root{--bg:#120719;--bg2:#1f0d24;--panel:#181b2d;--panel2:#222338;--text:#fff;--muted:#c9c3d4;--line:rgba(255,255,255,.13);--pink:#ff65b7;--pink2:#ff93d4;--purple:#a84fe5;--shadow:0 24px 70px rgba(0,0,0,.38)}
 body[data-theme=light]{--bg:#fff0f8;--bg2:#ffe4f4;--panel:#fff;--panel2:#fff7fc;--text:#211629;--muted:#6d6174;--line:rgba(95,48,86,.16);--shadow:0 20px 55px rgba(180,82,140,.15)}
