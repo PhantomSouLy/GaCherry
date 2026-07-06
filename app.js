@@ -574,23 +574,9 @@ function renderRedeem() {
   `;
 }
 
-function renderRedeem() {
-  const active = db.redeem?.active || [];
-  const expired = db.redeem?.expired || [];
-  $('redeemGrid').innerHTML = `<article class="redeem-card"><h3>🟢 Aktív kódok</h3>${active.map(codeCard).join('') || '<p>Nincs aktív kód.</p>'}</article><article class="redeem-card"><h3>🔴 Lejárt kódok</h3>${expired.map(codeCard).join('') || '<p>Nincs lejárt kód feltöltve.</p>'}</article>`;
-}
-
 function codeCard(code) {
   const expired = code.status === 'Expired' ? '<span class="expired-badge">Expired</span>' : '';
   return `<div class="redeem-item"><div>${expired}</div><div class="redeem-code">${esc(code.code)}</div>${code.reward ? `<p><strong>Jutalom:</strong> ${esc(code.reward)}</p>` : ''}${code.expires ? `<p><strong>Lejár:</strong> ${esc(code.expires)}</p>` : ''}<small>${esc(code.note || 'Beváltás Discordon: /redeem')}</small></div>`;
-}
-
-function renderDrop() {
-  $('dropTable').innerHTML = DROP.map(([r, p]) => {
-    const m = db.rarities.find(x => x.id === r);
-    const name = m ? `${m.icon} ${m.name}` : r;
-    return `<div class="drop-row"><span>${esc(name)}</span><strong>${p}%</strong></div>`;
-  }).join('');
 }
 
 function rollRarity() {
