@@ -1,12 +1,12 @@
 [
   {
     "icon": "✨",
-    "type": "Update",
-    "date": "2026.07.05",
-    "title": "Update",
-    "text": "-",
+    "type": "News",
+    "date": "2026.07.x",
+    "title": "GaCherry Database",
+    "text": "Megjelent a GaCherry Database! Ezen a helyen megtalász minden hasznos infót a játékról. Végignézheted a kártyákat, craft listát vagy bármi mást, ami a játékhoz tartozik!",
     "featured": true,
-    "tags": ["GaCherry", "Update"]
+    "tags": ["GaCherry", "News"]
   },
   {
     "icon": "🎉",
@@ -18,10 +18,10 @@
   },
   {
     "icon": "🎉",
-    "type": "News",
-    "date": "2026.07.",
-    "title": "GaCherry Database",
-    "text": "Megjelent a GaCherry Database! Ezen a helyen megtalász minden hasznos infót a játékról. Végignézheted a kártyákat, craft listát vagy bármi mást, ami a játékhoz tartozik!",
+    "type": "Update",
+    "date": "2026.07.xx",
+    "title": "Update",
+    "text": "-",
     "tags": ["Info"]
   }
 ]
