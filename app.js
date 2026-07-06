@@ -183,6 +183,13 @@ function showPage(page) {
     item.classList.toggle('active', item.dataset.page === page || (page === 'guide' && item.id === 'guideToggle'));
   });
 
+  setTimeout(() => {
+  document.querySelector('.main')?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}, 50);
+
   if (page === 'guide') renderGuide();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
