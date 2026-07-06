@@ -442,16 +442,36 @@ function renderCurrencies() {
 
 function renderCraft() {
   if (!$('craftTree')) return;
+
   const levels = db.craft?.levels || [];
+
   $('craftTree').innerHTML = levels.length ? levels.map(level => `
     <article class="craft-card">
       <h3>${esc(level.title || 'Craft')}</h3>
-      <p><strong>Kész Kártya:</strong> ${linkable(level.result || '')}</p>
-      <p><strong>Rarity:</strong> ${esc(level.rarity || '-')}</p>
-      <p><strong>Role:</strong> ${esc(level.role || '-')}</p>
+
+      <p>
+        <strong>Eredmény:</strong> ${linkable(level.result || '')}
+      </p>
+
+      <p>
+        <strong>Rarity:</strong> ${esc(level.rarity || '-')}
+      </p>
+
+      <p>
+        <strong>Role:</strong> ${esc(level.role || '-')}
+      </p>
+
       <h4>Szükséges:</h4>
-      <ul>${(level.requirements || []).map(item => `<li>${linkable(item)}</li>`).join('')}</ul>
-      ${(level.subcrafts || []).map(sub => `<h4>${esc(sub.title || '')}</h4><ul>${(sub.items || []).map(item => `<li>${linkable(item)}</li>`).join('')}</ul>`).join('')}
+      <ul>
+        ${(level.requirements || []).map(item => `<li>${linkable(item)}</li>`).join('')}
+      </ul>
+
+      ${(level.subcrafts || []).map(sub => `
+        <h4>${esc(sub.title || '')}</h4>
+        <ul>
+          ${(sub.items || []).map(item => `<li>${linkable(item)}</li>`).join('')}
+        </ul>
+      `).join('')}
     </article>
   `).join('') : '<div class="empty-state">Nincs craft adat.</div>';
 
