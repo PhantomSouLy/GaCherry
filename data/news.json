@@ -3,8 +3,8 @@
     "icon": "✨",
     "type": "Update",
     "date": "2026.07.05",
-    "title": "Hírek rész a főoldalon",
-    "text": "A főoldal kapott egy külön hírek blokkot, ahova update, event, redeem vagy bármilyen fontos GaCherry infó kerülhet.",
+    "title": "Update",
+    "text": "-",
     "featured": true,
     "tags": ["GaCherry", "Update"]
   },
@@ -12,16 +12,16 @@
     "icon": "🎉",
     "type": "Event",
     "date": "Hamarosan",
-    "title": "Event bejelentések helye",
-    "text": "Ide jöhetnek a limitált kártyák, szezonális események, új nyitások vagy külön Discord programok.",
+    "title": "Event",
+    "text": "-",
     "tags": ["Event", "Discord"]
   },
   {
-    "icon": "📌",
-    "type": "Info",
-    "date": "Mindig aktuális",
-    "title": "Fontos infók egy helyen",
-    "text": "Craft változások, új redeem kódok, guide frissítések vagy rendszerüzenetek is szépen kiemelhetők itt.",
+    "icon": "🎉",
+    "type": "News",
+    "date": "2026.07.",
+    "title": "GaCherry Database",
+    "text": "Megjelent a GaCherry Database! Ezen a helyen megtalász minden hasznos infót a játékról. Végignézheted a kártyákat, craft listát vagy bármi mást, ami a játékhoz tartozik!",
     "tags": ["Info"]
   }
 ]
