@@ -10,8 +10,40 @@ body[data-theme=light]{--bg:#fff0f8;--bg2:#ffe4f4;--panel:#fff;--panel2:#fff7fc;
 @media(max-width:800px){.main{padding:14px}.hero{border-radius:18px}.hero h1{font-size:40px}.home-grid,.toolbar,.modal-card,.guide-layout,.redeem-grid{grid-template-columns:1fr}.cards-grid,.sim-results{grid-template-columns:repeat(2,1fr)}.craft-tree,.currency-list,.link-grid{grid-template-columns:1fr}.modal-image-box{min-height:420px}.gacha-orb{width:170px;height:170px}.orb-core{width:108px;height:108px}.panel-head{align-items:flex-start;flex-direction:column}.top-actions{justify-content:flex-start}}
 @media(max-width:480px){.cards-grid,.sim-results{grid-template-columns:1fr}.rarity-grid,.rarity-list{grid-template-columns:1fr}.hero{border-radius:16px}.hero h1{font-size:34px}.intro-card h2,.panel h2{font-size:27px}}
 
-.hero-banner{display:block;width:100%;height:auto;max-height:360px;object-fit:contain;border-radius:24px}
+.hero-banner{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;border-radius:24px}
 
 .site-footer{margin:28px 0 8px;padding:18px 20px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.04);color:var(--muted);display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;font-weight:800}
 .site-footer span:not(:last-child)::after{content:"•";margin-left:14px;color:var(--pink2)}
 body[data-theme=light] .site-footer{background:rgba(255,255,255,.65)}
+
+
+/* v7 light-mode card readability fix */
+.card-info{color:#fff}
+.card-name{color:#fff}
+body[data-theme=dark] .card-info{
+  background:linear-gradient(transparent,rgba(0,0,0,.78) 45%,rgba(0,0,0,.94));
+}
+body[data-theme=light] .card-info{
+  background:linear-gradient(transparent,rgba(255,240,248,.78) 43%,rgba(255,240,248,.97));
+  color:#211629;
+}
+body[data-theme=light] .card-name{
+  color:#211629;
+  text-shadow:none;
+}
+body[data-theme=light] .card-id{
+  color:#6d6174;
+  text-shadow:none;
+}
+body[data-theme=light] .card-info .rarity-badge{
+  color:#211629;
+  background:rgba(255,255,255,.72);
+  border-color:rgba(95,48,86,.18);
+  text-shadow:none;
+}
+body[data-theme=light] .card-info .type-badge{
+  color:#211629;
+  background:rgba(255,255,255,.72);
+  border-color:rgba(95,48,86,.18);
+  text-shadow:none;
+}
