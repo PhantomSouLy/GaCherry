@@ -120,17 +120,11 @@
   ],
   "items": [
     "<strong>Ez az oldal csak egy útmutató és adatbázis.</strong><ul><li>Minden funkció csak is Cherry Discord szerverén érhető el!</li></ul>",
-
     "<strong>Miért nem látom a Gacha szobákat?</strong><ul><li>Nincs rajtad a GaCherry rang. A rangot a Rangok szobában tudod felvenni.</li></ul>",
-
     "<strong>Hol nyithatok kártyát?</strong><ul><li>A GaCherry kategória alatti Gacha szobában ezzel a paranccsal: <code>/gacha</code></li></ul>",
-
     "<strong>Hol találom mennyi a pénzem van?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/wallet</code></li></ul>",
-
     "<strong>Hol találom meg a meglévő kártyáimat?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/inventory</code></li></ul>",
-
     "<strong>Hol tudom beváltani a kódot?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/redeem</code></li></ul>",
-
     "<strong>Bármilyen plusz kérdésed van?</strong><ul><li>Ha itt nem találod a választ, akkor a gacha chat szobában nyugodtan kérdezz rá bátran!</li></ul>"
   ]
 }
