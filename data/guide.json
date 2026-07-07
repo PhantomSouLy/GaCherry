@@ -3,7 +3,7 @@
     "title": "GaCherry - Bevezetés",
     "body": [
       "<strong>Cherry egyedi gacha játékához itt találsz leírást és útmutatót!</strong>",
-      "<strong>A parancsok és minden más funkciók csak is kizárólag Cherry Discord szerverén működnek!<strong>",
+      "<strong>A parancsok és minden más funkció csak is kizárólag Cherry Discord szerverén működik!</strong>",
       "TIPP: Parancsokat célszerű legtöbbször a 'cmd' szobában használni!"
     ]
   },
@@ -22,7 +22,7 @@
       "<code>/rob</code> – Más játékos kirablása.",
       "<code>/inventory</code> – Kártya kollekciód megnyitása.",
       "<code>/wallet</code> – Fizetőeszközeid megnézése.",
-      "<code>/profile</code> – Profil megnézése. (Másokét is)",
+      "<code>/profile</code> – Profil megnézése. Másokét is.",
       "<code>/redeem</code> – Kupon kód beváltása.",
       "<code>/top</code> – Top lista.",
       "<code>/merge</code> – Craftolás. Badge Craft.",
@@ -35,32 +35,32 @@
   "profile": {
     "title": "Profil",
     "body": [
-      "Profilt készíthetsz magadnak. Saját kiírást, profil képet és egyebeket állíthatsz be.",
-      "Mások profilját is megnézheted, ezen belül kártyáira is rá leshetsz vagy akár kommentelhetsz alá."
+      "Profilt készíthetsz magadnak. Saját kiírást, profilképet és egyebeket állíthatsz be.",
+      "Mások profilját is megnézheted, ezen belül a kártyáira is ránézhetsz vagy akár kommentelhetsz alá."
     ],
     "items": [
       "<strong>Parancs:</strong> <code>/profile</code>",
       "Ha nincs profilod, a parancs beírása után feldob egy panelt: \"Create Profile\".",
-      "<strong>Miket lehet még csinalni?<strong>",
-      " - Kommentet írni egy adott profilra.",
-      " - Megnézni egy másik profilt.",
-      " - Szavazni más profilra. (Upvote)",
-      " - Kártya kollekciót megnézni. (Inventory)",
-      " - Profil szerkesztés."
+      "<strong>Miket lehet még csinálni?</strong>",
+      "Kommentet írni egy adott profilra.",
+      "Megnézni egy másik profilt.",
+      "Szavazni más profilra. Upvote.",
+      "Kártya kollekciót megnézni. Inventory.",
+      "Profil szerkesztés."
     ]
   },
 
   "gacha": {
     "title": "Gacha",
     "body": [
-      "A Gacha lényege: Kártyákat szerezhetsz nyitással, amik a kollekciódba kerülnek.",
+      "A Gacha lényege: kártyákat szerezhetsz nyitással, amik a kollekciódba kerülnek.",
       "A nyitás különböző rarity alapú esélyekkel működik."
     ],
     "items": [
       "<strong>Parancs:</strong> <code>/gacha</code>",
       "Nyitni csak is a Gacha szobában tudsz!",
       "A kártyák rarity, series, type és tag alapján különülnek el. Ezeket leginkább itt láthatod az oldalon.",
-      "Duplikált kártyákat a rendszer automatikusan eladja, és a kártyához tartozó pénzemet megkapod."
+      "Duplikált kártyákat a rendszer automatikusan eladja, és a kártyához tartozó pénznemet megkapod."
     ]
   },
 
@@ -83,7 +83,7 @@
     ],
     "items": [
       "<strong>Parancs:</strong> <code>/dungeon</code>",
-      "Belépéshez Dungeon kulcs-ra lesz szükséged, amit Gacha nyitással szerezhetsz meg.",
+      "Belépéshez Dungeon kulcsra lesz szükséged, amit Gacha nyitással szerezhetsz meg.",
       "A Dungeon jutalmak külön rarity vagy tag alatt jelenhetnek meg."
     ]
   },
@@ -113,18 +113,19 @@
     ]
   },
 
-"faq": {
-  "title": "GYIK",
-  "body": [
-    "Gyakori kérdések."
-  ],
-  "items": [
-    "<strong>Ez az oldal csak egy útmutató és adatbázis.</strong><ul><li>Minden funkció csak is Cherry Discord szerverén érhető el!</li></ul>",
-    "<strong>Miért nem látom a Gacha szobákat?</strong><ul><li>Nincs rajtad a GaCherry rang. A rangot a Rangok szobában tudod felvenni.</li></ul>",
-    "<strong>Hol nyithatok kártyát?</strong><ul><li>A GaCherry kategória alatti Gacha szobában ezzel a paranccsal: <code>/gacha</code></li></ul>",
-    "<strong>Hol találom mennyi a pénzem van?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/wallet</code></li></ul>",
-    "<strong>Hol találom meg a meglévő kártyáimat?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/inventory</code></li></ul>",
-    "<strong>Hol tudom beváltani a kódot?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/redeem</code></li></ul>",
-    "<strong>Bármilyen plusz kérdésed van?</strong><ul><li>Ha itt nem találod a választ, akkor a gacha chat szobában nyugodtan kérdezz rá bátran!</li></ul>"
-  ]
+  "faq": {
+    "title": "GYIK",
+    "body": [
+      "Gyakori kérdések."
+    ],
+    "items": [
+      "<strong>Ez az oldal csak egy útmutató és adatbázis.</strong><ul><li>Minden funkció csak is Cherry Discord szerverén érhető el!</li></ul>",
+      "<strong>Miért nem látom a Gacha szobákat?</strong><ul><li>Nincs rajtad a GaCherry rang. A rangot a Rangok szobában tudod felvenni.</li></ul>",
+      "<strong>Hol nyithatok kártyát?</strong><ul><li>A GaCherry kategória alatti Gacha szobában ezzel a paranccsal: <code>/gacha</code></li></ul>",
+      "<strong>Hol találom, mennyi pénzem van?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/wallet</code></li></ul>",
+      "<strong>Hol találom meg a meglévő kártyáimat?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/inventory</code></li></ul>",
+      "<strong>Hol tudom beváltani a kódot?</strong><ul><li>A GaCherry kategória alatti bármelyik szobában ezzel a paranccsal: <code>/redeem</code></li></ul>",
+      "<strong>Bármilyen plusz kérdésed van?</strong><ul><li>Ha itt nem találod a választ, akkor a gacha chat szobában nyugodtan kérdezz rá bátran!</li></ul>"
+    ]
+  }
 }
