@@ -176,15 +176,40 @@ function bind() {
 
 function showPage(page) {
   state.page = page;
-  document.querySelectorAll('.page').forEach(section => section.classList.remove('active'));
-  $(`${page}Page`)?.classList.add('active');
 
-  document.querySelectorAll('.nav-item').forEach(item => {
-    item.classList.toggle('active', item.dataset.page === page || (page === 'guide' && item.id === 'guideToggle'));
+  document.querySelectorAll('.page').forEach(section => {
+    section.classList.remove('active');
   });
 
-  if (page === 'guide') renderGuide();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  const targetPage = $(`${page}Page`);
+  targetPage?.classList.add('active');
+
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.classList.toggle(
+      'active',
+      item.dataset.page === page || (page === 'guide' && item.id === 'guideToggle')
+    );
+  });
+
+  if (page === 'guide') {
+    renderGuide();
+  }
+
+  setTimeout(() => {
+    const main = document.querySelector('.main');
+
+    if (window.innerWidth <= 1200 && main) {
+      window.scrollTo({
+        top: main.offsetTop - 8,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }, 80);
 }
 
 function renderAll() {
