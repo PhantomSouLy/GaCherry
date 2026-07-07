@@ -644,4 +644,233 @@ function renderCraft() {
 
 function cleanCraft(text) {
   return String(text || '')
-    .replace(/^\s*\d+\s*[
+    .replace(/^\s*\d+\s*[x×]?\s*/i, '')
+    .replace(/\s*\((Store|Gacha|Dungeon)\)/ig, '')
+    .replace(/\s*\[\d+x\]/ig, '')
+    .replace(/\s*→.*$/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function searchKey(text) {
+  return cleanCraft(text)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/level/g, 'lvl')
+    .replace(/\[\s*lvl\s*(\d+)\s*\]/g, 'lvl$1')
+    .replace(/lvl\s*(\d+)/g, 'lvl$1')
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function resolveCraftCard(query) {
+  const key = searchKey(query);
+  if (!key) return null;
+
+  const direct = db.cards.find(card => searchKey(card.name) === key);
+  if (direct) return direct;
+
+  return db.cards.find(card => {
+    const cardKey = searchKey(card.name);
+    return cardKey.includes(key) || key.includes(cardKey);
+  }) || null;
+}
+
+function linkable(text) {
+  const clean = cleanCraft(text);
+  return `<span class="craft-chip" data-craft-search="${esc(clean)}">${esc(text)}</span>`;
+}
+
+function openCraftPreview(query) {
+  const card = resolveCraftCard(query);
+  const currency = db.currencies.find(item => searchKey(item.name) === searchKey(query) || searchKey(query).includes(searchKey(item.name)));
+  let html = '';
+
+  if (card) {
+    const tags = [...(card.types || []), ...(card.tags || [])].filter(Boolean).slice(0, 5);
+
+    html = `
+      <img src="${esc(card.image || '')}" alt="${esc(card.name || '')}">
+      <h3>${esc(card.name || query)}</h3>
+      <p>${esc(card.rarityIcon || lab(card.rarityGroup || card.rarity)[0])} ${esc(card.rarityName || lab(card.rarityGroup || card.rarity)[1])}</p>
+      <div class="preview-tags">${tags.map(tag => `<span>${esc(tag)}</span>`).join('') || '<span>Kártya</span>'}</div>
+      <button class="primary-action" id="openPreviewCard" type="button">Kártya megnyitása</button>
+    `;
+  } else if (currency) {
+    const icon = currency.icon && String(currency.icon).startsWith('data/')
+      ? `<img src="${esc(currency.icon)}" alt="${esc(currency.name)}">`
+      : `<div class="fallback-icon">${esc(currency.icon || '💰')}</div>`;
+
+    html = `${icon}<h3>${esc(currency.name)}</h3><p>Pénznem</p>`;
+  } else {
+    html = `
+      <div class="fallback-icon">🔎</div>
+      <h3>${esc(query)}</h3>
+      <p>Nincs még adatbázishoz kötve, vagy a neve eltér a kártya pontos nevétől.</p>
+      <div class="preview-tags"><span>Craft item</span><span>Nincs pontos találat</span></div>
+    `;
+  }
+
+  if ($('craftPreviewBody')) $('craftPreviewBody').innerHTML = html;
+  $('craftModal')?.classList.add('open');
+
+  if (card && $('openPreviewCard')) {
+    $('openPreviewCard').onclick = () => {
+      closeCraftModal();
+      openModal(card);
+    };
+  }
+}
+
+function guideBodyToHTML(guide) {
+  let html = '';
+
+  if (guide.body) {
+    html += guide.body.map(text => `<p>${text}</p>`).join('');
+  }
+
+  if (guide.items) {
+    html += `<ul>${guide.items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+  }
+
+  if (guide.note) {
+    html += `<p><strong>${guide.note}</strong></p>`;
+  }
+
+  return html;
+}
+
+function renderGuide() {
+  if (!$('guideTabs') || !$('guideContent')) return;
+
+  const entries = Object.entries(GUIDE);
+  if (!entries.length) return;
+
+  if (!GUIDE[state.guide]) state.guide = entries[0][0];
+
+  $('guideTabs').innerHTML = entries.map(([id, guide]) => `
+    <button class="${state.guide === id ? 'active' : ''}" data-guide-tab="${esc(id)}" type="button">
+      ${esc(guide.title || id)}
+    </button>
+  `).join('');
+
+  $('guideTabs').querySelectorAll('[data-guide-tab]').forEach(button => {
+    button.onclick = () => {
+      state.guide = button.dataset.guideTab;
+      renderGuide();
+    };
+  });
+
+  const guide = GUIDE[state.guide] || entries[0][1];
+  $('guideContent').innerHTML = `<h3>${esc(guide.title || 'Guide')}</h3>${guideBodyToHTML(guide)}`;
+}
+
+function renderRedeem() {
+  if (!$('redeemGrid')) return;
+
+  const active = db.redeem?.active || [];
+  const expired = db.redeem?.expired || [];
+
+  $('redeemGrid').innerHTML = `
+    <article class="redeem-card">
+      <h3>🟢 Aktív kódok</h3>
+      ${active.map(codeCard).join('') || '<p>Nincs aktív kód.</p>'}
+    </article>
+
+    <article class="redeem-card">
+      <h3>🔴 Lejárt kódok</h3>
+      ${expired.map(codeCard).join('') || '<p>Nincs lejárt kód feltöltve.</p>'}
+    </article>
+  `;
+}
+
+function codeCard(code) {
+  const expired = code.status === 'Expired' ? '<span class="expired-badge">Expired</span>' : '';
+
+  return `
+    <div class="redeem-item">
+      <div>${expired}</div>
+      <div class="redeem-code">${esc(code.code)}</div>
+      ${code.reward ? `<p><strong>Jutalom:</strong> ${esc(code.reward)}</p>` : ''}
+      ${code.expires ? `<p><strong>Lejár:</strong> ${esc(code.expires)}</p>` : ''}
+      <small>${esc(code.note || 'Beváltás Discordon: /redeem')}</small>
+    </div>
+  `;
+}
+
+function rollRarity() {
+  const total = DROP.reduce((sum, item) => sum + item[1], 0);
+  let roll = Math.random() * total;
+
+  for (const [id, chance] of DROP) {
+    roll -= chance;
+    if (roll <= 0) return id;
+  }
+
+  return DROP[0][0];
+}
+
+function getGachaPoolForRarity(rarityId) {
+  const gachaCards = db.cards.filter(card => (card.types || []).includes('Gacha'));
+  let pool = gachaCards.filter(card => card.rarity === rarityId || card.rarityGroup === rarityId);
+
+  if (!pool.length && rarityId.endsWith('_plus')) {
+    const base = rarityId.replace('_plus', '');
+    pool = gachaCards.filter(card => card.rarity === base || card.rarityGroup === base);
+  }
+
+  return pool.length ? pool : gachaCards;
+}
+
+function rollOneCard() {
+  const rarityId = rollRarity();
+  const pool = getGachaPoolForRarity(rarityId);
+
+  if (!pool.length) return null;
+
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function rollGacha(amount) {
+  if (isRolling) return;
+
+  isRolling = true;
+
+  const buttons = document.querySelectorAll('[data-roll]');
+  buttons.forEach(button => button.disabled = true);
+
+  $('gachaOrb')?.classList.add('opening');
+  setText('simStatus', 'Nyitás folyamatban...');
+
+  if ($('simResults')) $('simResults').innerHTML = '';
+
+  setTimeout(() => {
+    const results = [];
+
+    for (let i = 0; i < amount; i++) {
+      const card = rollOneCard();
+      if (card) results.push(card);
+    }
+
+    if ($('simResults')) {
+      $('simResults').innerHTML = results.length
+        ? results.map(cardHTML).join('')
+        : '<div class="empty-state">Nincs Gacha type-os kártya az adatbázisban.</div>';
+
+      $('simResults').querySelectorAll('.card').forEach(element => {
+        element.onclick = () => openModal(findCardByNumber(element.dataset.number));
+      });
+    }
+
+    $('gachaOrb')?.classList.remove('opening');
+    setText('simStatus', results.length ? `${results.length} kártya kinyitva.` : 'Nem találtam nyitható kártyát.');
+
+    buttons.forEach(button => button.disabled = false);
+    isRolling = false;
+  }, 760);
+}
+
+load().catch(error => {
+  console.error(error);
+  document.body.innerHTML = `<main style="padding:30px;color:white;font-family:sans-serif"><h1>Hiba</h1><p>${esc(error.message)}</p></main>`;
+});
