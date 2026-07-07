@@ -176,41 +176,22 @@ function bind() {
 
 function showPage(page) {
   state.page = page;
-
-  document.querySelectorAll('.page').forEach(section => {
-    section.classList.remove('active');
-  });
-
-  const targetPage = $(`${page}Page`);
-  targetPage?.classList.add('active');
+  document.querySelectorAll('.page').forEach(section => section.classList.remove('active'));
+  $(`${page}Page`)?.classList.add('active');
 
   document.querySelectorAll('.nav-item').forEach(item => {
-    item.classList.toggle(
-      'active',
-      item.dataset.page === page || (page === 'guide' && item.id === 'guideToggle')
-    );
+    item.classList.toggle('active', item.dataset.page === page || (page === 'guide' && item.id === 'guideToggle'));
   });
 
-  if (page === 'guide') {
-    renderGuide();
-  }
-
   setTimeout(() => {
-    const main = document.querySelector('.main');
+  document.querySelector('.main')?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}, 50);
 
-    if (window.innerWidth <= 1200 && main) {
-      const y = main.offsetTop - 8;
-      window.scrollTo({
-        top: y,
-        behavior: 'smooth'
-      });
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  }, 80);
+  if (page === 'guide') renderGuide();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderAll() {
@@ -299,6 +280,239 @@ function uniqueCardValues(callback) {
 function renderFilters() {
   const rarityGroups = ORDER.filter(group => db.cards.some(card => (card.rarityGroup || card.rarity) === group));
   const extraRarities = uniqueCardValues(card => card.rarityGroup || card.rarity).filter(group => !ORDER.includes(group));
+  const types = [...new Set([...TYPES, ...db.cards.flatMap(card => card.types || [])])].filter(Boolean);
+  const series = [...new Set([...SERIES, ...uniqueCardValues(card => card.series)])].filter(Boolean);
+  const tags = [...new Set([...TAGS, ...db.cards.flatMap(card => card.tags || [])])].filter(Boolean);
+
+  if ($('rarityFilters')) $('rarityFilters').innerHTML = chip('rarity', 'all', 'Összes') + rarityGroups.concat(extraRarities).map(group => {
+    const [icon, label] = lab(group);
+    return chip('rarity', group, `${icon} ${label}`);
+  }).join('');
+  if ($('typeFilters')) $('typeFilters').innerHTML = chip('type', 'all', 'Összes') + types.map(type => chip('type', type, type)).join('');
+  if ($('seriesFilters')) $('seriesFilters').innerHTML = chip('series', 'all', 'Összes') + series.map(item => chip('series', item, item)).join('');
+  if ($('tagFilters')) $('tagFilters').innerHTML = chip('tag', 'all', 'Minden tag') + tags.map(tag => chip('tag', tag, tag)).join('');
+
+  document.querySelectorAll('.chip[data-filter]').forEach(button => {
+    button.onclick = () => {
+      state.filters[button.dataset.filter] = button.dataset.value;
+      state.currentPage = 1;
+      syncFilters();
+      renderCards();
+    };
+  });
+}
+
+function syncFilters() {
+  document.querySelectorAll('.chip[data-filter]').forEach(button => {
+    button.classList.toggle('active', state.filters[button.dataset.filter] === button.dataset.value);
+  });
+  renderStats();
+}
+
+function matches(card) {
+  const rarity = card.rarityGroup || card.rarity || 'unknown';
+  if (state.filters.rarity !== 'all' && rarity !== state.filters.rarity) return false;
+
+  if (state.filters.type !== 'all') {
+    const types = card.types || [];
+    const tags = card.tags || [];
+    if (!types.includes(state.filters.type) && !tags.includes(state.filters.type)) return false;
+  }
+
+  if (state.filters.series !== 'all' && card.series !== state.filters.series) return false;
+  if (state.filters.tag !== 'all' && !(card.tags || []).includes(state.filters.tag)) return false;
+
+  const query = state.search.trim().toLowerCase();
+  if (query) {
+    const haystack = [card.name, card.description, card.rarityName, card.rarity, card.rarityGroup, card.type, card.series, card.currencyName, ...(card.tags || []), ...(card.types || [])].join(' ').toLowerCase();
+    if (!haystack.includes(query)) return false;
+  }
+
+  return true;
+}
+
+function sortCards(a, b) {
+  if (state.sort === 'number-desc') return (b.number || 0) - (a.number || 0);
+  if (state.sort === 'name-asc') return String(a.name || '').localeCompare(String(b.name || ''), 'hu');
+  if (state.sort === 'name-desc') return String(b.name || '').localeCompare(String(a.name || ''), 'hu');
+  if (state.sort === 'rarity-asc') return ORDER.indexOf(a.rarityGroup || a.rarity) - ORDER.indexOf(b.rarityGroup || b.rarity) || String(a.name || '').localeCompare(String(b.name || ''), 'hu');
+  return (a.number || 0) - (b.number || 0);
+}
+
+function cardHTML(card) {
+  return `
+    <article class="card" data-number="${esc(card.number)}">
+      <div class="image-shell"><img src="${esc(card.image || '')}" alt="${esc(card.name || '')}" loading="lazy"></div>
+      <div class="card-info">
+        <div class="card-name">${esc(card.name || 'Névtelen kártya')}</div>
+        <div class="card-meta"><span class="rarity-badge">${esc(card.rarityIcon || lab(card.rarityGroup || card.rarity)[0])} ${esc(card.rarityName || lab(card.rarityGroup || card.rarity)[1])}</span><span class="card-id">#${String(card.number || 0).padStart(3, '0')}</span></div>
+      </div>
+    </article>
+  `;
+}
+
+function renderCards() {
+  if (!$('cardsGrid')) return;
+  const list = db.cards.filter(matches).sort(sortCards);
+  const pages = Math.max(1, Math.ceil(list.length / state.perPage));
+  state.currentPage = Math.min(Math.max(1, state.currentPage), pages);
+  const page = list.slice((state.currentPage - 1) * state.perPage, state.currentPage * state.perPage);
+
+  setText('resultCount', `${list.length} kártya`);
+  $('cardsGrid').innerHTML = page.length ? page.map(cardHTML).join('') : '<div class="empty-state">Nincs találat.</div>';
+  $('cardsGrid').querySelectorAll('.card').forEach(element => element.onclick = () => openModal(findCardByNumber(element.dataset.number)));
+
+  if ($('prevPage')) $('prevPage').disabled = state.currentPage <= 1;
+  if ($('nextPage')) $('nextPage').disabled = state.currentPage >= pages;
+  if ($('pageNumbers')) $('pageNumbers').innerHTML = `<button class="active" type="button">${state.currentPage} / ${pages}</button>`;
+}
+
+function findCardByNumber(number) {
+  return db.cards.find(card => String(card.number) === String(number));
+}
+
+function curHTML(value, card) {
+  if (value === null || value === undefined || value === '') return '-';
+  const currency = db.currencies.find(item => item.id === card.currency) || { icon: '$', name: 'Default' };
+  return currency.icon && String(currency.icon).startsWith('data/')
+    ? `<span class="currency-value"><img src="${esc(currency.icon)}" alt="${esc(currency.name)}"><b>${esc(value)}</b></span>`
+    : `<span class="currency-value"><span>${esc(currency.icon || '$')}</span><b>${esc(value)}</b></span>`;
+}
+
+function renderDesc(text) {
+  return esc(text || '')
+    .replace(/&lt;:RedStar:\d+&gt;/g, '<img class="inline-icon" src="data/Currency/RedStar.webp" alt="RedStar">')
+    .replace(/&lt;RedStar:\d+&gt;/g, '<img class="inline-icon" src="data/Currency/RedStar.webp" alt="RedStar">');
+}
+
+function openModal(card) {
+  if (!card) return;
+  $('cardModal')?.classList.add('open');
+  if ($('modalImage')) {
+    $('modalImage').src = card.image || '';
+    $('modalImage').alt = card.name || '';
+  }
+  setText('modalNumber', `#${String(card.number || 0).padStart(3, '0')}`);
+  setText('modalRarity', `${card.rarityIcon || lab(card.rarityGroup || card.rarity)[0]} ${card.rarityName || lab(card.rarityGroup || card.rarity)[1]}`);
+  setText('modalTypes', (card.types || []).join(', '));
+  setText('modalTitle', card.name || 'Névtelen kártya');
+  if ($('modalDescription')) $('modalDescription').innerHTML = renderDesc(card.description || 'Nincs külön leírás megadva.');
+  setText('modalSeries', card.series || '-');
+  setText('modalTypeList', (card.types || []).join(', ') || '-');
+  if ($('modalSell')) $('modalSell').innerHTML = curHTML(card.sell, card);
+  if ($('modalBuy')) $('modalBuy').innerHTML = curHTML(card.buy, card);
+  setText('modalStock', card.stock ?? '-');
+  setText('modalMaxUser', card.maxPerUser ?? '-');
+  setText('modalRole', card.role || '-');
+  if ($('modalRoleRow')) $('modalRoleRow').style.display = card.role ? 'flex' : 'none';
+  const tags = card.tags || [];
+  if ($('modalTags')) $('modalTags').innerHTML = tags.length ? tags.map(tag => `<span>${esc(tag)}</span>`).join('') : '<span>Nincs tag</span>';
+}
+
+function closeModal() {
+  $('cardModal')?.classList.remove('open');
+}
+
+function closeCraftModal() {
+  $('craftModal')?.classList.remove('open');
+}
+
+function renderRarities() {
+  if (!$('rarityList')) return;
+  const counts = count(db.cards, card => card.rarityGroup || card.rarity || 'unknown');
+  const groups = ORDER.filter(group => counts[group]).concat(Object.keys(counts).filter(group => !ORDER.includes(group)));
+  $('rarityList').innerHTML = groups.length ? groups.map(group => {
+    const [icon, label] = lab(group);
+    return `<button class="rarity-tile" data-rarity-page="${esc(group)}"><span class="icon">${icon}</span><strong>${esc(label)}</strong><span>${counts[group]} db</span></button>`;
+  }).join('') : '<div class="empty-state">Nincs rarity adat.</div>';
+
+  $('rarityList').querySelectorAll('[data-rarity-page]').forEach(button => {
+    button.onclick = () => {
+      state.filters.rarity = button.dataset.rarityPage;
+      state.currentPage = 1;
+      showPage('cards');
+      syncFilters();
+      renderCards();
+    };
+  });
+}
+
+function renderCurrencies() {
+  if (!$('currencyList')) return;
+  $('currencyList').innerHTML = db.currencies.length ? db.currencies.map(currency => {
+    const icon = currency.icon && String(currency.icon).startsWith('data/')
+      ? `<img src="${esc(currency.icon)}" alt="${esc(currency.name)}">`
+      : `<span class="currency-symbol">${esc(currency.icon || '$')}</span>`;
+    return `<article class="currency-tile">${icon}<strong>${esc(currency.name || 'Pénznem')}</strong></article>`;
+  }).join('') : '<div class="empty-state">Nincs pénznem adat.</div>';
+}
+
+function renderCraft() {
+  if (!$('craftTree')) return;
+
+  const levels = db.craft?.levels || [];
+
+  $('craftTree').innerHTML = levels.length ? levels.map(level => `
+    <article class="craft-card">
+      <h3>${esc(level.title || 'Craft')}</h3>
+
+      <p>
+        <strong>Eredmény:</strong> ${linkable(level.result || '')}
+      </p>
+
+      <p>
+        <strong>Rarity:</strong> ${esc(level.rarity || '-')}
+      </p>
+
+      <p>
+        <strong>Role:</strong> ${esc(level.role || '-')}
+      </p>
+
+      <h4>Szükséges:</h4>
+      <ul>
+        ${(level.requirements || []).map(item => `<li>${linkable(item)}</li>`).join('')}
+      </ul>
+
+      ${(level.subcrafts || []).map(sub => `
+        <h4>${esc(sub.title || '')}</h4>
+        <ul>
+          ${(sub.items || []).map(item => `<li>${linkable(item)}</li>`).join('')}
+        </ul>
+      `).join('')}
+    </article>
+  `).join('') : '<div class="empty-state">Nincs craft adat.</div>';
+
+  document.querySelectorAll('[data-craft-search]').forEach(element => {
+    element.onclick = () => openCraftPreview(element.dataset.craftSearch);
+  });
+}
+
+function cleanCraft(text) {
+  return String(text || '')
+    .replace(/^\s*\d+\s*[x×]?\s*/i, '')
+    .replace(/\s*\((Store|Gacha|Dungeon)\)/ig, '')
+    .replace(/\s*\[\d+x\]/ig, '')
+    .replace(/\s*→.*$/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function searchKey(text) {
+  return cleanCraft(text)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/level/g, 'lvl')
+    .replace(/\[\s*lvl\s*(\d+)\s*\]/g, 'lvl$1')
+    .replace(/lvl\s*(\d+)/g, 'lvl$1')
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function resolveCraftCard(query) {
+  const key = searchKey(query);
+  if (!key) return null;
+
+  connst extraRarities = uniqueCardValues(card => card.rarityGroup || card.rarity).filter(group => !ORDER.includes(group));
   const types = [...new Set([...TYPES, ...db.cards.flatMap(card => card.types || [])])].filter(Boolean);
   const series = [...new Set([...SERIES, ...uniqueCardValues(card => card.series)])].filter(Boolean);
   const tags = [...new Set([...TAGS, ...db.cards.flatMap(card => card.tags || [])])].filter(Boolean);
