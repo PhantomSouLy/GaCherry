@@ -211,10 +211,6 @@ function showPage(page) {
       });
     }
   }, 80);
-};
-
-  if (page === 'guide') renderGuide();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderAll() {
