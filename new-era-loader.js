@@ -1,7 +1,11 @@
-// GaCherry New ERA runtime extension.
-// Loads Wuthering Waves × Cherry cards from data/new-era.json and merges them into the main database without touching data/cards.json.
+// GaCherry New ERA runtime extension v3.
+// Fixes:
+// - Echo Bloom uses local data/Currency/echobloom.webp instead of showing a raw GitHub URL.
+// - New ERA Sell / Buy / Stock / Max/User are shown as ? for now.
+// - More reliable loading after the main cards database is ready.
 
 const NEW_ERA_URL = './data/new-era.json';
+const NEW_ERA_ECHO_BLOOM_ICON = 'data/Currency/echobloom.webp';
 
 (function installNewEraLoader() {
   const NEW_ERA_INSERT_AFTER = {
@@ -78,10 +82,10 @@ const NEW_ERA_URL = './data/new-era.json';
     if (!Array.isArray(db.currencies)) db.currencies = [];
 
     const currency = {
-      id: payload.currency.id,
-      name: payload.currency.name,
-      icon: payload.currency.iconPath ? rawUrl(payload, payload.currency.iconPath) : '$',
-      order: payload.currency.order || 999
+      id: payload.currency.id || 'echo_bloom',
+      name: payload.currency.name || 'Echo Bloom',
+      icon: NEW_ERA_ECHO_BLOOM_ICON,
+      order: payload.currency.order || 70
     };
 
     const existing = db.currencies.find(item => item.id === currency.id);
@@ -93,7 +97,6 @@ const NEW_ERA_URL = './data/new-era.json';
     const rarity = payload.rarities?.[entry.rarity] || {};
     const cardName = entry.name || `Cherry: ${stem(entry.path)}`;
     const types = entry.types || rarity.types || ['Gacha'];
-    const sell = entry.sell ?? rarity.sell ?? 0;
     const tradable = entry.tradable ?? rarity.tradable ?? true;
 
     return {
@@ -101,7 +104,7 @@ const NEW_ERA_URL = './data/new-era.json';
       number: entry.number || ((payload.startNumber || 660) + index),
       slug: entry.slug || slugify(`new-era-${stem(entry.path)}`),
       name: cardName,
-      description: entry.description || 'Wuthering Waves × Cherry New ERA event card.',
+      description: entry.description || '?',
       image: rawUrl(payload, entry.path),
       imageOriginal: blobUrl(payload, entry.path),
       rarity: entry.rarity,
@@ -112,16 +115,20 @@ const NEW_ERA_URL = './data/new-era.json';
       types,
       type: types.join(', '),
       series: payload.series || 'New ERA',
-      currency: payload.currency?.id || 'default',
-      currencyName: payload.currency?.name || 'Default',
-      currencyIcon: payload.currency?.iconPath ? rawUrl(payload, payload.currency.iconPath) : '$',
-      sell,
-      buy: entry.buy ?? sell,
-      stock: entry.stock ?? 'Event',
-      maxPerUser: entry.maxPerUser ?? 1,
-      role: entry.role ?? null,
+      currency: payload.currency?.id || 'echo_bloom',
+      currencyName: payload.currency?.name || 'Echo Bloom',
+      currencyIcon: NEW_ERA_ECHO_BLOOM_ICON,
+
+      // Temporary unknown values. We keep image/name/rarity usable, but hide economy data for now.
+      sell: '?',
+      buy: '?',
+      stock: '?',
+      maxPerUser: '?',
+      role: null,
+
       tradable,
-      tags: entry.tags || ['Event', 'Limited', 'New ERA', 'Wuthering Waves'].concat(tradable ? [] : ['Untradable'])
+      tags: entry.tags || ['Event', 'Limited', 'New ERA', 'Wuthering Waves'].concat(tradable ? [] : ['Untradable']),
+      rawText: `${rarity.icon || '?'} ${rarity.name || entry.rarity} ${cardName} NEW ERA`
     };
   }
 
@@ -133,7 +140,11 @@ const NEW_ERA_URL = './data/new-era.json';
     let added = 0;
 
     (payload.cards || []).map((entry, index) => buildCard(payload, entry, index)).forEach(card => {
-      if (!existingIds.has(card.id) && !existingSlugs.has(card.slug)) {
+      const existing = db.cards.find(item => item.id === card.id || item.slug === card.slug);
+
+      if (existing) {
+        Object.assign(existing, card);
+      } else if (!existingIds.has(card.id) && !existingSlugs.has(card.slug)) {
         db.cards.push(card);
         existingIds.add(card.id);
         existingSlugs.add(card.slug);
@@ -144,6 +155,22 @@ const NEW_ERA_URL = './data/new-era.json';
     return added;
   }
 
+  function patchCurHTML() {
+    if (typeof curHTML !== 'function' || curHTML.__newEraPatched) return;
+
+    const originalCurHTML = curHTML;
+
+    curHTML = function patchedCurHTML(value, card) {
+      if (card?.series === 'New ERA' && (value === '?' || value === null || value === undefined || value === '')) {
+        return '?';
+      }
+
+      return originalCurHTML(value, card);
+    };
+
+    curHTML.__newEraPatched = true;
+  }
+
   async function mergeNewEra() {
     const response = await fetch(NEW_ERA_URL, { cache: 'no-store' });
     if (!response.ok) throw new Error(`${NEW_ERA_URL} nem érhető el`);
@@ -152,6 +179,8 @@ const NEW_ERA_URL = './data/new-era.json';
 
     ensureRarityRuntimeSupport(payload);
     ensureCurrencySupport(payload);
+    patchCurHTML();
+
     return mergeCards(payload);
   }
 
