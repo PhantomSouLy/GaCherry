@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "event": "Wuthering Waves × Cherry",
+  "series": "New ERA",
+  "startNumber": 660,
+  "assetRepoRaw": "https://raw.githubusercontent.com/PhantomSouLy/GaCherry-Assets/main",
+  "assetRepoBlob": "https://github.com/PhantomSouLy/GaCherry-Assets/blob/main",
+  "rarities": {
+    "resonance": {
+      "name": "Resonance",
+      "icon": "🟣",
+      "iconPath": "ICON/ResonanceICO.png",
+      "color": "#9b6cff",
+      "order": 42,
+      "sell": 1,
+      "types": [
+        "Gacha"
+      ],
+      "tradable": true
+    },
+    "forte": {
+      "name": "Forte",
+      "icon": "🟡",
+      "iconPath": "ICON/ForteICO.png",
+      "color": "#f4c542",
+      "order": 52,
+      "sell": 5,
+      "types": [
+        "Gacha"
+      ],
+      "tradable": true
+    },
+    "awakened": {
+      "name": "Awakened",
+      "icon": "⚪",
+      "iconPath": "ICON/AwakenedICO.png",
+      "color": "#f5f2ff",
+      "order": 72,
+      "sell": 0,
+      "types": [
+        "Craft",
+        "NoDrop"
+      ],
+      "tradable": false
+    }
+  },
+  "currency": {
+    "id": "echo_bloom",
+    "name": "Echo Bloom",
+    "iconPath": "ICON/EchoBloom.png",
+    "order": 70
+  },
+  "cards": [
+    {
+      "rarity": "awakened",
+      "path": "Rarities/Awakened/The Maiden.gif"
+    },
+    {
+      "rarity": "awakened",
+      "path": "Rarities/Awakened/Yangyang Awakened.gif"
+    },
+    {
+      "rarity": "awakened",
+      "path": "Rarities/Awakened/item1.png"
+    },
+    {
+      "rarity": "awakened",
+      "path": "Rarities/Awakened/item2.png"
+    },
+    {
+      "rarity": "awakened",
+      "path": "Rarities/Awakened/item3.png"
+    },
+    {
+      "rarity": "awakened",
+      "path": "Rarities/Awakened/item4.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Aemeth.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Augusta.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Camellya.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Cantarella.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Carlotta.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Cartethyia.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Changli.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Chisa.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Ciaccona.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Encore.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Galbrena.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Hiyuki.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Iuno.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Jianxi.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Jinhsi.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Lucilla.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Lupa.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Lynae.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Mornye.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Phoebe.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Phrolova.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Roccia.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Rover.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Shorekeeperorigi.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Sigrika.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Verina.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Yinli.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Zhani.png"
+    },
+    {
+      "rarity": "forte",
+      "path": "Rarities/Forte/Zhezhi.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Baizhi.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Bulling.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Chixia.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Dajin.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Lumi.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Sanhua.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Taoqi.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/YangYang.png"
+    },
+    {
+      "rarity": "resonance",
+      "path": "Rarities/Resonance/Youhu.png"
+    }
+  ]
+}
