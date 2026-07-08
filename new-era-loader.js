@@ -4,7 +4,6 @@
 const NEW_ERA_URL = './data/new-era.json';
 
 (function installNewEraLoader() {
-  const NEW_ERA_ORDER = ['resonance', 'forte', 'awakened'];
   const NEW_ERA_INSERT_AFTER = {
     resonance: 'epic_plus',
     forte: 'legendary_plus',
@@ -12,6 +11,8 @@ const NEW_ERA_URL = './data/new-era.json';
   };
 
   let mergeStarted = false;
+  let merged = false;
+  let pollTimer = null;
 
   function encodePath(path) {
     return String(path).split('/').map(encodeURIComponent).join('/');
@@ -38,28 +39,37 @@ const NEW_ERA_URL = './data/new-era.json';
       .replace(/^-+|-+$/g, '');
   }
 
+  function mainDbReady() {
+    return typeof db !== 'undefined' && db && Array.isArray(db.cards) && db.cards.length > 0;
+  }
+
   function ensureRarityRuntimeSupport(payload) {
     Object.entries(payload.rarities || {}).forEach(([id, rarity]) => {
-      if (!ORDER.includes(id)) {
+      if (typeof ORDER !== 'undefined' && Array.isArray(ORDER) && !ORDER.includes(id)) {
         const insertAfter = NEW_ERA_INSERT_AFTER[id];
         const position = ORDER.indexOf(insertAfter);
-        ORDER.splice(position >= 0 ? position + 1 : ORDER.length - 1, 0, id);
+        ORDER.splice(position >= 0 ? position + 1 : Math.max(0, ORDER.length - 1), 0, id);
       }
 
-      LABEL[id] = [rarity.icon || '?', rarity.name || id];
+      if (typeof LABEL !== 'undefined') {
+        LABEL[id] = [rarity.icon || '?', rarity.name || id];
+      }
 
       if (!Array.isArray(db.rarities)) db.rarities = [];
-      if (!db.rarities.some(item => item.id === id)) {
-        db.rarities.push({
-          id,
-          name: rarity.name || id,
-          icon: rarity.icon || '?',
-          iconImage: rarity.iconPath ? rawUrl(payload, rarity.iconPath) : '',
-          color: rarity.color || '#8990a3',
-          order: rarity.order || 999,
-          filterGroup: id
-        });
-      }
+
+      const rarityEntry = {
+        id,
+        name: rarity.name || id,
+        icon: rarity.icon || '?',
+        iconImage: rarity.iconPath ? rawUrl(payload, rarity.iconPath) : '',
+        color: rarity.color || '#8990a3',
+        order: rarity.order || 999,
+        filterGroup: id
+      };
+
+      const existing = db.rarities.find(item => item.id === id);
+      if (existing) Object.assign(existing, rarityEntry);
+      else db.rarities.push(rarityEntry);
     });
   }
 
@@ -120,12 +130,18 @@ const NEW_ERA_URL = './data/new-era.json';
 
     const existingIds = new Set(db.cards.map(card => card.id));
     const existingSlugs = new Set(db.cards.map(card => card.slug));
+    let added = 0;
 
     (payload.cards || []).map((entry, index) => buildCard(payload, entry, index)).forEach(card => {
       if (!existingIds.has(card.id) && !existingSlugs.has(card.slug)) {
         db.cards.push(card);
+        existingIds.add(card.id);
+        existingSlugs.add(card.slug);
+        added += 1;
       }
     });
+
+    return added;
   }
 
   async function mergeNewEra() {
@@ -136,22 +152,48 @@ const NEW_ERA_URL = './data/new-era.json';
 
     ensureRarityRuntimeSupport(payload);
     ensureCurrencySupport(payload);
-    mergeCards(payload);
+    return mergeCards(payload);
   }
 
-  const originalRenderAll = renderAll;
+  async function applyNewEra() {
+    if (merged || mergeStarted || !mainDbReady()) return;
 
-  renderAll = function patchedRenderAll(...args) {
-    const result = originalRenderAll.apply(this, args);
+    mergeStarted = true;
 
-    if (!mergeStarted) {
-      mergeStarted = true;
+    try {
+      const added = await mergeNewEra();
+      merged = true;
+      console.info(`[GaCherry] New ERA betöltve. Hozzáadott kártyák: ${added}`);
 
-      mergeNewEra()
-        .then(() => originalRenderAll())
-        .catch(error => console.warn('New ERA kártyák betöltése sikertelen:', error.message));
+      if (typeof renderAll === 'function') {
+        renderAll();
+      }
+    } catch (error) {
+      mergeStarted = false;
+      console.warn('[GaCherry] New ERA kártyák betöltése sikertelen:', error.message);
+    }
+  }
+
+  if (typeof renderAll === 'function') {
+    const originalRenderAll = renderAll;
+
+    renderAll = function patchedRenderAll(...args) {
+      const result = originalRenderAll.apply(this, args);
+      window.setTimeout(applyNewEra, 0);
+      return result;
+    };
+  }
+
+  pollTimer = window.setInterval(() => {
+    if (merged) {
+      window.clearInterval(pollTimer);
+      return;
     }
 
-    return result;
-  };
+    applyNewEra();
+  }, 100);
+
+  window.setTimeout(() => {
+    if (pollTimer) window.clearInterval(pollTimer);
+  }, 15000);
 })();
